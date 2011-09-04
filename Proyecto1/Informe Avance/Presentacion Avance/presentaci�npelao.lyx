@@ -1,0 +1,1759 @@
+#LyX 1.6.9 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\usetheme{Warsaw}
+
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+\end_preamble
+\use_default_options false
+\language spanish
+\inputencoding auto
+\font_roman times
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 2
+\use_esint 0
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Clasificación automática de textos basada en algoritmos de separación lineal
+\begin_inset OptArg
+status open
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+opcional, sólo para títulos largos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Felipe Arancibia Rojas
+\end_layout
+
+\begin_layout Institute
+Profesor Guía: Rodrigo Alfaro Arancibia
+\begin_inset Newline newline
+\end_inset
+
+Profesor Co-referente: Broderick Crawford Labrín 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+Presentación de Avance de Proyecto 1
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+- Usar el nombre de la conferencia o bien su abreviatura.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+- Realmente no es informativo para la audiencia, pero sí para quienes (incluyend
+o Vd.mismo) lean la presentación en línea.
+\end_layout
+
+\end_inset
+
+
+\begin_inset OptArg
+status collapsed
+
+\begin_layout Plain Layout
+Avance Proyecto 1
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+opcional, debería ser una abreviatura del nombre de la conferencia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Si se dispone de un archivo como "institución-logo-nombrearchivo.xxx", donde
+ xxx es un formato gráfico aceptable por latex o pdflatex, entonces se puede
+ añadir un logotipo descomentando lo siguiente:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+pgfdeclareimage[height=0.5cm]{institution-logo}{institución-logo-nombrearchivo}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+logo{
+\backslash
+pgfuseimage{institution-logo}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Lo siguiente hace que se muestre un índice al inicio de cada subsección.
+ Suprímelo si no lo quieres.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSubsection[]{
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+frametitle{Índice}   
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tableofcontents[currentsection,currentsubsection] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Si quieres descubrir todo en modo paso a paso, descomenta el siguiente comando:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Índice
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introducción
+\end_layout
+
+\begin_layout BeginFrame
+Introducción
+\end_layout
+
+\begin_layout Itemize
+Costos de la categorización manual
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+MEDLINE y sus 18.000 categorías conllevan costos (app.) de $2.000.000
+\end_layout
+
+\begin_layout Itemize
+Yahoo! necesita 200 personas para el etiquetamiento manual.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Evolución histórica
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Década de los `80s
+\end_layout
+
+\begin_layout Itemize
+Década de los `90s
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Trabajo investigativo
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Objetivos y Metodología de Trabajo
+\end_layout
+
+\begin_layout BeginFrame
+Objetivos
+\end_layout
+
+\begin_layout Itemize
+Objetivo General
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Investigar y aplicar algoritmos de separación lineal para la clasificación
+ automática de textos multicategoría, y comparar los resultados entre estos
+ métodos de categorización.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos Específicos
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Establecer el marco teórico de la investigación para la clasificación automática
+ de textos.
+\end_layout
+
+\begin_layout Itemize
+Identificar y comprender las distintas etapas de las clasificaciones automáticas
+ y de los algoritmos de separación lineal.
+\end_layout
+
+\begin_layout Itemize
+Realizar pruebas con datos a determinar para obtener resultados comparables.
+\end_layout
+
+\begin_layout Itemize
+Analizar los datos obtenidos y realizar comparaciones entre ventajas y desventaj
+as de los métodos utilizados.
+\end_layout
+
+\end_deeper
+\begin_layout BeginFrame
+Metodología de trabajo
+\end_layout
+
+\begin_layout Itemize
+La clasificación automática de textos consiste en la organización de los
+ documentos según características predefinidas, y que a su vez permite que
+ éste sea identificado mediante distintas categorías para su mejor recuperación
+ u objetivo final.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Itemize
+Problemática
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+La necesidad de tener comparativas de rendimiento entre distintos algortimos
+ de sepación lineal en la clasificación automática genera la problemática.
+\end_layout
+
+\begin_layout Itemize
+El principal objetivo de la investigación es desarrollar comparativas entre
+ métodos para la clasificación automática de textos, lo que luego permita
+ desarrollar optimizaciones a los resultados obtenidos.
+\end_layout
+
+\end_deeper
+\begin_layout BeginFrame
+Metodología de trabajo
+\end_layout
+
+\begin_layout Itemize
+Plan de Trabajo
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Felipe/Pictures/tabla1.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Categorización Automática de Textos
+\end_layout
+
+\begin_layout Subsection
+Definición
+\end_layout
+
+\begin_layout BeginFrame
+Conceptos
+\end_layout
+
+\begin_layout Itemize
+Definiciones
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+CLASIFICADOR: Un algoritmo que, dado como entradas dos o más clases, automáticam
+ente decide a cual clase un determinado documento pertenece, basándose en
+ el análisis del contenido del documento.
+ 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+TÉRMINO: La dimensión del espacio vector en el cual documentos son representados
+ de acuerdo al modelo vectorial.
+ En aplicaciones temáticas de la categorización de textos los términos generalme
+nte coinciden con las palabras que tienen relevancia.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout BeginFrame
+Definición
+\end_layout
+
+\begin_layout Itemize
+Asignar un valor booleano a cada par representado por: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula ${d_{j},c_{j}}\in DxC$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Mediante la aproximación a función objetivo 
+\begin_inset Formula $\Phi:DxC\text{→}{T,F}$
+\end_inset
+
+ por parte de la función del clasificador 
+\begin_inset Formula $\phi\text{ : }DxC\text{→}{T,F}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Se asume la no existencia de conocimiento exógeno 
+\end_layout
+
+\begin_layout BeginFrame
+Tipos de categorías
+\end_layout
+
+\begin_layout Itemize
+Categoría única
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Categoría binaria
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Multicategoría
+\end_layout
+
+\begin_layout Subsection
+Aprendizaje automático
+\end_layout
+
+\begin_layout BeginFrame
+Tipos de Aprendizaje
+\end_layout
+
+\begin_layout Itemize
+El concepto de aprendizaje es entendido, en este caso, como inferencias
+ inductivas, donde mediante la observación de ejemplos que representan la
+ información incompleta acerca de algún fenómeno estático, se logra inferir
+ el correcto resultado.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Aprendizaje no supervisado.
+\end_layout
+
+\begin_layout Itemize
+Aprendizaje semisupervisado.
+\end_layout
+
+\begin_layout Itemize
+Aprendizaje supervisado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Felipe/Pictures/aprendizaje.png
+	scale 52
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Representación
+\end_layout
+
+\begin_layout BeginFrame
+Representación de los documentos
+\end_layout
+
+\begin_layout Itemize
+Modelo vectorial (espacio vectorial).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Limitaciones:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Poca representatividad en documentos grandes.
+\end_layout
+
+\begin_layout Itemize
+Derivaciones semánticas pueden producir falsos negativos.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Para reducir dichas limitaciones se utilizan:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Análisis léxico:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Stop Word Removal
+\end_layout
+
+\begin_layout Itemize
+Steeming
+\end_layout
+
+\begin_layout Itemize
+Longitud de palabras
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Asignación de pesos
+\end_layout
+
+\end_deeper
+\begin_layout BeginFrame
+Asignación de pesos
+\end_layout
+
+\begin_layout Itemize
+Modelo TF-IDF (Term frequency-inverse document frequency)
+\end_layout
+
+\begin_layout Itemize
+Función estándar para la asignación de pesos: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $tfidf\,\left(t_{k},d_{j}\right)=\#\left(t_{k},d_{j}\right)\cdot\log\frac{\left|Tr\right|}{\#Tr(t_{k})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Donde: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\#(t_{k},d_{j})$
+\end_inset
+
+ = nº de veces que el término 
+\begin_inset Formula $t_{k}$
+\end_inset
+
+ ocurre en el documento 
+\begin_inset Formula $d_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\#Tr(t_{k})$
+\end_inset
+
+ = nº de documentos en 
+\begin_inset Formula $Tr$
+\end_inset
+
+, en el que el 
+\begin_inset Formula $t_{k}$
+\end_inset
+
+ ocurre 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Estandarización:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $w_{kj}=\frac{tfidf\,\left(t_{k},d_{j}\right)}{\sqrt{\sum_{s=1}^{\left|T\right|}\left(tfidf\,\left(t_{s},d_{j}\right)\right)^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Métricas de evaluación
+\begin_inset Note Note
+status open
+
+\begin_layout BeginFrame
+Reducción de dimensión
+\end_layout
+
+\begin_layout Itemize
+Reducción de dimensión.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Reducción Local
+\end_layout
+
+\begin_layout Itemize
+Reducción Global
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Reducciones mediante su forma:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Reducción de dimensión por reducción de términos: reducir el número de términos
+ que componen la colección mediante la selección de los términos que ofrecen
+ una mayor efectividad.
+\end_layout
+
+\begin_layout Itemize
+Reducción de dimensión por extracción de términos: El origen de problemas
+ generados por palabras homónimas, sinónimos y polisémicas, se trata de
+ resolver al utilizar la extracción de términos para generar nuevos términos
+ que no se encuentran en el conjunto
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout BeginFrame
+Reducción de términos
+\end_layout
+
+\begin_layout Itemize
+Aproximación superficial: Cada vez que se añada o extraiga un término al
+ conjunto, el mismo método de aprendizaje que se utilizará para la clasificación
+ será usado para su evaluación, por lo que se estima si el nuevo conjunto
+ de términos es superior o no.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Aproximación por filtrado: Algunos de los términos son extraídos mediante
+ la aplicación de una función que realiza un filtrado sobre la importancia
+ de los términos.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout BeginFrame
+Extracción de términos
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Clustering de términos: Agrupación de las palabras que presenten grandes
+ parecidos semánticos.
+\end_layout
+
+\begin_layout Itemize
+Latent semantic indexing: Representación de los documentos teniendo en cuenta
+ coocurrencia de términos 
+\end_layout
+
+\begin_layout Itemize
+Utilización de ontologías: Reducir su dimensión terminológica mediante la
+ búsqueda de relaciones entre términos.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Métricas de evaluación
+\end_layout
+
+\begin_layout Itemize
+Efectividad
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Precisión (
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\pi$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang spanish
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\pi=\frac{TP}{(TP\,+\, FP)}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Cobertura (
+\begin_inset Formula $\rho$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\rho=\frac{TP}{(TP\,+\, FN)}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $F_{1}=\frac{(2\,\cdot\,\pi\,\cdot\rho)}{\pi\,+\,\rho}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Felipe/Pictures/tabla2.png
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout BeginFrame
+Métricas de evaluación
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Itemize
+El cálculo de la precisión y la cobertura se pueden realizar de dos formas
+ distintas: 
+\end_layout
+
+\begin_layout Itemize
+Microaveraging (Micro-promedio): los cálculos se basan en la sumatoria de
+ todos los valores individuales.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Macroaveraging (Macro-promedio): los cálculos son realizados mediante la
+ suma local de los valores para cada categoría, obteniendo luego la media
+ total.
+ 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Otras métricas
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Eficiencia: Consiste en considerar la eficiencia de entrenamiento (tiempo
+ medio que toma construir un clasificador) y la eficiencia de clasificación
+ (tiempo promedio que necesario para clasificar un nuevo documento).
+\end_layout
+
+\begin_layout Itemize
+Exactitud
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\hat{A}=\frac{TP\,+\, TN\,}{(TP\,+\, TN\,+\, FP\,+\, FN)}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Error
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\hat{E}=\frac{FP\,+\, FN\,}{(TP\,+\, TN\,+\, FP\,+\, FN)}\Longleftrightarrow\hat{E}=1-\hat{A}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout BeginFrame
+Colecciones de datos
+\end_layout
+
+\begin_layout Itemize
+Colección Reuters-21578
+\end_layout
+
+\begin_layout Itemize
+Colección OHSUMED
+\end_layout
+
+\begin_layout Itemize
+Colecciones WEB
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Yahoo! Science
+\end_layout
+
+\begin_layout Itemize
+BankSearch
+\end_layout
+
+\begin_layout Itemize
+WebKB²
+\end_layout
+
+\end_deeper
+\begin_layout BeginFrame
+Aplicaciones
+\end_layout
+
+\begin_layout Itemize
+Organización de documentos
+\end_layout
+
+\begin_layout Itemize
+Desambiguación de significados de palabras
+\end_layout
+
+\begin_layout Itemize
+Filtración de textos
+\end_layout
+
+\begin_layout Itemize
+Directorios web
+\end_layout
+
+\begin_layout Itemize
+Identificación del lenguaje natural
+\end_layout
+
+\begin_layout Itemize
+Clasificación de noticias
+\end_layout
+
+\begin_layout Itemize
+Clasificación de sentimientos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tipos de Clasificadores
+\end_layout
+
+\begin_layout BeginFrame
+Tipos de Clasificadores
+\end_layout
+
+\begin_layout Itemize
+Clasificadores probabilísticos
+\end_layout
+
+\begin_layout Itemize
+Método Rocchio
+\end_layout
+
+\begin_layout Itemize
+Clasificadores basados en árboles de decisión 
+\end_layout
+
+\begin_layout Itemize
+Clasificadores basados en reglas 
+\end_layout
+
+\begin_layout Itemize
+Clasificadores basados en ejemplos 
+\end_layout
+
+\begin_layout Itemize
+Métodos de regresión 
+\end_layout
+
+\begin_layout Itemize
+Clasificadores unidos (Classifier Committees) 
+\end_layout
+
+\begin_layout Itemize
+Clasificación con redes neuronales
+\end_layout
+
+\begin_layout Itemize
+Clasificación con máquinas de soporte vectorial 
+\end_layout
+
+\begin_layout Itemize
+Otros clasificadores
+\end_layout
+
+\begin_layout Section
+Redes Neuronales
+\end_layout
+
+\begin_layout Subsection
+Estructura básica
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ann.png
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ANN es un sistema computacional distribuido caracterizado por 
+\noun on
+(Isasi Viñuela)
+\noun default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Un conjunto de unidades elementales,con relativamente bajas capacidades
+ de procesamiento.
+\end_layout
+
+\begin_layout Itemize
+Una estructura de interconexiones usando enlaces ponderados.
+\end_layout
+
+\begin_layout Itemize
+Parámetros libres que deben ser ajustados para satisfacer los requerimientos
+ de desempeño.
+\end_layout
+
+\begin_layout Itemize
+Aprenden, generalizan y abstraen.
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Felipe/Pictures/1.2.png
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Felipe/Pictures/1.3.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout BeginFrame
+Tipos de Redes Neuronales
+\end_layout
+
+\begin_layout Itemize
+Según su topología
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Red FeedForward
+\end_layout
+
+\begin_layout Itemize
+Red BackForward
+\end_layout
+
+\begin_layout Itemize
+Red Recurrente
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Según su algoritmo de aprendizaje
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Aprendizaje supervisado
+\end_layout
+
+\begin_layout Itemize
+Aprendizaje no supervisado (Autoorganizado)
+\end_layout
+
+\begin_layout Itemize
+Aprendizaje por refuerzo
+\end_layout
+
+\begin_layout Itemize
+Redes Híbridas
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ANN en la clasificación
+\end_layout
+
+\begin_layout BeginFrame
+Redes Neuronales en la clasificación
+\end_layout
+
+\begin_layout Itemize
+Discrimininantes lineales
+\end_layout
+
+\begin_layout Itemize
+Principal método: Perceptrón simple
+\end_layout
+
+\begin_layout Subsection
+Perceptrón
+\end_layout
+
+\begin_layout BeginFrame
+Perceptrón
+\end_layout
+
+\begin_layout Itemize
+Modelo:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Graphics
+	filename C:/Users/Felipe/Pictures/perceptron1.jpg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Salida:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $y=F\left(\sum_{i=1}^{n}w_{i}\cdot x_{i}+\theta\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+donde si 
+\begin_inset Formula $s>0$
+\end_inset
+
+ el resultado es 1, de lo contrario es -1
+\end_layout
+
+\end_deeper
+\begin_layout BeginFrame
+Perceptrón en un plano
+\end_layout
+
+\begin_layout Itemize
+En dos dimensiones el plano de separación es una recta de forma:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $w_{1}x_{1}+w_{2}x_{2}+\theta=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Felipe/Pictures/perceptron.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Método de aprendizaje
+\end_layout
+
+\begin_layout Itemize
+Si se denomina x a cada uno de los ejemplos de entrenamiento y d(x) a su
+ clase asociada, tomando valores de (1, -1)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+1.
+ Empezar con valores aleatorios para los pesos y el umbral.
+ 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+2.
+ Seleccionar un vector de entrada x del conjunto de ejemplos de entrenamiento.
+ 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+3.
+ Si 
+\begin_inset Formula $y≠d(x)$
+\end_inset
+
+, la red da una respuesta incorrecta.
+ Modificar 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ de acuerdo con:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\triangle w_{i}=d(x)x_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+4.
+ Si no se ha cumplido el criterio, volver a 2.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Máquinas de Soporte Vectorial
+\end_layout
+
+\begin_layout Subsection
+Máquinas de soporte vectorial (SVM)
+\end_layout
+
+\begin_layout BeginFrame
+Introducción
+\end_layout
+
+\begin_layout Itemize
+SVM: Modelo que representa a los puntos de muestra en el espacio, separando
+ las clases por un espacio lo más amplio posible
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Tipos de SVM
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Caso linealmente separable
+\end_layout
+
+\begin_layout Itemize
+Caso no linealmente separable
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Felipe/Pictures/svmnolineal1.png
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout BeginFrame
+SVM no lineales
+\end_layout
+
+\begin_layout Itemize
+En este caso, el espacio de muestra es mapeado a un espacio superior, generalmen
+te mediante una función Kernel
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $x={x_{1},x_{2},…,x_{n}}→\phi(x)={\left[\phi(x)\right]{}_{1},\left[\phi(x)\right]{}_{2},…,\left[\phi(x)\right]{}_{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Felipe/Pictures/svmnolineal.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout BeginFrame
+SVM en la clasificación
+\end_layout
+
+\begin_layout Itemize
+Existe evidencia teórica y empírica de las características de las SVM en
+ la clasificación automática de textos 
+\noun on
+(Joachims)
+\noun default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Espacio de entrada de alta dimensión y pocas características irrelevantes.
+\end_layout
+
+\begin_layout Pause
+\begin_inset Note Note
+status open
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Vectores de documentos son escasos.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Problemas linealmente separables.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+SVM Lineal
+\end_layout
+
+\begin_layout BeginFrame
+SVM lineal
+\end_layout
+
+\begin_layout Itemize
+En el caso lineal se busca la recta que separe ambos espacios, maximizando
+ el espacio entre ellos.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Representadas por :
+\begin_inset Formula $f(x)=wx+b$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Felipe/Pictures/svm.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+En el ejemplo si ambas ec.
+ de rectas son restadas da por resultado 
+\begin_inset Formula $w(x_{1}-x_{2})=2$
+\end_inset
+
+ donde el margen está definido por 
+\begin_inset Formula $\frac{w}{|w|(x_{1}-x_{2})}=\frac{2}{|w|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Multiplicadores de Lagrange
+\end_layout
+
+\begin_layout Itemize
+Para la maximización de dicha función la utilización de multiplicadores
+ de Lagrange simplifica la operación 
+\emph on
+\noun on
+(Burges)
+\emph default
+\noun default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Introduciendo multiplicadores por cada restricción de 
+\begin_inset Formula $y_{i}(wx_{i}+b)-1≥0$
+\end_inset
+
+ se obtiene :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $L_{p}=\frac{1}{2}\left|w\right|{}^{2}-\sum_{i=1}^{l}\alpha_{i}y_{i}(wx_{i}+b)+\sum_{i=1}^{l}\alpha_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Por lo que nacen nuevas condiciones:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $w=\sum_{i}\alpha_{i}y_{i}x_{i}$
+\end_inset
+
+ y 
+\begin_inset Formula $\sum_{i}\alpha_{i}y_{i}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Que siendo reemplazadas en la original, quedan de la siguiente forma:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $L_{D}=\sum_{i}\alpha_{i}-\frac{1}{2}\sum_{i,j}(\alpha_{i}\alpha_{j}y_{i}y{}_{j}x_{i})\cdot x_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Conclusiones
+\end_layout
+
+\begin_layout BeginFrame
+Conclusiones
+\end_layout
+
+\begin_layout Itemize
+Se establece el marco teórico de la investigación.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Son definidos el alcance y los objetivos de la investigación.
+\end_layout
+
+\begin_layout Itemize
+Se identifican los conceptos y métodos que serán utilizados.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+La presentación tiene por objetivo formar cimientos sobre la parte teórica
+ necesaria para la posterior investigación y análisis de los resultados.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Los pasos a seguir son:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Seleccionar los datos para la experimentación.
+\end_layout
+
+\begin_layout Itemize
+Comenzar la implementación de las técnicas expuestas.
+\end_layout
+
+\begin_layout Itemize
+Obtener resultados concretos para dichos experimentos.
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section*
+\start_of_appendix
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Todo lo siguiente es opcional y generalmente no es necesario.
+\end_layout
+
+\end_inset
+
+Apéndice
+\end_layout
+
+\begin_layout BeginFrame
+Referencias
+\end_layout
+
+\begin_layout Itemize
+Bennet, Paul.
+ Introduction to text categorization.
+ 2002.
+\end_layout
+
+\begin_layout Itemize
+Burges, Christopher.
+ A Tutorial on Support Vector Machines for Pattern Recognition.
+ Data Mining and Knowledge Discovery, 1998.
+\end_layout
+
+\begin_layout Itemize
+Isasi Viñuela, Pedro and Galván León, Inés.
+ Redes de Neuronas Artificiales.
+ Un Enfoque Práctico.
+ Madrid : Depto de Informática, Universidad Carlos III de Madrid, 2004.
+\end_layout
+
+\begin_layout Itemize
+Joachims, Thorsten.
+ Text Categorization with Support Vector Machines: Learning with Many Relevant
+ Features.
+ Germany : Universität Dortmund.
+\end_layout
+
+\begin_layout Itemize
+Sebastiani, Fabrizio.
+ Text Categorization.
+ Istituto di Scienza e Tecnologie dell'Informazione, 2005.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Yang, Yiming.
+ Decision Trees in Text Categorization.
+ 2000.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Zubiaga, Arkaitz.
+ Aproximaciones a SVM semisupervizado para clasificación de páginas web.
+ Departamento de Lenguajes y Sistemas Informáticos, 2008.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Gracias
+\end_layout
+
+\begin_layout Itemize
+Consultas.
+\end_layout
+
+\begin_layout Itemize
+Gracias.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\end_body
+\end_document

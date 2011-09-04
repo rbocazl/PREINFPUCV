@@ -1,0 +1,7 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Introducci\'on}{1}
+\contentsline {section}{\numberline {2}Cap\IeC {\'\i }tulo 1}{2}
+\contentsline {subsection}{\numberline {2.1}Presentaci\'on Gr\'afica}{2}
+\contentsline {section}{\numberline {3}Cap\IeC {\'\i }tulo 2}{3}
+\contentsline {subsection}{\numberline {3.1}Tablas}{3}
+\contentsline {subsection}{\numberline {3.2}Ecuaciones}{3}

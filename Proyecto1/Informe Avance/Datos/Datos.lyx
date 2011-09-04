@@ -1,0 +1,243 @@
+#LyX 1.6.9 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language spanish
+\inputencoding latin1
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 4
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Los datos que son necesarios para la investigación se describen en este
+ apartado.
+ Se han dividido en categorías o dimensiones, dependiendo del origen de
+ éstos, los cuales pueden ser de procedencia, de la batería de selección
+ o del propio estudio universitario.
+ Para cada estudiante debe generarse un identificador, que debe ser mantenido
+ por igual por todas las dimensiones a las que se hacen referencia, o tablas
+ que puedan generarse al extraer los datos.
+ Estos datos serán solicitados oportunamente a la universidad para comenzar
+ el análisis de éstos.
+\end_layout
+
+\begin_layout Subsection
+Dimensión Procedencia
+\end_layout
+
+\begin_layout Standard
+Estos datos son los de la procedencia del estudiante, y describen las condicione
+s que tenía el estudiante antes de ingresar a la Escuela.
+ Los datos necesarios en esta dimensión son:
+\end_layout
+
+\begin_layout Subparagraph
+Establecimiento de egreso.
+\end_layout
+
+\begin_layout Standard
+Debe obtenerse el establecimiento de egreso para cada estudiante que haya
+ estudiado en la Escuela.
+ Este debe ser un nombre identificador del establecimiento, puede ser una
+ sigla compuesta o un nombre único.
+\end_layout
+
+\begin_layout Subparagraph
+Tipo de establecimiento.
+\end_layout
+
+\begin_layout Standard
+Debe indicarse si el establecimiento de egreso es de la categoría Particular,
+ Subvencionado o Municipal.
+ Esto puede realizarse mediante un identificador numérico de cada categoría
+ o el nombre de esta como una cadena de texto.
+\end_layout
+
+\begin_layout Subparagraph
+Ranking de egreso.
+\end_layout
+
+\begin_layout Standard
+Especifica la posición de egreso del establecimiento de educación media,
+ este se obtiene al ordenar todos los alumnos de una promoción en el colegio
+ por sus calificaciones.
+ Debe ser un numero.
+\end_layout
+
+\begin_layout Subparagraph
+Región del establecimiento.
+\end_layout
+
+\begin_layout Standard
+Este dato representa la región donde se encuentra el establecimiento de
+ origen del estudiante.
+ Puede ser un numero en romano o arábigo.
+ Debe tenerse extremo cuidado en éste dato debido a la creación de las nuevas
+ regiones hace un tiempo atrás.
+\end_layout
+
+\begin_layout Subparagraph
+Año de término de la educación media.
+\end_layout
+
+\begin_layout Standard
+Se necesita saber en que año el estudiante egresó de la educación media.
+\end_layout
+
+\begin_layout Subparagraph
+Modalidad estudios del estudiante.
+\end_layout
+
+\begin_layout Standard
+Debe indicarse que modalidad de estudios siguió el estudiante durante su
+ educación media.
+ Esta se categorizan en tres grupos: Científico-Humanista diurno, de adultos
+ y Técnico-Profesional.
+\end_layout
+
+\begin_layout Subparagraph
+Notas de la enseñanza media (NEM).
+\end_layout
+
+\begin_layout Standard
+Este dato denota las calificaciones obtenidas en el establecimiento y debe
+ ser obtenida como un numero.
+\end_layout
+
+\begin_layout Subsection
+Dimensión Batería de Selección
+\end_layout
+
+\begin_layout Standard
+Estos datos son propios del proceso de selección que es adoptado por la
+ Escuela al pertenecer al Consejo de Rectores.
+\end_layout
+
+\begin_layout Subparagraph
+Puntaje de la PSU/PAA.
+\end_layout
+
+\begin_layout Standard
+Para cada PSU/PAA rendida por cada estudiante se necesita saber el puntaje
+ ponderado de la Prueba de Selección Universitaria o Prueba de Aptitud Académica
+ si corresponde.
+\end_layout
+
+\begin_layout Subparagraph
+Año de cada Prueba
+\end_layout
+
+\begin_layout Standard
+Es necesario saber en que año se rindió cada prueba por cada estudiante
+\end_layout
+
+\begin_layout Subparagraph
+Puntaje de las pruebas en específico
+\end_layout
+
+\begin_layout Standard
+Se necesita el puntaje de las cuatro pruebas individuales.
+ Se puede asignar un 0 si no rindió alguna de las pruebas de Ciencias o
+ Historia.
+\end_layout
+
+\begin_layout Subsection
+Dimensión Universitaria
+\end_layout
+
+\begin_layout Standard
+Los datos de esta dimensión son propios del paso por la Escuela del individuo,
+ pretenden ser la base para los indicadores de desempeño que se pretenden
+ confeccionar.
+\end_layout
+
+\begin_layout Subparagraph
+Año de ingreso
+\end_layout
+
+\begin_layout Standard
+Para cada estudiante, se refiere al año al que ingresó a alguna de las dos
+ carreras dictadas por la Escuela.
+\end_layout
+
+\begin_layout Subparagraph
+Asignaturas cursadas
+\end_layout
+
+\begin_layout Standard
+Para cada estudiante deben indicarse todas las asignaturas que ha cursado
+ y el año y semestre en el cual se cursó
+\end_layout
+
+\begin_layout Subparagraph
+Calificaciones de las asignaturas cursadas
+\end_layout
+
+\begin_layout Standard
+Las calificaciones finales de cada asignatura cursada, sea esta aprobada
+ o no
+\end_layout
+
+\begin_layout Subparagraph
+Aprobación o reprobación de las asignaturas cursadas
+\end_layout
+
+\begin_layout Standard
+El estado de cada asignatura inscrita, debe indicarse si se encuentra en
+ curso.
+\end_layout
+
+\begin_layout Subparagraph
+Año de egreso
+\end_layout
+
+\begin_layout Standard
+El año de egreso de cada estudiante que haya pasado por la escuela.
+ Si no consiguió egresar se debe indicar esto.
+\end_layout
+
+\begin_layout Subparagraph
+Año de titulación
+\end_layout
+
+\begin_layout Standard
+El año de egreso de cada estudiante que haya egresado.
+ Si no consiguió el título se debe indicar esto.
+\end_layout
+
+\end_body
+\end_document

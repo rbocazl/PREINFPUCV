@@ -1,0 +1,122 @@
+<Schema name="Civil">
+  <Dimension type="StandardDimension" highCardinality="false" name="alumno">
+    <Hierarchy name="Alumno" hasAll="true" primaryKey="IDAlumno">
+      <Table name="dim_alumno">
+      </Table>
+      <Level name="idAlumno" column="IDAlumno" type="Numeric" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="TimeDimension" highCardinality="false" name="periodo">
+    <Hierarchy name="Periodo" hasAll="true" primaryKey="codAsignatura" primaryKeyTable="dim_curso">
+      <Join leftKey="codAsignatura" rightKey="codAsignatura">
+        <Table name="dim_curso">
+        </Table>
+        <Table name="fact_rendimiento">
+        </Table>
+      </Join>
+      <Level name="ano" table="dim_curso" column="Ano" type="String" uniqueMembers="false" levelType="TimeYears" hideMemberIf="Never">
+      </Level>
+      <Level name="semestre" table="dim_curso" column="Semestre" type="String" uniqueMembers="false" levelType="TimeHalfYear" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" highCardinality="false" name="colegio">
+    <Hierarchy name="Colegio" hasAll="true" primaryKey="IDAlumno">
+      <Table name="dim_alumno">
+      </Table>
+      <Level name="tipo" column="TipoColegio" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never" caption="Tipo">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="TimeDimension" highCardinality="false" name="cohorte">
+    <Hierarchy name="Cohorte" hasAll="true" primaryKey="IDAlumno">
+      <Table name="dim_alumno">
+      </Table>
+      <Level name="ano" column="AnoIngreso" type="String" uniqueMembers="false" levelType="TimeYears" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" highCardinality="false" name="establecimiento">
+    <Hierarchy name="Establecimiento" hasAll="true" primaryKey="IDAlumno">
+      <Table name="dim_alumno">
+      </Table>
+      <Level name="Colegio" column="codEstablecimiento" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never" caption="Tipo">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" highCardinality="false" name="region">
+    <Hierarchy name="Region" hasAll="true" primaryKey="IDAlumno">
+      <Table name="dim_alumno">
+      </Table>
+      <Level name="region" column="Region" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" highCardinality="false" name="asignatura">
+    <Hierarchy name="Asignatura" hasAll="true" primaryKey="codAsignatura" primaryKeyTable="fact_rendimiento">
+      <Join leftKey="codAsignatura" rightKey="codAsignatura">
+        <Table name="fact_rendimiento">
+        </Table>
+        <Table name="dim_curso">
+        </Table>
+      </Join>
+      <Level name="unidadAcademica" table="dim_curso" column="unidadAcademica" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never" caption="Unidad Academica">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Cube name="cuboFull" caption="Rendimiento" cache="true" enabled="true">
+    <Table name="fact_rendimiento">
+    </Table>
+    <DimensionUsage source="colegio" name="Colegio" caption="Tipo de Colegio" foreignKey="IDAlumno" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="cohorte" name="Cohorte" foreignKey="IDAlumno" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="periodo" name="Periodo" foreignKey="codAsignatura" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="region" name="Procedencia" foreignKey="IDAlumno" highCardinality="false">
+    </DimensionUsage>
+    <Measure name="Rendimiento" column="Estado" formatString="0.00%" aggregator="avg" caption="Rendimiento Promedio" visible="true">
+    </Measure>
+    <Measure name="CantidadAlumnos" column="IDAlumno" datatype="Numeric" aggregator="distinct count" caption="Cantidad de Alumnos" visible="true">
+    </Measure>
+  </Cube>
+  <Cube name="primerAno" caption="Primer A&#241;o" cache="true" enabled="true">
+    <Table name="fact_primerano">
+    </Table>
+    <DimensionUsage source="colegio" name="colegio" foreignKey="IDAlumno" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="region" name="region" foreignKey="IDAlumno" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="cohorte" name="cohorte" foreignKey="IDAlumno" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="periodo" level="semestre" name="semestre" foreignKey="codAsignatura" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="asignatura" name="TipoAsignatura" foreignKey="codAsignatura" highCardinality="false">
+    </DimensionUsage>
+    <Measure name="rendimientoAvg" column="Estado" formatString="0.00%" aggregator="avg" caption="Rendimiento Promedio" visible="true">
+    </Measure>
+  </Cube>
+  <Cube name="ingreso" caption="Ingreso" cache="true" enabled="true">
+    <Table name="dim_alumno">
+    </Table>
+    <DimensionUsage source="alumno" name="alumno" caption="Alumno" foreignKey="IDAlumno" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="colegio" name="tipoColegio" caption="Tipo Colegio" foreignKey="IDAlumno" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="region" name="region" caption="Region" foreignKey="IDAlumno" highCardinality="false">
+    </DimensionUsage>
+    <Measure name="puntaje" column="puntajePSU" aggregator="avg" caption="Puntaje PSU" visible="true">
+    </Measure>
+  </Cube>
+  <VirtualCube enabled="true" name="VC1">
+    <VirtualCubeDimension foreignKey="IDAlumno" name="region">
+    </VirtualCubeDimension>
+    <VirtualCubeDimension foreignKey="IDAlumno" name="colegio">
+    </VirtualCubeDimension>
+    <VirtualCubeMeasure cubeName="ingreso" name="[Measures].[puntaje]" visible="true">
+    </VirtualCubeMeasure>
+    <VirtualCubeMeasure cubeName="primerAno" name="[Measures].[rendimientoAvg]" visible="true">
+    </VirtualCubeMeasure>
+  </VirtualCube>
+</Schema>

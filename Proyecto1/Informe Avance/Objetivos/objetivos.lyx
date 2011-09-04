@@ -1,0 +1,281 @@
+#LyX 1.6.9 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language spanish
+\inputencoding latin1
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 4
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+En el presente apartado se pretende definir cuáles son los objetivos de
+ la investigación y su alcance.
+ Además de realizar la planificación del estudio mediante la confección
+ de una carta Gantt para lograr un mejor entendimiento.
+ Las actividades, y sus duraciones, pueden verse en detalle en la sección
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Plan-de-Trabajo"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Objetivo General
+\end_layout
+
+\begin_layout Standard
+Realizar un reconocimiento de patrones que permita la predicción del desempeño
+ universitario de los estudiantes de la Escuela de Ingeniería Informática
+ de la Pontificia Universidad Católica de Valparaíso, mediante el uso del
+ Análisis Inteligente de Datos.
+ 
+\end_layout
+
+\begin_layout Subsection
+Objetivos Específicos
+\end_layout
+
+\begin_layout Itemize
+Definir indicadores que permitan la medición del desempeño y rendimiento
+ de los estudiantes.
+ 
+\end_layout
+
+\begin_layout Itemize
+Aplicar un Análisis Inteligente de Datos para el reconocimiento de los patrones
+ relacionados con el desempeño estudiantil.
+\end_layout
+
+\begin_layout Itemize
+Aplicar técnicas de la minería de datos que permitan la predicción del desempeño
+ universitario futuro.
+ 
+\end_layout
+
+\begin_layout Subsection
+Alcance
+\end_layout
+
+\begin_layout Standard
+El alcance de la presente investigación se encuentra acotado a los estudiantes
+ de la Escuela de Ingeniería Informática de la Pontificia Universidad Católica
+ de Valparaíso y lo referente al historial académico de ellos.
+ 
+\end_layout
+
+\begin_layout Standard
+Es necesario exponer que deberán realizarse dos estudios por separado debido
+ a las dos carreras existentes en la Escuela.
+ La razón de esto es que los datos que se recolectarán difieren debido a
+ la diferencia en las identificaciones de las asignaturas, asignaturas que
+ no son compartidas y la duración de las carreras que se dictan en la Escuela.
+\end_layout
+
+\begin_layout Subsection
+Plan de Trabajo
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Plan-de-Trabajo"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A continuación se detallará la planificación de la presente investigación.
+ Han sido proyectadas una serie de actividades que, al ser desarrolladas,
+ lograrán cumplir los objetivos propuestos.
+ Cabe destacar que estas fechas son tentativas y están sujetas a modificaciones
+ por parte del profesor guía o del estudiante, también vale recalcar que
+ estas actividades no son las únicas a realizar y eventualmente pueden agregarse
+ otras en el camino.
+ El nombre de las tareas, su duración, comienzo, fin y actividad predecesora
+ pueden ser vistos en la tabla 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Actividades-del-Proyecto"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subparagraph
+Definir los Objetivos
+\end_layout
+
+\begin_layout Standard
+Esta tarea contempla la definición de los objetivos del presente estudio.
+ Los objetivos son confeccionados por el estudiante con ayuda del profesor
+ guía.
+ Se proyecta una duración de 11 días contados desde el 15 de marzo.
+\end_layout
+
+\begin_layout Subparagraph
+Estudiar el Marco Conceptual
+\end_layout
+
+\begin_layout Standard
+La presente tarea involucra tres subtareas que es la investigación de cada
+ uno de los conceptos involucrados en el Marco Teórico: el reconocimiento
+ de patrones, la metodología del análisis de datos y el desempeño académico.
+ Tiene una duración estimada de 9 días contados desde el 30 de marzo.
+\end_layout
+
+\begin_layout Subparagraph
+Revisar el Informe de Avance
+\end_layout
+
+\begin_layout Standard
+Esta actividad consiste en la tarea de redactar el informe, revisarlo conjuntame
+nte con el profesor guía y preparar la presentación.
+ Se estima una duración de 7 días partiendo el martes 12 de abril.
+\end_layout
+
+\begin_layout Subparagraph
+Hito 1: Entregar Informe de Avance
+\end_layout
+
+\begin_layout Standard
+Este hito marca la fecha límite para la entrega del informe de avance y
+ el resumen ejecutivo a Secretaría de Docencia.
+ La fecha estipulada por la Escuela es el 21 de abril.
+\end_layout
+
+\begin_layout Subparagraph
+Recolectar los datos
+\end_layout
+
+\begin_layout Standard
+La recolección de los datos necesarios para desarrollar la presente investigació
+n consiste en tres subtareas: la definición de los datos que son necesarios,
+ la solicitud de los datos a la Universidad y las primeras fases del análisis
+ inteligente de datos: la extracción, limpieza y carga de los datos para
+ su posterior análisis.
+ Esta tarea tiene una duración de 50 días desde el lunes 4 de abril.
+\end_layout
+
+\begin_layout Subparagraph
+Definir los indicadores de desempeño
+\end_layout
+
+\begin_layout Standard
+En esta actividad se deben definir cuáles serán los indicadores de desempeño
+ y/o rendimiento que se utilizarán para la medición de los datos.
+ Para esta actividad se proyecta un plazo de 10 días contados desde el 2
+ de mayo
+\end_layout
+
+\begin_layout Subparagraph
+Definir los modelos de Data Mining
+\end_layout
+
+\begin_layout Standard
+Para esta tarea se ha fijado un plazo de 6 días desde el 13 de junio y consiste
+ en definir qué modelos se utilizarán para extraer conocimiento de la base
+ de datos.
+\end_layout
+
+\begin_layout Subparagraph
+Revisar Informe Final
+\end_layout
+
+\begin_layout Standard
+Consiste en redactar, confeccionar y revisar el informe final de Proyecto
+ 1 además de la presentación final, para esto se estimó una duración de
+ 7 días, al igual que con el avance, contados hasta el día anterior al hito
+ 2.
+\end_layout
+
+\begin_layout Subparagraph
+Hito 2: Entregar Informe Final
+\end_layout
+
+\begin_layout Standard
+Este hito está planificado para el día 1 de julio y consiste en la entrega
+ del informe final y el resumen ejecutivo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Actividades-del-Proyecto"
+
+\end_inset
+
+Actividades del Proyecto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/Actividades.PNG
+	width 80line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

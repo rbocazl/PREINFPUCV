@@ -1,0 +1,381 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass scrlttr2
+\begin_preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Here you can modify the layout of your letter
+%% Have a look at the KOMA script documentation
+%% for details. Most commands are commented out
+%% here (i.e. we use default settings)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Load an *.lco style file (see KOMA documentation)
+\LoadLetterOption{DIN}%                          
+
+%% THE CLASS OPTIONS
+%% Remove preceeding '%' to uncomment an item
+\KOMAoptions{%
+%,headsepline=true%            separate the header with a line on page >1
+%,footsepline=true%             separate the footer with a line on page >1
+%pagenumber=botcenter%   position of the page number (see docu)
+%,parskip=false%          Use indent instead of skip (more options cf. docu)
+fromalign=center%        alignment of the address
+,fromrule=aftername%    separate the address with a line?
+,fromphone=true%         print sender phone number
+%,fromfax=true%          print sender fax number
+,fromemail=true%           print sender e-mail address
+,fromurl=false%               print sender URL
+%,fromlogo=true%         print a logo (position depends on fromalign)
+%,addrfield=false%        print an address field?
+%,backaddress=false%  print the back address?
+%,subject=afteropening,titled% alternative subject layout and position
+%,locfield=narrow%      width of the (extra) location field
+%,foldmarks=false%      print foldmarks?
+%,numericaldate=true%  date layout
+%,refline=wide%             layout of the refline
+}
+
+%% Customize Separators
+%\setkomavar{placeseparator}{ -- }
+\setkomavar{backaddressseparator}{ $\cdot$ }
+%\setkomavar{emailseparator}{ --> }
+%\setkomavar{enclseparator}{ > }
+%\setkomavar{faxseparator}{ --> }
+%\setkomavar{phoneseparator}{ --> }
+%\setkomavar{subjectseparator}{ >>> }
+
+%% Customize fonts
+%% Use LaTeX's standard font commands
+%% Modify with \setkomafont or \addtokomafont
+%% (see KOMA documentation)
+\setkomafont{backaddress}{\rmfamily}
+%\setkomafont{descriptionlabel}{}
+\setkomafont{fromaddress}{\small}
+\setkomafont{fromname}{\scshape}
+%\setkomafont{pagefoot}{}
+%\setkomafont{pagehead}{}
+%\setkomafont{pagenumber}{}
+%\setkomafont{subject}{}
+%\setkomafont{title}{}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing other 1.1499999999999999
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 0
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Name
+Ricardo Bocaz León.
+\end_layout
+
+\begin_layout SenderAddress
+Estudiante de Ingeniería Civil en Informática
+\begin_inset Newline newline
+\end_inset
+
+Pontificia Universidad Católica de Valparaíso
+\end_layout
+
+\begin_layout Telephone
+(09)74357830
+\end_layout
+
+\begin_layout E-Mail
+rbocazl@gmail.com
+\end_layout
+
+\begin_layout URL
+
+\end_layout
+
+\begin_layout Backaddress
+Ricardo Bocaz L.
+\begin_inset Newline newline
+\end_inset
+
+<rbocazl@gmail.com>
+\end_layout
+
+\begin_layout Signature
+Ricardo Bocaz L.
+\end_layout
+
+\begin_layout Subject
+Solicitud de datos para proyecto de título 
+\end_layout
+
+\begin_layout Place
+Valparaíso
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Address
+Sr.
+ David Letelier Valenzuela
+\begin_inset Newline newline
+\end_inset
+
+Director de Asuntos Estudiantiles
+\begin_inset Newline newline
+\end_inset
+
+Pontificia Universidad Católica de Valparaíso
+\end_layout
+
+\begin_layout Opening
+Estimado Sr.
+ Letelier,
+\end_layout
+
+\begin_layout Standard
+El motivo de la presente carta es solicitarle los datos necesarios para
+ el desarrollo de mi proyecto de título.
+ Como fue conversado en la reunión sostenida por ambos el día 30 de mayo
+ del 2011, le envío esta carta detallando los datos que encuentro necesarios
+ de obtener y que usted de muy buena voluntad ofreció ayudarme a conseguir.
+ Desde luego, agradezco su buena disposición, ya que la ayuda prestada es
+ imprescindible para lograr los objetivos propuestos del proyecto titulado
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Predicción del desempeño estudiantil en la Escuela de Ingeniería Informática
+ de la PUCV
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+El objetivo del proyecto es, mediante herramientas automáticas de clasificación,
+ crear un modelo que permita predecir el desempeño de los estudiantes de
+ la Escuela de Ingeniería Informática de la Pontificia Universidad Católica
+ de Valparaíso.
+ El alcance del proyecto, en tanto, serán las dos carreras que pertenecen
+ a la Escuela de Ingeniería Informática de la PUCV, esto es, las carreras
+ de Ingeniería Civil en Informática y la de Ingeniería en Ejecución Informática.
+ Por lo tanto es necesario todos los datos que sean posibles de rescatar
+ de los estudiantes de esas dos carreras.
+\end_layout
+
+\begin_layout Standard
+Los datos requeridos fueron clasificados en tres categorías, dependiendo
+ de la naturaleza de ellos.
+ La primera categoría es la de procedencia del estudiante, que son los datos
+ referidos a su situación antes de ingresar a la universidad.
+ La segunda categoría son los datos de la batería de selección propiamente
+ tal.
+ Mientras que la tercera es relacionada a la historia del estudiante en
+ su paso por la carrera a la que haya ingresado.
+ Para cada una de ellas se detallan los datos, que encuentro necesarios,
+ para realizar un análisis que permita construir el modelo antes mencionado.
+\end_layout
+
+\begin_layout Standard
+La descripción de los datos se encuentran a continuación.
+ También se detalla la estructura de datos que encontré necesaria para cada
+ uno de ellos, aunque no necesariamente deben estrictamente seguirla.
+ Espero que este detalle sea de su entendimiento, pero cualquier duda que
+ surja al respecto no dude en hacérmela llegar.
+\end_layout
+
+\begin_layout Description
+Dimensión Procedencia 
+\end_layout
+
+\begin_layout Itemize
+Grupo Socioeconómico al que pertenece el estudiante.
+\end_layout
+
+\begin_layout Itemize
+Establecimiento de egreso: Debe obtenerse el establecimiento de egreso para
+ cada estudiante que haya estudiado en la Escuela.
+ Este debe ser un nombre identificador del establecimiento, puede ser una
+ sigla compuesta o un nombre único.
+ 
+\end_layout
+
+\begin_layout Itemize
+Tipo de establecimiento: Debe indicarse si el establecimiento de egreso
+ es de la categoría Particular, Subvencionado o Municipal.
+ Esto puede realizarse mediante un identificador numérico de cada categoría
+ o el nombre de esta como una cadena de texto.
+ 
+\end_layout
+
+\begin_layout Itemize
+Ranking de egreso: Especifica la posición de egreso del establecimiento
+ de educación media, este se obtiene al ordenar todos los alumnos de una
+ promoción en el colegio por sus calificaciones.
+ Debe ser un número.
+ 
+\end_layout
+
+\begin_layout Itemize
+Región del establecimiento: Este dato representa la región donde se encuentra
+ el establecimiento de origen del estudiante.
+ Puede ser un numero en romano o arábigo.
+ Debe tenerse extremo cuidado en éste dato debido a la creación de las nuevas
+ regiones hace algunos años.
+ 
+\end_layout
+
+\begin_layout Itemize
+Año de término de la educación media: Se necesita saber en que año el estudiante
+ egresó de la educación media.
+ 
+\end_layout
+
+\begin_layout Itemize
+Modalidad estudios del estudiante: Debe indicarse que modalidad de estudios
+ siguió el estudiante durante su educación media.
+ Esta se categorizan en tres grupos: Científico-Humanista diurno, de adultos
+ y Técnico-Profesional.
+ 
+\end_layout
+
+\begin_layout Itemize
+Notas de la enseñanza media (NEM): Este dato denota las calificaciones obtenidas
+ en el establecimiento y debe ser obtenida como un numero.
+ 
+\end_layout
+
+\begin_layout Description
+Dimensión Batería de Selección 
+\end_layout
+
+\begin_layout Itemize
+Puntaje de la PSU/PAA: Para la PSU/PAA rendida que haya servido para ingresar,
+ por cada estudiante, se necesita saber el puntaje ponderado con el que
+ haya ingresado a la carrera.
+ 
+\end_layout
+
+\begin_layout Itemize
+Puntaje de las pruebas en específico: Se necesita el puntaje de las cuatro
+ pruebas individuales.
+ Se puede asignar un 0 si no rindió alguna de las pruebas de Ciencias o
+ Historia.
+ 
+\end_layout
+
+\begin_layout Itemize
+Preferencia de postulación: Se debe indicar el numero de preferencia de
+ la carrera en la postulación, sea ésta civil o ejecución.
+\end_layout
+
+\begin_layout Description
+Dimensión Universitaria 
+\end_layout
+
+\begin_layout Itemize
+Año de ingreso: Para cada estudiante, se refiere al año al que ingresó a
+ alguna de las dos carreras dictadas por la Escuela.
+ 
+\end_layout
+
+\begin_layout Itemize
+Asignaturas cursadas: Para cada estudiante deben indicarse todas las asignaturas
+ que ha cursado y el año y semestre en el cual se cursó 
+\end_layout
+
+\begin_layout Itemize
+Calificaciones de las asignaturas cursadas: Las calificaciones finales de
+ cada asignatura cursada, sea esta aprobada o no 
+\end_layout
+
+\begin_layout Itemize
+Aprobación o reprobación de las asignaturas cursadas: El estado (aprobación
+ o reprobación) de cada asignatura inscrita, debe indicarse si se encuentra
+ en curso.
+ Este dato puede ser binario.
+\end_layout
+
+\begin_layout Itemize
+Año de egreso: El año de egreso de cada estudiante que haya pasado por la
+ escuela.
+ Si no consiguió egresar se debe indicar ésto.
+ 
+\end_layout
+
+\begin_layout Itemize
+Año de titulación: El año de titulación de cada estudiante que haya egresado.
+ Si no consiguió el título se debe indicar esto.
+\end_layout
+
+\begin_layout Closing
+Desde ya agradeciendo su disposición y su buena voluntad, se despide atentamente
+: 
+\end_layout
+
+\end_body
+\end_document

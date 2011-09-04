@@ -1,0 +1,94 @@
+#LyX 1.6.9 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language spanish
+\inputencoding latin1
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 4
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+El presente documento presentó el inicio de esta investigación, que parte
+ de la necesidad de la Escuela de contar con instrumentos que den indicadores
+ que permitan aumentar la calidad de su educación.
+ Dada la preocupación que debe mostrar ésta por sus procesos formativos,
+ es que se hace necesario reconocer que características de los estudiantes
+ se relacionan con su desempeño académico.
+\end_layout
+
+\begin_layout Standard
+Dada esta problemática, en el presente documento se logró definir el objetivo
+ y la metodología que se utilizará.
+ El objetivo de este estudio viene a satisfacer la necesidad anteriormente
+ descrita y la metodología a utilizar que será el análisis inteligente de
+ datos.
+ Se pudo esgrimir también una programación de la presente investigación
+ y se logro identificar las principales tareas y sus duraciones, además
+ de la definición del alcance del estudio.
+\end_layout
+
+\begin_layout Standard
+Para comprender el contexto de la investigación, se realizó una explicación
+ del marco teórico que engloba al presente estudio.
+ Se logró realizar una breve definición de los conceptos involucrados: el
+ reconocimiento de patrones, el análisis inteligente de datos y el desempeño
+ académico.
+ También se identificaron los datos necesarios para llevar a buen puerto
+ esta investigación pudiendo definir tres dimensiones de datos.
+\end_layout
+
+\begin_layout Standard
+Los resultados que se esperan obtener en el transcurso de este estudio son
+ el reconocimiento de las correlaciones entre los factores académicos, y
+ las características asociadas al desempeño universitario de los estudiantes.
+ Todo ésto, se espera que pueda ser identificado al completar el análisis
+ de los datos.
+ Los resultados además deberían incluir predicciones de desempeño posterior
+ dado una serie de ejemplos de estudiantes a analizar.
+ Se tendrá que analizar también con que fiabilidad el modelo predictivo
+ está funcionando, para tener una idea de cuan fuerte es el modelo de pronóstico
+ confeccionado.
+\end_layout
+
+\begin_layout Standard
+Que éste sea sólo el comienzo del camino a la consecución de los objetivos
+ propuestos, tanto personales como académicos.
+\end_layout
+
+\end_body
+\end_document

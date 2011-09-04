@@ -1,0 +1,343 @@
+#LyX 1.6.9 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+
+%author: Eduardo Cárdenas Calderón [ecardena@gmail.com]
+
+\usepackage{fancybox}\usepackage{fancyhdr}\usepackage{xcolor}\@ifundefined{definecolor}
+ {\usepackage{color}}{}
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0.0pt}
+\fancyfoot{}
+\rfoot{\thepage } %número de página a la derecha
+\parindent 4em  %indentacion de los parrafos X espacios
+\parskip 20in  %Salto entre parrafos
+%\usepackage[ps2pdf,bookmarks,urlcolor=blue,citecolor=blue,linkcolor=blue,%
+%           pagecolor=blue,colorlinks,hyperfigures]{hyperref}
+
+%=============================================================================
+% Redefining paragraph
+
+\makeatletter % needed to recognize '@' as a normal char
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\z@}{-3.25ex \@plus
+-1ex \@minus -.2ex}{1.5ex \@plus .2ex}{\normalfont\normalsize\bfseries}}
+\makeatother % needed to recognize '@' as a special char
+
+
+
+%=============================================================================
+% Document
+\end_preamble
+\use_default_options false
+\language spanish
+\inputencoding latin1
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 3cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 4
+\tocdepth 3
+\paragraph_separation indent
+\defskip 5em
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+El análisis inteligente de datos es una metodologíaue hacen relación a disciplin
+as distintas que confluyen en una frase que, en los tiempos actuales, es
+ muy usada pero poco entendida.
+ El término proviene de la complementación de varias disciplinas, tales
+ como la Estadística y 
+\emph on
+Machine Learning
+\emph default
+.
+ La Estadística aporta el modelamiento de la realidad, la recolección de
+ los datos, el análisis de estos y el enfoque de sacar conclusiones a partir
+ de una muestra de datos (inferencia), mientras que las herramientas de
+ las Ciencias de la Computación permiten potenciar el análisis de datos
+ generando máquinas que aprenden y pueden computar grandes cantidades de
+ información en tiempos extremadamente menores comparados con una persona,
+ además de apoyar la extracción de conocimiento a traves del reconocimiento
+ de patrones derivados del 
+\emph on
+Data Mining
+\emph default
+.
+\end_layout
+
+\begin_layout Subsubsection
+Análisis de Datos
+\end_layout
+
+\begin_layout Standard
+Desde tiempos inmemoriales los primeros pensantes y científicos se han interesad
+o por el tratamiento matematico de los datos y la información.
+ Desde Galileo, pasando por Platón y los analistas de datos y teóricos como
+ Jean-Paul Benzécri.
+ Él y Gödel eran conscientes de las dificultades entre, la observación o
+ la medición de los datos, y los factores explicativos que subyacen a los
+ fenómenos asociados con los datos.
+ Con la llegada de los computadores en los tiempos actuales es posible realizar
+ la recolección de grandes escalas de datos, y de analizar y modificar grandes
+ cantidades de información, lo que ha dado origen al análisis de datos moderno.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DAOrigins"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Berthold define el análisis de datos como 
+\begin_inset Quotes fld
+\end_inset
+
+El proceso de computar diversos resúmenes y valores derivados de la coleccion
+ de datos dada
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Cabe resaltar aquí el termino 
+\emph on
+proceso
+\emph default
+, porque dice mucha relación con lo que es en sí el análisis de datos, algo
+ iterativo, incremental y con mucho feedback; con sus entradas y sus salidas.
+ Es iterativo porque se examinan los datos, se aplica una tecnica analítica
+ y se decide probar de otra forma, quizas modificando los datos dividiendo
+ o particionando, o en algunos casos transformándolos; y se debe volver
+ al comienzo aplicando otra técnica analitica.
+ Ésto puede ser repetido muchas veces durante el análisis, por que cada
+ técnica puede probar aspectos distintos de los datos, aspectos que con
+ una sola técnica no podrían haber sido abarcados y que sirven para responder
+ otras preguntas que se generen en el camino.
+ Las herramientas que se utilizan en el analisis de datos no deben ser nunca
+ consideradas como técnicas aisladas de las demás, sino todo lo contrario,
+ porque tienen complejas relaciones entre ellas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AIDA"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Se pueden distinguir dos tipos de análisis, los descriptivos y los inferenciales.
+ Los descriptivos apuntan a rescatar información propia de la muestra que
+ se analiza ,y responder preguntas com por ejemplo ¿Cual es la edad promedio
+ de los asistentes de este partido de fútbol?, ¿Cuantos bebés nacieron con
+ el pelo rubio ayer en Valparaíso?, etc.
+ En cambio los inferenciales tratan de explicar como se comporta la población
+ basado en una muestra representativa de ella, por lo tanto responden preguntas
+ mas amplias, como por ejemplo ¿Cuantos niños rubios nacieron en el mundo
+ ayer?, que a menudo se infieren porque no se puede analizar a toda la población.
+\end_layout
+
+\begin_layout Standard
+Las herramientas que se utilizan en el análisis de datos, difieren si es
+ que se habla de un analisis descriptivo o de uno inferencial.
+ Aunque puede ser la misma herramienta que se utilice para el analisis,
+ la comprension del resultado es distinto.
+ Si se toma, como un ejemplo, la media de una muestra y se realiza un analisis
+ descriptivo, entonces es un valor exacto y calculable; en cambio si se
+ infiere la media siempre será un valor estimado y si se cambian los datos
+ o la muestra, la media estimada tambien cambiará, por lo tanto siempre
+ se está consciente 
+\emph on
+a piori
+\emph default
+ de que existe un error en la estimación.
+\end_layout
+
+\begin_layout Standard
+Esta nueva forma de hacer estadística, asistida por computador, ha llevado
+ a que el analisis inteligente de datos se preocupe de descubrir conocimiento
+ en forma confiable, rapida y oportuna.
+ Ya no se necesita de tanto tiempo realizando tablas de datos a papel y
+ lapiz; calcular parámetros estadisticos y descubrir conocimiento es algo
+ más rapido y permite procesar una gran cantidad de datos que sin la ayuda
+ del computador ni se pensaría en lograr.
+ Los modelos de aprendizaje automático permiten realizar un 
+\emph on
+Data Mining
+\emph default
+ mas preciso y mas optimo y así el descubrimiento del conocimiento adopta
+ un potencial aun mas enorme del que ya tenia.
+\end_layout
+
+\begin_layout Subsubsection
+Los datos y su naturaleza
+\end_layout
+
+\begin_layout Standard
+Para realizar un análisis de datos lo primero es determinar la naturaleza
+ de los datos, la mayoria de las veces son del tipo numéricos, pero existen
+ otros tipos de datos como las imágenes y los textos por ejemplo.
+ Es necesario saber de que tipo son los datos, para así poder elegir las
+ mejores técnicas para su analisis.
+ Una buena identificación de los tipos de datos permitirá una buena representaci
+ón de ellos.
+\end_layout
+
+\begin_layout Standard
+Para clasificar los tipos de datos existen tres categorias: los datos estructura
+dos, los no estructurados, y los bloques de datos binarios.
+ Su diferencia claramente está en su estructura y su representación.
+ Los datos estructurados pueden ser sub-clasificados también en lo que son
+ los datos cualitativos, los cuantitativos, los simbólicos y los que están
+ ordenados jerárquicamente.
+ Los datos estructurados pueden ser representados por estructuras de datos
+ tales como los arreglos, las tuplas, las matrices, árboles, etc.
+ El tipo de dato estructurado está dado por su significado para las personas,
+ los datos cualitativos denotan atributos carácteristicos de los objetos
+ que representan sus cualidades, mientras que los cuantitativos representan
+ mediciones de esos atributos más objetivas y exactas.
+ Los datos no estructurados se refieren principalmente a textos.
+ Un texto está compuesto por unidades fundamentales que son las palabras
+ y una serie de símbolos que lo acompañan y pueden ser combinadas de maneras
+ mas diversas que los numeros.
+ Y por último los bloques de datos binarios, hacen relación a la representación
+ computacional de las imágenes o sonidos.
+\end_layout
+
+\begin_layout Subsubsection
+Aplicaciones del analisis de datos
+\end_layout
+
+\begin_layout Standard
+El analisis de datos da soluciones a problemas propios de clasificación,
+ pronóstico, reconocimiento y transformación.
+ Las disciplinas que se ven favorecidas con su aplicación son diversas.
+ Algunas de ellas son la biometría, climatologia, sismología, medicina,
+ balística entre otras.
+ 
+\end_layout
+
+\begin_layout Standard
+Las aplicaciones mas comunes son
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AllendeAIDA"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Pronóstico de magnitudes máxima de terremotos
+\end_layout
+
+\begin_layout Itemize
+Pronóstico de perspectiva de yacimientos minerales
+\end_layout
+
+\begin_layout Itemize
+Pronóstico de tormentas ionosféricas
+\end_layout
+
+\begin_layout Itemize
+Regionalización sísmica
+\end_layout
+
+\begin_layout Itemize
+Diagnóstico diferencial de enfermedades
+\end_layout
+
+\begin_layout Itemize
+Lectura diagnóstica de señales (EEG, ECG,IC, etc.) 
+\end_layout
+
+\begin_layout Itemize
+Clasificación automática de Clientes
+\end_layout
+
+\begin_layout Itemize
+Identificación de huellas digitales
+\end_layout
+
+\begin_layout Itemize
+Identificación de caligrafías
+\end_layout
+
+\begin_layout Itemize
+Identificación de rostros (estáticos, en movimiento, enmascarados, etc.)
+\end_layout
+
+\begin_layout Itemize
+Identificación de objetos(mediante sonidos o mediante rastros)
+\end_layout
+
+\begin_layout Itemize
+Dispositivos de acceso por identificación iriológica
+\end_layout
+
+\begin_layout Itemize
+Reconocimiento de placas de vehículos
+\end_layout
+
+\begin_layout Itemize
+Caracterización socio política de colectivos sociales
+\end_layout
+
+\begin_layout Itemize
+Pronóstico de surgimiento de fenómenos sociales
+\end_layout
+
+\begin_layout Itemize
+Caracterización del modus operandi de terroristas o delincuentes
+\end_layout
+
+\begin_layout Itemize
+Análisis de las causas de algún fenomeno social
+\end_layout
+
+\begin_layout Subsubsection
+Etapas del Análisis Inteligente de Datos
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

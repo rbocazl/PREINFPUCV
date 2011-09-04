@@ -1,0 +1,1109 @@
+#LyX 1.6.9 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\usetheme{Ilmenau}
+
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+\end_preamble
+\use_default_options false
+\language spanish
+\inputencoding auto
+\font_roman times
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize 10
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 2
+\use_esint 0
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+RECONOCIMIENTO DE PATRONES RELACIONADOS CON EL DESEMPEÑO ACADÉMICO DE LOS
+ ESTUDIANTES DE LA ESCUELA DE INGENIERÍA INFORMÁTICA
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset OptArg
+status open
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+opcional, sólo para títulos largos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Ricardo Bocaz L.
+\end_layout
+
+\begin_layout Institute
+Pontificia Universidad Católica de Valparaíso
+\end_layout
+
+\begin_layout Date
+Profesor Guía: Rodrigo Alfaro Arancibia.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Profesor Correferente: Alexandru Cristian Rusu.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/Ricardo/PUCV/LogoUniversidad.png
+	width 20page%
+
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 5cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/Ricardo/PUCV/logo_escuela.png
+	lyxscale 10
+	width 20page%
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+- Usar el nombre de la conferencia o bien su abreviatura.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+- Realmente no es informativo para la audiencia, pero sí para quienes (incluyend
+o Vd.mismo) lean la presentación en línea.
+\end_layout
+
+\end_inset
+
+
+\begin_inset OptArg
+status open
+
+\begin_layout Plain Layout
+Avance Proyecto 1
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+opcional, debería ser una abreviatura del nombre de la conferencia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Si se dispone de un archivo como "institución-logo-nombrearchivo.xxx", donde
+ xxx es un formato gráfico aceptable por latex o pdflatex, entonces se puede
+ añadir un logotipo descomentando lo siguiente:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+pgfdeclareimage[height=0.5cm]{institution-logo}{institución-logo-nombrearchivo}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+logo{
+\backslash
+pgfuseimage{institution-logo}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Lo siguiente hace que se muestre un índice al inicio de cada subsección.
+ Suprímelo si no lo quieres.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSection[]{
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+frametitle{Contenido de la Presentación}   
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tableofcontents[currentsection] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSubsection[]{
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+frametitle{Contenido de la Presentación}   
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tableofcontents[currentsection,currentsubsection] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Si quieres descubrir todo en modo paso a paso, descomenta el siguiente comando:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section*
+Introducción
+\end_layout
+
+\begin_layout BeginFrame
+Contenido de la presentación
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Introducción
+\end_layout
+
+\begin_layout Itemize
+Cotinua busqueda de mejorar los procesos formativos y la calidad de la educación.
+\end_layout
+
+\begin_layout Itemize
+Adelantarse a los hechos.
+\end_layout
+
+\begin_layout Itemize
+Gran cantidad de datos históricos.
+\end_layout
+
+\begin_layout Itemize
+Aporte de la informática, apoyo a la toma de desiciones.
+\end_layout
+
+\begin_layout Itemize
+Se pretende identificar características de los estudiantes relacionadas
+ con su desempeño (Procedencia, Nivel Socioeconómico, etc.).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Objetivos
+\end_layout
+
+\begin_layout Subsection
+Objetivo General
+\end_layout
+
+\begin_layout BeginFrame
+Objetivo General del Proyecto
+\end_layout
+
+\begin_layout Standard
+Realizar un reconocimiento de patrones, que permitan el pronóstico del desempeño
+ universitario de los estudiantes de la Escuela de Ingeniería Informática
+ de la Pontificia Universidad Católica de Valparaíso, mediante el uso del
+ Análisis Inteligente de Datos.
+ 
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Subsection
+Objetivos Específicos
+\end_layout
+
+\begin_layout BeginFrame
+Objetivos Específicos
+\end_layout
+
+\begin_layout Itemize
+<1->Definir indicadores que permitan la medición del desempeño y rendimiento
+ de los estudiantes.
+ 
+\end_layout
+
+\begin_layout Itemize
+<2->Aplicar un Análisis Inteligente de Datos para el reconocimiento de los
+ patrones relacionados con el desempeño estudiantil.
+\end_layout
+
+\begin_layout Itemize
+<3->Crear la base para la implementación de una herramienta que permita
+ el pronóstico del desempeño universitario.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Marco Teórico
+\end_layout
+
+\begin_layout BeginFrame
+Marco Teórico
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/Ricardo/Proyecto1/Informe Avance/Marco Teorico/img/marcoteorico.png
+	lyxscale 10
+	width 60page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Subsection
+Marco Conceptual
+\end_layout
+
+\begin_layout BeginFrame
+Desempeño Académico
+\end_layout
+
+\begin_layout Itemize
+Objetivos del estudiante.
+\end_layout
+
+\begin_layout Itemize
+Calidad de la educación.
+\end_layout
+
+\begin_layout Itemize
+Diferencia entre desempeño y rendimiento.
+\end_layout
+
+\begin_layout Itemize
+Indicadores.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Análisis Inteligente de Datos
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/Ricardo/Proyecto1/Informe Avance/Marco Teorico/img/DataAnalysis.PNG
+	lyxscale 10
+	width 60page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Reconocimiento de Patrones
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename hp1.jpg
+	lyxscale 10
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Reconocimiento de Patrones
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes fld
+\end_inset
+
+Dado algunos ejemplos de señales complejas y las decisiones correctas para
+ ellas, realizar decisiones automáticamente para un flujo de ejemplos futuros
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PatternRec"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Características.
+\end_layout
+
+\begin_layout Itemize
+Clasificador
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Clasificación.
+\end_layout
+
+\begin_layout Itemize
+Outliers.
+\end_layout
+
+\begin_layout Itemize
+Rechazos.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Modelos y Patrones
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hand2001"
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Un modelo es una descripción global, de alto nivel.
+\end_layout
+
+\begin_layout Itemize
+Un patrón es una característica local de los datos.
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Subsection
+Marco Referencial
+\end_layout
+
+\begin_layout BeginFrame
+Determinantes de desempeño universitario.
+ ¿Importa la habilidad relativa?
+\end_layout
+
+\begin_layout Itemize
+Estudio del Consejo Superior de Educación en el 2009
+\begin_inset CommandInset citation
+LatexCommand cite
+key "habreluchile"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Revisar si una medida de habilidad relativa aporta información, aparte de
+ la batería de selección tradicional.
+\end_layout
+
+\begin_layout Itemize
+Cuatro universidades estudiadas (PUCV, UCT, UFT,USACH).
+\end_layout
+
+\begin_layout Itemize
+Ranking de egreso del alumno.
+\end_layout
+
+\begin_layout Itemize
+Análisis de estudiantes por ingreso especial.
+\end_layout
+
+\begin_layout Itemize
+Resultados
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Estar entre los mejores alumnos de la escuela implica mejor desempeño en
+ primer año.
+\end_layout
+
+\begin_layout Itemize
+Ingresos especiales tienen rendimiento igual o superior.
+\end_layout
+
+\begin_layout Itemize
+Batería de selección tradicional no es el único predictor del rendimiento
+ universitario.
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Estudio de validez predictiva de la PSU y comparación con el sistema PAA
+\end_layout
+
+\begin_layout Itemize
+Tesis de magíster de S.
+ Prado en 2008 (UTAL) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Prado2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Análisis de la validez predictiva de la PSU.
+\end_layout
+
+\begin_layout Itemize
+Alcance: Ingeniería Civil 2001-2006 - PUC, UCH .
+\end_layout
+
+\begin_layout Itemize
+Comparación con la PAA.
+\end_layout
+
+\begin_layout Itemize
+Análisis por prueba (Lenguaje, Matemática, etc.).
+\end_layout
+
+\begin_layout Itemize
+Resultados
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Validez predictiva menor que la reportada en un estudio del CRUCH para la
+ PUC.
+\end_layout
+
+\begin_layout Itemize
+PSU tiene 2% más de reprobaciones totales en primer año comparados con la
+ PAA.
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Planificación
+\end_layout
+
+\begin_layout Subsection
+Alcance
+\end_layout
+
+\begin_layout BeginFrame
+Alcance del Proyecto
+\end_layout
+
+\begin_layout Itemize
+Estudiantes de la Escuela de Ingeniería Informática de la Pontificia Universidad
+ Católica de Valparaíso.
+\end_layout
+
+\begin_layout Itemize
+Se deben realizar dos estudios por separado
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dos carreras con diferentes datos.
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Subsection
+Programa
+\end_layout
+
+\begin_layout BeginFrame
+Programación
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/Ricardo/Proyecto1/Informe Avance/Objetivos/imagenes/Actividades.PNG
+	lyxscale 10
+	width 70page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Datos de entrada
+\end_layout
+
+\begin_layout BeginFrame
+Datos de Entrada
+\end_layout
+
+\begin_layout FrameSubtitle
+Dimensión Procedencia
+\end_layout
+
+\begin_layout Standard
+Establecimiento de egreso.
+\end_layout
+
+\begin_layout Standard
+Tipo de establecimiento.
+\end_layout
+
+\begin_layout Standard
+Ranking de egreso.
+\end_layout
+
+\begin_layout Standard
+Región del establecimiento.
+\end_layout
+
+\begin_layout Standard
+Año de término de la educación media.
+\end_layout
+
+\begin_layout Standard
+Modalidad estudios del estudiante (Científico-Humanista diurno, de adultos
+ y Técnico-Profesional).
+\end_layout
+
+\begin_layout Standard
+Notas de la enseñanza media (NEM).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Datos de Entrada
+\end_layout
+
+\begin_layout FrameSubtitle
+Dimensión Batería de Selección
+\end_layout
+
+\begin_layout Subparagraph
+Puntaje de la PSU/PAA.
+\end_layout
+
+\begin_layout Subparagraph
+Año de cada Prueba rendida.
+\end_layout
+
+\begin_layout Subparagraph
+Puntaje de las pruebas en específico (Lenguaje, Matemática, Ciencias, Historia).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Datos de Entrada
+\end_layout
+
+\begin_layout FrameSubtitle
+Dimensión Universitaria
+\end_layout
+
+\begin_layout Subparagraph
+Año de ingreso.
+\end_layout
+
+\begin_layout Subparagraph
+Asignaturas cursadas.
+\end_layout
+
+\begin_layout Subparagraph
+Calificaciones de las asignaturas cursadas.
+\end_layout
+
+\begin_layout Subparagraph
+Aprobación o reprobación de las asignaturas cursadas.
+\end_layout
+
+\begin_layout Subparagraph
+Año de egreso.
+\end_layout
+
+\begin_layout Subparagraph
+Año de titulación.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Técnica a utilizar
+\end_layout
+
+\begin_layout BeginFrame
+Técnica
+\end_layout
+
+\begin_layout FrameSubtitle
+Máquinas de Soporte Vectorial (SVM)
+\end_layout
+
+\begin_layout Standard
+Serie de métodos de aprendizaje supervisado, usados para clasificación y
+ reconocimiento de patrones.
+\begin_inset Newline newline
+\end_inset
+
+Toma un conjunto de datos de entrada y, para cada entrada, pronostica a
+ cual de las dos diferentes clases pertenece.
+\begin_inset Newline newline
+\end_inset
+
+Separa los datos mediante hiperplanos.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename 628px-Svm_separating_hyperplanes.png
+	lyxscale 10
+	width 30page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Técnica
+\end_layout
+
+\begin_layout FrameSubtitle
+Formalización
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename 556px-Svm_max_sep_hyperplane_with_margin.png
+	lyxscale 10
+	width 30page%
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ec.
+ Hiperplano: 
+\begin_inset Formula $\mathbf{w}\cdot\mathbf{x}-b=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Margen: Distancia entre hiperplanos paralelos: 
+\begin_inset Formula $\tfrac{2}{\|\mathbf{w}\|}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Se busca maximizar el margen.
+ Minimizar 
+\begin_inset Formula $\|\mathbf{w}\|$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+La salida es la clase de la entrada dada (+ ó -).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Técnica
+\end_layout
+
+\begin_layout FrameSubtitle
+Ventajas y Desventajas
+\end_layout
+
+\begin_layout Standard
+Ventajas
+\end_layout
+
+\begin_layout Itemize
+<2->Entrenamiento relativamente fácil.
+\end_layout
+
+\begin_layout Itemize
+<3->Si no es linearmente separable, el uso del Kernel no supone más costo
+ computacional.
+\end_layout
+
+\begin_layout Standard
+Desventajas
+\end_layout
+
+\begin_layout Itemize
+<4->Alto costo computacional (QP)
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Conclusiones
+\end_layout
+
+\begin_layout BeginFrame
+Conclusiones
+\end_layout
+
+\begin_layout Itemize
+<1->Estudio de los conceptos.
+\end_layout
+
+\begin_layout Itemize
+<2->Directrices del marco referencial.
+\end_layout
+
+\begin_layout Itemize
+<3->Resultados Esperados.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Referencias
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "C:/Users/Ricardo/Proyecto1/Informe Avance/Proyecto1Avance"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Fin
+\end_layout
+
+\begin_layout Standard
+\align center
+Muchas Gracias
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\end_body
+\end_document
