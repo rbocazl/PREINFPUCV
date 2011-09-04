@@ -1,0 +1,8 @@
+23-jun-2011 2:01:30 org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+23-jun-2011 2:14:39 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+23-jun-2011 5:58:54 org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+23-jun-2011 21:52:00 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext

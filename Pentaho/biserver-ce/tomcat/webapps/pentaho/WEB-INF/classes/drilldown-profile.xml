@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drilldown-profiles xmlns="http://reporting.pentaho.org/namespaces/engine/classic/drilldown-profile/1.0">
+  <group name="pentaho">
+    <drilldown-profile name="remote-xaction" class="org.pentaho.reporting.engine.classic.extensions.drilldown.FormulaLinkCustomizer" bundle-name="org.pentaho.reporting.engine.classic.extensions.drilldown.drilldown-profile" expert="false" hidden="false" deprecated="false" preferred="false">
+      <attribute name="extension">xaction</attribute>
+      <attribute name="formula">OPENINMANTLETAB([&quot;::path&quot;] &amp; &quot;/ViewAction?&quot; &amp; [&quot;::parameter&quot;]; [::TabName]; [::TabActive])</attribute>
+    </drilldown-profile>
+    <drilldown-profile name="remote-prpt" class="org.pentaho.reporting.engine.classic.extensions.drilldown.FormulaLinkCustomizer" bundle-name="org.pentaho.reporting.engine.classic.extensions.drilldown.drilldown-profile" expert="false" hidden="false" deprecated="false" preferred="false">
+      <attribute name="extension">prpt</attribute>
+      <attribute name="formula">OPENINMANTLETAB([&quot;::path&quot;] &amp; &quot;/content/reporting/reportviewer/report.html?&quot; &amp; [&quot;::parameter&quot;]; [::TabName]; [::TabActive])</attribute>
+    </drilldown-profile>
+    <drilldown-profile name="remote-prpt-no-parameter" class="org.pentaho.reporting.engine.classic.extensions.drilldown.FormulaLinkCustomizer" bundle-name="org.pentaho.reporting.engine.classic.extensions.drilldown.drilldown-profile" expert="false" hidden="false" deprecated="false" preferred="false">
+      <attribute name="extension">prpt</attribute>
+      <attribute name="formula">OPENINMANTLETAB([&quot;::path&quot;] &amp; &quot;/content/reporting?&quot; &amp; [&quot;::parameter&quot;]; [::TabName]; [::TabActive])</attribute>
+    </drilldown-profile>
+    <drilldown-profile name="local-xaction" class="org.pentaho.reporting.engine.classic.extensions.drilldown.FormulaLinkCustomizer" bundle-name="org.pentaho.reporting.engine.classic.extensions.drilldown.drilldown-profile" expert="false" hidden="false" deprecated="false" preferred="false">
+      <attribute name="extension">xaction</attribute>
+      <attribute name="formula">OPENINMANTLETAB(ENV(&quot;pentahoBaseURL&quot;) &amp; &quot;/ViewAction?&quot; &amp; [&quot;::parameter&quot;]; [::TabName]; [::TabActive])</attribute>
+    </drilldown-profile>
+    <drilldown-profile name="local-prpt" class="org.pentaho.reporting.engine.classic.extensions.drilldown.FormulaLinkCustomizer" bundle-name="org.pentaho.reporting.engine.classic.extensions.drilldown.drilldown-profile" expert="false" hidden="false" deprecated="false" preferred="false">
+      <attribute name="extension">prpt</attribute>
+      <attribute name="formula">OPENINMANTLETAB(ENV(&quot;pentahoBaseURL&quot;) &amp; &quot;/content/reporting/reportviewer/report.html?&quot; &amp; [&quot;::parameter&quot;]; [::TabName]; [::TabActive])</attribute>
+    </drilldown-profile>
+    <drilldown-profile name="local-prpt-no-parameter" class="org.pentaho.reporting.engine.classic.extensions.drilldown.FormulaLinkCustomizer" bundle-name="org.pentaho.reporting.engine.classic.extensions.drilldown.drilldown-profile" expert="false" hidden="false" deprecated="false" preferred="false">
+      <attribute name="extension">prpt</attribute>
+      <attribute name="formula">OPENINMANTLETAB(ENV(&quot;pentahoBaseURL&quot;) &amp; &quot;/content/reporting?&quot; &amp; [&quot;::parameter&quot;]; [::TabName]; [::TabActive])</attribute>
+    </drilldown-profile>
+  </group>
+</drilldown-profiles>

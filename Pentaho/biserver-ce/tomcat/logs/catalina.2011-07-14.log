@@ -1,0 +1,30 @@
+14-jul-2011 16:05:16 org.apache.catalina.core.AprLifecycleListener init
+INFO: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: C:\Program Files\Java\jdk1.6.0_25\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\MiKTeX 2.9\miktex\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Windows Live\Shared
+14-jul-2011 16:05:17 org.apache.coyote.http11.Http11Protocol init
+INFO: Inicializando Coyote HTTP/1.1 en puerto http-8080
+14-jul-2011 16:05:17 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1510 ms
+14-jul-2011 16:05:17 org.apache.catalina.core.StandardService start
+INFO: Arrancando servicio Catalina
+14-jul-2011 16:05:17 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.29
+14-jul-2011 16:05:17 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Desplieque del descriptor de configuración pentaho.xml
+14-jul-2011 16:05:19 org.apache.catalina.startup.ContextConfig validateSecurityRoles
+INFO: ATENCIÓN: El nombre de papel de seguridad PENTAHO_ADMIN es usado en un <auth-constraint> sin haber sido definido en <security-role>
+14-jul-2011 16:05:57 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Despliegue del directorio mondrian de la aplicación web
+14-jul-2011 16:05:59 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Despliegue del directorio pentaho-style de la aplicación web
+14-jul-2011 16:05:59 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Despliegue del directorio ROOT de la aplicación web
+14-jul-2011 16:05:59 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Despliegue del directorio sw-style de la aplicación web
+14-jul-2011 16:05:59 org.apache.coyote.http11.Http11Protocol start
+INFO: Arrancando Coyote HTTP/1.1 en puerto http-8080
+14-jul-2011 16:06:00 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+14-jul-2011 16:06:00 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/45  config=null
+14-jul-2011 16:06:00 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 42630 ms

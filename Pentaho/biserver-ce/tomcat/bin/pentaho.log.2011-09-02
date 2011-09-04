@@ -1,0 +1,8 @@
+2011-09-02 22:30:43,632 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2011-09-02 22:30:45,872 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2011-09-02 22:30:46,069 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2011-09-02 22:30:46,241 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2011-09-02 22:30:46,441 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2011-09-02 22:30:46,605 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2011-09-02 22:30:46,734 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2011-09-02 22:30:46,851 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
