@@ -2,3 +2,5 @@
 /data-integration
 /mondrian
 /schema-workbench
+/biserver-ce/tomcat/logs
+/biserver-ce/tomcat/bin/pentaho.log

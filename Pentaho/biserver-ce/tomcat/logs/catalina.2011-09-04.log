@@ -594,3 +594,47 @@ GRAVE: The web application [/pentaho] created a ThreadLocal with key of type [ja
 GRAVE: The web application [/pentaho] created a ThreadLocal with key of type [java.lang.InheritableThreadLocal] (value [java.lang.InheritableThreadLocal@3c944f]) and a value of type [org.pentaho.platform.engine.security.session.TrustedSystemStartupSession] (value [org.pentaho.platform.engine.security.session.TrustedSystemStartupSession@e8eeca]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
 04-sep-2011 17:52:43 org.apache.coyote.http11.Http11Protocol destroy
 INFO: Parando Coyote HTTP/1.1 en puerto http-8080
+04-sep-2011 19:41:41 org.apache.catalina.core.AprLifecycleListener init
+INFO: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: C:\Program Files\Java\jdk1.6.0_25\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files\MiKTeX 2.9\miktex\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Windows Live\Shared;C:\Program Files\QT Lite\QTSystem;C:\Program Files\Intuwave\Shared\mRouterRuntime;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Google\Google Apps Sync\;C:\Program Files\Google\Google Apps Migration\
+04-sep-2011 19:41:41 org.apache.coyote.http11.Http11Protocol init
+INFO: Inicializando Coyote HTTP/1.1 en puerto http-8080
+04-sep-2011 19:41:41 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1118 ms
+04-sep-2011 19:41:41 org.apache.catalina.core.StandardService start
+INFO: Arrancando servicio Catalina
+04-sep-2011 19:41:41 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.29
+04-sep-2011 19:41:41 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Desplieque del descriptor de configuración pentaho.xml
+04-sep-2011 19:41:44 org.apache.catalina.startup.ContextConfig validateSecurityRoles
+INFO: ATENCIÓN: El nombre de papel de seguridad PENTAHO_ADMIN es usado en un <auth-constraint> sin haber sido definido en <security-role>
+04-sep-2011 19:53:25 org.apache.catalina.core.AprLifecycleListener init
+INFO: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: C:\Program Files\Java\jdk1.6.0_25\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files\MiKTeX 2.9\miktex\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Windows Live\Shared;C:\Program Files\QT Lite\QTSystem;C:\Program Files\Intuwave\Shared\mRouterRuntime;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Google\Google Apps Sync\;C:\Program Files\Google\Google Apps Migration\
+04-sep-2011 19:53:25 org.apache.coyote.http11.Http11Protocol init
+INFO: Inicializando Coyote HTTP/1.1 en puerto http-8080
+04-sep-2011 19:53:25 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 482 ms
+04-sep-2011 19:53:25 org.apache.catalina.core.StandardService start
+INFO: Arrancando servicio Catalina
+04-sep-2011 19:53:25 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.29
+04-sep-2011 19:53:25 org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Desplieque del descriptor de configuración pentaho.xml
+04-sep-2011 19:53:27 org.apache.catalina.startup.ContextConfig validateSecurityRoles
+INFO: ATENCIÓN: El nombre de papel de seguridad PENTAHO_ADMIN es usado en un <auth-constraint> sin haber sido definido en <security-role>
+04-sep-2011 19:53:53 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Despliegue del directorio mondrian de la aplicación web
+04-sep-2011 19:53:54 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Despliegue del directorio pentaho-style de la aplicación web
+04-sep-2011 19:53:54 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Despliegue del directorio ROOT de la aplicación web
+04-sep-2011 19:53:54 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Despliegue del directorio sw-style de la aplicación web
+04-sep-2011 19:53:55 org.apache.coyote.http11.Http11Protocol start
+INFO: Arrancando Coyote HTTP/1.1 en puerto http-8080
+04-sep-2011 19:53:55 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+04-sep-2011 19:53:55 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/27  config=null
+04-sep-2011 19:53:55 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 29432 ms
