@@ -1,0 +1,234 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding latin1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 4
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+En las últimas décadas, la cantidad de estudiantes que siguen estudios universit
+arios ha ido en aumento
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Según estudio del Sistema de Información para la Educación Superior (SIES)
+ http://www.mineduc.cl/usuarios/1234/File/Publicaciones/Estudios/5Estudio-Evolucio
+n-Matricula-Historica-1990-2009.pdf
+\end_layout
+
+\end_inset
+
+.
+ Este incremento de la población universitaria va acompañado también por
+ un crecimiento en la diversidad de las características de los alumnos.
+ Estudiantes de diferentes sectores socioeconómicos, regiones y realidades
+ tienen también necesidades y potencial académico distinto
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Mckenzie2001"
+
+\end_inset
+
+ El reto de las universidades entonces es reconocer esta heterogeneidad
+ y afrontarla de la mejor manera posible.
+ Baker (1987) señaló que 
+\begin_inset Quotes fld
+\end_inset
+
+el enfoque no solo debe estar en la admisión de un amplio abanico de estudiantes
+, sino también en darles el apoyo y la ayuda necesaria para asegurarles
+ una oportunidad de éxito razonable
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "successHE"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+El desempeño académico de los alumnos constituye un indicador que permite
+ aproximarse a la realidad educativa de la universidad y, por ende, para
+ evaluar la calidad de la enseñanza.
+ El avance del conocimiento, la fluidez en la transmisión de la información
+ y los cambios acelerados de las estructuras sociales también han incidido
+ en los progresos alcanzados por los estudios enfocados en el desempeño
+ académico en educación superior.
+ En ese contexto, centrarse en la calificación del capital humano adquiere
+ un valor incalculable y ello se vincula estrechamente con los resultados
+ e investigaciones sobre el desempeño académico de los estudiantes universitario
+s
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rendacad"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+En busca de la excelencia académica la universidad cada vez está más preocupada
+ por los procesos formativos de sus estudiantes.
+ Éstos procesos pueden ser vistos en términos de valor añadido, según el
+ cual la calidad de una institución se estimaría por la diferencia entre
+ las características de entrada y de salida de los alumnos
+\begin_inset CommandInset citation
+LatexCommand cite
+key "EvalRend2001"
+
+\end_inset
+
+.
+ La tendencia más habitual de medir el proceso de egreso de un estudiante
+ es correlacionar rendimiento con resultados, los cuales pueden ser clasificados
+ como inmediatos o diferidos.
+ Los diferidos miden la utilidad que proporcionan los estudios para la inserción
+ del titulado al mundo laboral, existiendo dificultades en su medición debido
+ a lo subjetivo de ésta.
+ Mientras que los rendimientos inmediatos son más fáciles de cuantificar,
+ aunque no existe un estándar para su medición, ya que se pueden medir en
+ términos del éxito.
+ El rendimiento inmediato, entonces, queda relacionado a la superación de
+ las exigencias de las asignaturas, y éstas a su vez como exigencias para
+ culminar el programa de estudios, es decir: aprobación de las asignaturas
+ contempladas en la malla curricular.
+\end_layout
+
+\begin_layout Standard
+Conocer los diferentes factores que inciden en el desempeño académico en
+ el campo de la educación superior de una manera integral, permite obtener
+ resultados tanto cualitativos como cuantitativos para propiciar un enfoque
+ completo en la toma decisiones, y así mejorar los niveles de pertinencia,
+ equidad y calidad educativa
+\begin_inset CommandInset citation
+LatexCommand cite
+key "futuni"
+
+\end_inset
+
+.
+ Y si estos factores son comunes en grupos de estudiantes estaríamos en
+ presencia de patrones, que describirían a los estudiantes y permitirían
+ predecir su desempeño.
+\end_layout
+
+\begin_layout Standard
+En el campo de los predictores, se mantiene a la Prueba de Selección Universitar
+ia como el instrumento explicativo del posterior rendimiento del estudiante
+ en el primer nivel universitario.
+ Es por ésto que la Universidad, al estar inserta en el CRUCH, selecciona
+ a sus postulantes mediante la batería de la PSU.
+ Contreras (2009) ha cuestionado esta metodología, determinando que el puntaje
+ obtenido en la PSU no es el único indicador del rendimiento posterior
+\begin_inset CommandInset citation
+LatexCommand cite
+key "habreluchile"
+
+\end_inset
+
+.
+ Para la Escuela sería una gran ventaja conocer si existen factores que
+ influyen en el desempeño estudiantil, así podría tomar mejores decisiones
+ con respecto a los recursos y sus asignaciones para mejorar el proceso
+ formativo de sus estudiantes.
+\end_layout
+
+\begin_layout Standard
+La presente investigación se enmarca en la necesidad anterior, y para conseguir
+ ésto se pretende realizar un reconocimiento de patrones, que explicarían
+ características comunes de los estudiantes correlacionadas con su desempeño,
+ y que permitirían clasificarlos a través de estos rasgos.
+ El reconocimiento de patrones se realizará a través de técnicas del Análisis
+ Inteligente de Datos, tales como las Redes Neurales y las Máquinas de Soporte
+ Vectorial, entre otras.
+\end_layout
+
+\begin_layout Standard
+Primeramente, se describen los objetivos de éste documento, éstos son los
+ fines que ésta investigación persigue.
+ También se exponen las actividades que serán necesarias para completarla
+ y su planificación estimada.
+ Posteriormente se contextualiza esta investigación explicando lo que significa
+ el desempeño y el rendimiento académico universitario, cómo afecta este
+ indicador en la calidad de la educación superior, formas de medición del
+ desempeño y del rendimiento de los estudiantes y la importancia de estos
+ indicadores para mejorar la calidad de la educación.
+ Además de introducir el reconocimiento de patrones, métodos de identificación,
+ clasificación, etc.
+ Acto seguido, se introduce la metodología del Análisis de Datos, y el aporte
+ que significa al reconocimiento de patrones.Todo esto para llegar al Análisis
+ Inteligente de Datos, describiendo como un área de la informática como
+ la Inteligencia Artificial ha ayudado a realizar el Análisis de Datos de
+ una forma automatizada e inteligente.Más adelante se detallan los datos
+ que son necesarios para el desarrollo de la investigación, y que serán
+ solicitados oportunamente a la Universidad.
+ Además de explicar cuales son los resultados que se esperan obtener cuando
+ ya culmine esta investigación, para por último enumerar las conclusiones
+ de este estudio.
+\end_layout
+
+\end_body
+\end_document

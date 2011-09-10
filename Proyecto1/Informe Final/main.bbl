@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{AptCambridge2003}
+K.R. Apt.
+\newblock {\em {Principles of Constraint Programming}}.
+\newblock Cambridge Press, 2003.
+
+\bibitem{AptTOPLAS1998}
+K.R. Apt, J.~Brunekreef, V.~Partington, and A.~Schaerf.
+\newblock {Alma-0: An Imperative Language that Supports Declarative
+  Programming}.
+\newblock {\em ACM Transactions on Programming Languages and Systems (ACM
+  TOPLAS)}, 20(5):1014--1066, 1998.
+
+\end{thebibliography}

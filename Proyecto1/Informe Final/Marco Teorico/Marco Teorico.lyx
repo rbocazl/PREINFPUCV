@@ -1,0 +1,1758 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+
+%author: Eduardo Cárdenas Calderón [ecardena@gmail.com]
+
+\usepackage{fancybox}\usepackage{fancyhdr}\usepackage{xcolor}\@ifundefined{definecolor}
+ {\usepackage{color}}{}
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0.0pt}
+\fancyfoot{}
+\rfoot{\thepage } %número de página a la derecha
+\parindent 4em  %indentacion de los parrafos X espacios
+\parskip 20in  %Salto entre parrafos
+%\usepackage[ps2pdf,bookmarks,urlcolor=blue,citecolor=blue,linkcolor=blue,%
+%           pagecolor=blue,colorlinks,hyperfigures]{hyperref}
+
+%=============================================================================
+% Redefining paragraph
+
+\makeatletter % needed to recognize '@' as a normal char
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\z@}{-3.25ex \@plus
+-1ex \@minus -.2ex}{1.5ex \@plus .2ex}{\normalfont\normalsize\bfseries}}
+\makeatother % needed to recognize '@' as a special char
+
+
+
+%=============================================================================
+% Document
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding latin1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 4
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+En este capitulo se entregará el marco referente al estudio, los conceptos
+ que enmarcan el tema y los últimos estudios realizados que se relacionan
+ a la presente investigación.
+ Para comenzar se describirá el marco conceptual, que hace referencia a
+ los conceptos principales que se relacionan al presente estudio, estos
+ son, el desempeño estudiantil, el análisis inteligente de datos y la minería
+ de datos.
+ En el apartado 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Marco-Referencial"
+
+\end_inset
+
+ se detalla el marco referencial, que consiste en los últimos estudios realizado
+s con relación al tema que se está investigando.
+\end_layout
+
+\begin_layout Standard
+Dado el objetivo de la presente investigación, es necesario contextualizar
+ las bases de el presente proyecto.
+ La predicción, y por consecuente, la confección del modelo predictivo requiere
+ de una serie de pasos anteriores a éste.
+ Tales pasos son, por ejemplo, la definición de los datos necesarios para
+ generar el modelo, el análisis inteligente para obtener conclusiones y
+ la selección y prueba de las herramientas predictivas.
+\end_layout
+
+\begin_layout Standard
+La definición de los datos requiere que previamente se haya pensado en que
+ indicadores de desempeño se quieren observar.
+ También es necesario que los datos requeridos hayan sido guardados previamente
+ por la institución.
+ Estos datos son luego extraídos por alguna herramienta automatizada, ya
+ que se requiere que esta extracción sea periódica.
+ La periodicidad de la obtención debería ser en este caso semestral.
+ Luego de la extracción de los datos, estos deben ser limpiados y transformados
+ a conveniencia del análisis.
+ Seguidamente se crea un almacén de datos con la idea de explorar a través
+ de dimensiones y sacar conclusiones.
+\end_layout
+
+\begin_layout Standard
+Todas las consideraciones antes descritas están relacionadas entre sí, como
+ puede verse en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Esquema-del-Marco"
+
+\end_inset
+
+.
+ Con la data histórica guardada por la PUCV se realiza un proceso de ETL,
+ éste permite crear un almacén de datos desde los cuales es posible realizar
+ un análisis ROLAP.
+ Éste se ayuda en los indicadores de desempeño que se desean medir.
+ El análisis inteligente de datos permite realizar un modelo predictivo
+ que servirá de apoyo para la toma de decisiones de la dirección de la Escuela
+ de Ingeniería Informática de la PUCV.
+ Estas decisiones permitirán aumentar el desempeño, tanto de los estudiantes
+ que ya se encuentran en la universidad, como también de los que próximamente
+ se integrarán.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/marcoteorico.png
+	lyxscale 50
+	width 80line%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Esquema-del-Marco"
+
+\end_inset
+
+Relaciones entre los conceptos del proyecto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para lograr lo que se pretende también se debe hacer referencia a lo que
+ se entiende por desempeño académico.
+ Deben especificarse indicadores de desempeño, que deben ser los que interesen
+ a la Dirección de la Escuela de Ingeniería Informática.
+ Para una primera aproximación se irán usando los encontrados en la literatura,
+ y los que a juicio del profesor guía sean importantes de medir.
+ Éstas mediciones de los indicadores permitirán tener una representación
+ del desempeño que pueda dar indicios en un futuro de mejoras, producto
+ de las decisiones adoptadas por la Dirección, que sean debidas a las conclusion
+es de la presente investigación.
+\end_layout
+
+\begin_layout Standard
+Para poder apoyar la toma de decisiones se hará uso de las herramientas
+ de la minería de datos, para extraer conocimiento desde la información
+ recabada por el análisis inteligente de datos que se aplicará.
+ Esto permitirá pronosticar el desempeño futuro de los estudiantes de la
+ Escuela, como también predecir el desempeño del primer año de los nuevos
+ estudiantes que postulen a las carreras que dicta la Escuela.
+\end_layout
+
+\begin_layout Standard
+Todo esto se apoyará en las investigaciones que se han realizado a la fecha
+ que intentan explicar los factores que influyen en el rendimiento universitario.
+ Solamente algunas de ellas son detalladas en este documento, por una razón
+ de resumen.
+ Aunque no se hayan encontrado hasta ahora investigaciones que ocupen el
+ análisis inteligente de datos para explicar el desempeño universitario,
+ estas investigaciones presentan una motivación para explicar de otra forma
+ y como no quizás encontrar nuevas formas de poder predecirlo.
+ 
+\end_layout
+
+\begin_layout Subsection
+Marco Conceptual
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Marco-Conceptual"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este apartado se pretende explicar a grandes rasgos los conceptos involucrado
+s en el tema de investigación.
+ Estos conceptos ayudan a comprender mejor la problemática a solucionar
+ ya que permite focalizar la investigación.
+ Se describe en un comienzo el desempeño estudiantil, seguido del análisis
+ inteligente de datos, para culminar con la minería de datos.
+\end_layout
+
+\begin_layout Subsubsection
+Desempeño Académico
+\end_layout
+
+\begin_layout Standard
+Para toda institución de educación es de importancia la medición del desempeño
+ de sus estudiantes, ya que éstos son uno de los productos principales que
+ crea la universidad.
+ El continuo afán de mejorar los procesos de aprendizaje y la calidad de
+ la educación, lleva a las universidades a preguntarse dónde se encuentran
+ las falencias en su forma realizar docencia.
+ Para esto, una clara medición del rendimiento de sus estudiantes, puede
+ dar luces de donde se encuentran los principales factores que hacen que
+ un estudiante tenga mejor desempeño que otro.
+\end_layout
+
+\begin_layout Standard
+El desempeño estudiantil se puede definir como el grado de cumplimiento
+ de los objetivos planificados por el estudiante al iniciar el proceso educativo
+, comparado con los recursos disponibles para cumplirlos.
+ También puede ser visto como la buena utilización de los recursos disponibles
+ por el estudiante para lograr o sobrepasar los objetivos propuestos.
+ Ejemplos de desempeño universitario es el tiempo que demora el estudiante
+ en egresar, o la cantidad de créditos aprobados por sobre lo mínimo exigido.
+\end_layout
+
+\begin_layout Standard
+Los factores que pueden influir en que un estudiante tenga un mejor desempeño
+ son variados y afectan de forma distinta además a cada estudiante en particular.
+ Existen factores que son propios de cada estudiante, como el conocimiento
+ acabado de la carrera que estudia, o la motivación por el área de estudio
+ que realiza, como también factores externos: los socioeconómicos, culturales,
+ de entorno, entre otros.
+ También se pueden apreciar componentes propios del ambiente universitario,
+ tales como la infraestructura, sus profesores, el compromiso con el estudiante,
+ las ayudas por parte de la institución, los compañeros de clase, etc.
+ Al final, encontrar todos los factores que podrían incidir es una tarea
+ titánica, sino imposible, para cualquiera que desee realizarla.
+\end_layout
+
+\begin_layout Standard
+El desempeño académico en estricto rigor no es lo mismo que el rendimiento
+ académico.
+ Mientras este último mide la relación de los objetivos propuestos por el
+ estudiante con lo que realmente cumple, el desempeño académico hace referencia
+ a cuan bien se ocupan los recursos, tales como el tiempo, dinero, esfuerzo,
+ etc.
+ en lograr los objetivos propuestos.
+ Es por ésto que los dos conceptos no deben ser confundidos, ya que el rendimien
+to mide la eficacia de los objetivos del estudiante mientras que el desempeño
+ mide la eficiencia de éstos.
+ Aunque podría establecerse que el desempeño engloba al rendimiento estudiantil,
+ ya que al medir la eficiencia de los recursos en cumplir el objetivo necesariam
+ente los objetivos deben cumplirse.
+ Es por esto ultimo que este estudio está enfocado en el desempeño universitario
+, sin embargo, también se medirán aspectos de eficacia.
+\end_layout
+
+\begin_layout Standard
+Para tener una idea de la eficiencia, hace falta definir como se medirá
+ ésta.
+ Esto se realiza a través de la construcción de indicadores de desempeño,
+ que darán un diagnóstico de la situación del estudiante.
+ La confección de estos indicadores pasa por un discernimiento por parte
+ de la dirección de la institución sobre qué realmente desea medir para
+ su posterior mejora.
+ En la literatura se pueden encontrar diversos indicadores, que han sido
+ construidos con alguna realidad particular, pero que no necesariamente
+ aplican a cualquier tipo de investigación.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Indicadores de desempeño
+\end_layout
+
+\begin_layout Standard
+Básicamente los indicadores que se construyan deben dar una idea de la eficienci
+a de algún aspecto educativo, para esto se debe especificar primero qué
+ se desea medir y cuales son las unidades que indican lo que se desea medir.
+ Existen de distintos tipos, como las que miden las calificaciones o esfuerzo
+ que un estudiante realiza para terminar su carrera, los que miden el tiempo
+ que se emplea para aprobar una asignatura, un grupo de asignaturas o lograr
+ el egreso, o también los que miden la aprobación con respecto a la carga
+ académica de un año en particular.
+\end_layout
+
+\begin_layout Standard
+Las calificaciones puede ser medidas de distinta forma, y dependerá del
+ constructor del indicador velar que éste mida lo que realmente se busca.
+ Un ejemplo sería medir el promedio de calificaciones por año, o ponderarlas
+ por los créditos de cada asignatura, otro podrá ser medir el promedio de
+ calificaciones de un grupo de asignaturas o el promedio ponderado acumulado,
+ etcétera.
+ Los indicadores que tienen relación con el tiempo pueden medir distintos
+ aspectos de éste, por ejemplo el tiempo de egreso, el tiempo en que se
+ demora un estudiante en aprobar un grupo de asignaturas o una asignatura
+ en particular, el tiempo que se está sin estudiar (congelamiento), el tiempo
+ que transcurre entre que el estudiante debe tomar una asignatura y realmente
+ la inscribe, el tiempo que demora el estudiante entre que egresa y se titula,
+ la diferencia de tiempos entre que el alumno egresa y la duración de la
+ carrera, entre otros.Los indicadores que midan la aprobación pueden indicar,
+ por ejemplo, el porcentaje de aprobación de un área de estudio, el porcentaje
+ de aprobación de las asignaturas aprobadas con respecto a las inscritas,
+ la relación entre los créditos aprobados y la tasa de avance, promedio
+ de créditos aprobados por semestre, y un largo etcétera.
+ 
+\end_layout
+
+\begin_layout Standard
+Por supuesto que pueden construirse otros indicadores que no sean de los
+ tipos anteriormente descritos, siempre que vengan a responder necesidades
+ por parte de la Dirección y que puedan aportar información crucial para
+ descubrir la situación actual de la Escuela.
+ Obviamente estos indicadores se retroalimentan y pueden modificarse, añadiendo
+ o quitando parámetros para ajustarlos a las necesidades que surjan.
+ También pueden dejarse de calcular algunos indicadores que ya no parezcan
+ aportar en algo a medir la eficiencia de los estudiantes en cuanto a su
+ formación académica.
+\end_layout
+
+\begin_layout Paragraph
+Rendimiento académico
+\end_layout
+
+\begin_layout Standard
+No es menos importante medir la consecución de los objetivos planteados
+ por los estudiantes, y como no por la misma Escuela, ya que permite ver
+ en que aspectos los estudiantes no cumplen con sus objetivos o en que porcentaj
+e lo hacen, etc.
+ Los indicadores que podrían medir el rendimiento académico deben estar
+ en total concordancia con los objetivos que se plantean los constructores
+ de ellos.
+ 
+\end_layout
+
+\begin_layout Standard
+Como ejemplos de indicadores que pueden medir el rendimiento académico están
+ la relación entre la cantidad de créditos aprobados con los del total de
+ la carrera, el total de asignaturas aprobadas con relación al total, la
+ tasa de avance, entre otras.
+\end_layout
+
+\begin_layout Standard
+También podrían ser medidos indicadores por parte del grupo de estudiantes,
+ como por ejemplo los de una cohorte en especifico y calcular los indicadores
+ descritos anteriormente.
+ Con esto se podría medir el rendimiento de la cohorte produciendo información
+ que no puede ser vista por el cálculo de los indicadores a sujetos individuales.
+\end_layout
+
+\begin_layout Standard
+Es necesario recalcar que ni el rendimiento ni el desempeño académico son
+ conceptos que tienen un criterio aceptado por todos.
+ constituye un constructo que puede ser hecho operativo de distintas maneras
+ en función del significado que tiene para cada sujeto de acuerdo con su
+ situación particular.
+ De ahí que se considere este término como un concepto multidimensional,
+ relativo y contextual.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Diaz2001"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Desde un punto de vista práctico la tendencia más habitual es identificar
+ rendimiento con resultados, distinguiendo, entre estos, dos categorías:
+ los inmediatos y los diferidos.
+ Los inmediatos hacen relación con la estadía de los estudiantes en la universid
+ad, como se han tratado durante toda esta sección.
+ En cambio los diferidos son los resultados que obtienen los estudiantes
+ cuando ya dejan la universidad.
+\end_layout
+
+\begin_layout Standard
+Los rendimientos diferidos son difíciles de calcular, debido a que no siempre
+ se dispone de la información de la vida posterior a la universitaria de
+ cada estudiante, además de que los indicadores que podrían usarse no son
+ tan fáciles de elaborar como los del rendimiento inmediato.
+ El rendimiento diferido hace relación con el impacto que tiene la enseñanza
+ universitaria sobre la vida social.
+ Por lo tanto puede medir distintas variables como las socioeconómicas -capacida
+d del estudiante en insertarse al mundo laboral, nivel de salario, estatus,
+ retribución- sino también por variables del tipo personal y social como
+ por ejemplo el desempeñar trabajos que tengan que ver con su título, estabilida
+d de los empleos, etc.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mora1998"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Análisis Inteligente de Datos
+\end_layout
+
+\begin_layout Standard
+El análisis inteligente de datos (AIDA), como se muestra en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ciencias-que-aportan"
+
+\end_inset
+
+, es una metodología que proviene de la complementación de diferentes disciplina
+s, tales como la Estadística y las Máquinas de Aprendizaje
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Berthold2003"
+
+\end_inset
+
+.
+ La Estadística aporta el modelado de la realidad, la recolección de los
+ datos, el análisis de estos y el enfoque de sacar conclusiones a partir
+ de una muestra de datos (inferencia), para realizar esto se apoya en las
+ herramientas de dos ciencias: las Ciencias Sociales y las Ciencias Matemáticas.
+ Mientras que las Máquinas de Aprendizaje se nutren, ademas de las Ciencias
+ Matemáticas, de las Ciencias de la Computación.
+ Las Máquinas de Aprendizaje permiten potenciar el análisis de datos generando
+ computadores que aprenden y pueden calcular grandes cantidades de información
+ en tiempos menores si se les compara con una persona.
+\end_layout
+
+\begin_layout Standard
+El análisis inteligente de datos no es más que un análisis de datos, apoyado
+ en las nuevas tecnologías, que permiten realizar esta tarea con mayor rapidez
+ y precisión y con menos errores, además de permitir procesar grandes cantidades
+ de datos.
+ Existen herramientas genéricas que permiten realizar un AIDA, y hasta se
+ han creado metodologías o conjuntos de buenas prácticas basados en este
+ tipo de análisis, como por ejemplo la Inteligencia de Negocios.
+ Las aplicaciones del AIDA pueden desarrollarse en variados campos, tales
+ como las Ciencias de la Ingeniería, la Economía, etc.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/DataAnalysis.PNG
+	width 80line%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Ciencias-que-aportan"
+
+\end_inset
+
+Ciencias que aportan al análisis inteligente de datos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Análisis de Datos
+\end_layout
+
+\begin_layout Standard
+Los primeros pensantes y científicos se interesaron por el tratamiento matemátic
+o de los datos y la información.
+ Desde Galileo, pasando por Platón y los analistas de datos y teóricos tales
+ como Jean-Paul Benzécri.
+ Él y Gödel, eran conscientes de las dificultades intrínsecas de la observación
+ o la medición de los datos, y los factores explicativos subyacentes a los
+ fenómenos asociados con los datos.
+ Con la llegada de los computadores en la actualidad es posible realizar
+ la recolección de grandes escalas de datos, y de analizar y modificar grandes
+ cantidades de información, lo que ha dado origen al análisis de datos moderno.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Murtagh2008"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El análisis de datos se define como 
+\begin_inset Quotes fld
+\end_inset
+
+El proceso de computar diversos resúmenes y valores derivados de la colección
+ de datos dada
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Berthold2003"
+
+\end_inset
+
+.
+ Cabe resaltar aquí el termino 
+\emph on
+proceso
+\emph default
+, porque dice relación con lo que es en sí el análisis de datos, algo iterativo,
+ incremental y con 
+\emph on
+feedback
+\emph default
+; con diferentes entradas y salidas.
+ Es iterativo porque se examinan los datos, se aplica una técnica analítica
+ y se decide probar de otra forma, quizás modificando los datos, dividiéndolos,
+ o en algunos casos transformándolos; y se vuelve al comienzo aplicando
+ otra técnica analítica.
+ Ésto puede ser realizado repetidas veces durante el análisis, por que cada
+ técnica puede probar aspectos distintos de los datos, aspectos que con
+ una sola técnica no podrían haber sido abarcados y que sirven para responder
+ otras preguntas que se generen en el camino.
+ Las herramientas que se utilizan en el análisis de datos no deben ser nunca
+ consideradas como técnicas aisladas de las demás, sino todo lo contrario,
+ porque tienen complejas relaciones entre ellas.
+\end_layout
+
+\begin_layout Standard
+Se pueden distinguir dos tipos de análisis, los descriptivos y los inferenciales.
+ Los descriptivos apuntan a rescatar información propia de la muestra que
+ se analiza ,y responder preguntas como por ejemplo ¿Cuál es la edad promedio
+ de los asistentes de este partido de fútbol?, ¿Cuántos bebés nacieron con
+ el pelo rubio ayer en Valparaíso?, etc.
+ En cambio los inferenciales tratan de explicar como se comporta la población
+ basado en una muestra representativa de ella, por lo tanto responden preguntas
+ mas amplias, como por ejemplo ¿Cuántos niños rubios nacieron en el mundo
+ ayer?, que a menudo se infieren porque no se puede analizar a toda la población.
+\end_layout
+
+\begin_layout Standard
+Las herramientas que se utilizan en el análisis de datos, difieren si es
+ que se habla de un análisis descriptivo o de uno inferencial.
+ Aunque puede ser la misma herramienta que se utilice para el análisis,
+ la comprensión del resultado es distinto.
+ Si se toma, como un ejemplo, la media de una muestra y se realiza un análisis
+ descriptivo, entonces es un valor exacto y calculable; en cambio si se
+ infiere la media, siempre será un valor estimado y si es modificada la
+ muestra, la media estimada también cambiará, por lo tanto siempre se está
+ consciente 
+\shape italic
+a priori
+\shape default
+ de que existe un error en la estimación.
+\end_layout
+
+\begin_layout Standard
+La nueva forma de hacer estadística, asistida por computador, ha llevado
+ a que el análisis de datos se preocupe de descubrir conocimiento en forma
+ confiable, rápida y oportuna.
+ Ya no se necesita de tanto tiempo realizando tablas de datos a papel y
+ lápiz; calcular parámetros estadísticos y descubrir conocimiento es algo
+ rápido y que permite procesar una gran cantidad de datos, que sin la ayuda
+ del computador no podría ser posible.
+ Los modelos de aprendizaje automático permiten realizar una minería de
+ datos mas precisa y mas óptima, adoptando al descubrimiento de conocimiento
+ un potencial aun mas enorme del que ya tenia.
+\end_layout
+
+\begin_layout Paragraph
+Los datos y su naturaleza
+\begin_inset CommandInset label
+LatexCommand label
+name "par:natdat"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para realizar un análisis de datos lo primero es determinar la naturaleza
+ de los datos, la mayoría de las veces son del tipo numérico, pero existen
+ otros tipos de datos como por ejemplo las imágenes y los textos.
+ Es necesario saber de qué tipo son los datos, para así poder elegir las
+ mejores técnicas para su análisis.
+ Una buena identificación de los tipos de datos permitirá una buena representaci
+ón de ellos.Para clasificar los tipos de datos existen tres categorías: los
+ datos estructurados, los no estructurados, y los bloques de datos binarios.
+ Su diferencia claramente está en su estructura y su representación.
+ 
+\end_layout
+
+\begin_layout Standard
+Los datos estructurados pueden ser subclasificados también en lo que son
+ los datos cualitativos, los cuantitativos, los simbólicos y los que están
+ ordenados jerárquicamente.
+ Los datos estructurados pueden ser representados por estructuras de datos
+ tales como los arreglos, las tuplas, las matrices, árboles, etc.
+ El tipo de dato estructurado está dado por su significado para las personas,
+ los datos cualitativos denotan atributos característicos de los objetos
+ que representan sus cualidades, mientras que los cuantitativos representan
+ mediciones de esos atributos de forma objetiva y exacta.
+ 
+\end_layout
+
+\begin_layout Standard
+Los datos no estructurados son principalmente textos.
+ Un texto está compuesto por unidades fundamentales que son las palabras,
+ y una serie de símbolos que lo acompañan y pueden ser combinadas de maneras
+ más diversas que los números.
+ Y por último los bloques de datos binarios, hacen relación a la representación
+ en forma computacional o electrónica de imágenes o sonidos.
+\end_layout
+
+\begin_layout Paragraph
+Aplicaciones del análisis de datos
+\end_layout
+
+\begin_layout Standard
+El análisis de datos da soluciones a problemas propios de clasificación,
+ pronóstico, reconocimiento y transformación.
+ Las disciplinas que se ven favorecidas con su aplicación son diversas.
+ Algunas de ellas son la biometría, climatología, sismología, medicina,
+ balística entre otras.
+ 
+\end_layout
+
+\begin_layout Standard
+Las aplicaciones más comunes son:
+\end_layout
+
+\begin_layout Itemize
+Pronóstico de magnitudes máximas de terremotos.
+\end_layout
+
+\begin_layout Itemize
+Pronóstico de perspectiva de yacimientos minerales.
+\end_layout
+
+\begin_layout Itemize
+Pronóstico de tormentas en la ionósfera.
+\end_layout
+
+\begin_layout Itemize
+Regionalización sísmica.
+\end_layout
+
+\begin_layout Itemize
+Diagnóstico diferencial de enfermedades.
+\end_layout
+
+\begin_layout Itemize
+Lectura diagnóstica de señales (EEG, ECG,IC, etc.).
+\end_layout
+
+\begin_layout Itemize
+Clasificación automática de clientes.
+\end_layout
+
+\begin_layout Itemize
+Identificación de huellas digitales.
+\end_layout
+
+\begin_layout Itemize
+Identificación de caligrafías.
+\end_layout
+
+\begin_layout Itemize
+Identificación de rostros (estáticos, en movimiento, enmascarados, etc.).
+\end_layout
+
+\begin_layout Itemize
+Identificación de objetos(mediante sonidos o mediante rastros).
+\end_layout
+
+\begin_layout Itemize
+Dispositivos de acceso por identificación iriológica.
+\end_layout
+
+\begin_layout Itemize
+Reconocimiento de placas de vehículos.
+\end_layout
+
+\begin_layout Itemize
+Caracterización sociopolítica de colectivos sociales.
+\end_layout
+
+\begin_layout Itemize
+Pronóstico de surgimiento de fenómenos sociales.
+\end_layout
+
+\begin_layout Itemize
+Caracterización del 
+\emph on
+modus
+\emph default
+ 
+\emph on
+operandi
+\emph default
+ de terroristas o delincuentes.
+\end_layout
+
+\begin_layout Itemize
+Análisis de las causas de algún fenómeno social.
+\end_layout
+
+\begin_layout Paragraph
+¿Por qué inteligente?
+\end_layout
+
+\begin_layout Standard
+En el proceso de la extracción de la estructura que subyace en los datos
+ y en el entendimiento lo que está sucediendo, se aplican en forma reiterada
+ diversos métodos, técnicas y se usan diversas herramientas.
+ Para refinar las preguntas que el investigador trata de responder se requiere
+ de una metodología clara, pero por sobre todo inteligencia.
+ El análisis inteligente de datos no es un método sistemático de aplicación
+ de las herramientas análisis de datos y de minería de datos.
+ No pretende ser un camino aleatorio a través de las técnicas de análisis
+ y los métodos estadísticos, sino que 
+\begin_inset Quotes fld
+\end_inset
+
+Un proceso cuidadosamente planeado para decidir lo que será más útil y revelador
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Según el curso 
+\begin_inset Quotes fld
+\end_inset
+
+Análisis Inteligente de Datos
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Dr.
+ Héctor Alllende.
+ UTSFM
+\end_layout
+
+\end_inset
+
+ para el investigador y la investigación en sí.
+\end_layout
+
+\begin_layout Paragraph
+Etapas del Análisis Inteligente de Datos
+\end_layout
+
+\begin_layout Standard
+En el AIDA existen dos grandes etapas.
+ La primera es la integración de los datos, y la segunda el análisis propiamente
+ tal.
+ La integración se convierte entonces en una actividad de soporte, en la
+ cual el objetivo principal es llenar los almacenes de datos para posterior
+ estudio.
+ La integración de los datos tiene, a su vez, etapas definidas en cuanto
+ al tipo de actividad que se realiza con los datos.
+ Estas etapas, como puede verse en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Etapas-del-AIDA"
+
+\end_inset
+
+ son la extracción, la transformación y la carga de los datos (ETL).
+ 
+\end_layout
+
+\begin_layout Standard
+El proceso de ETL puede ser ejecutado de dos maneras distintas: como transformac
+iones y como trabajos (jobs).
+ Las transformaciones se realizan en demanda, esto es, cuando se requiere
+ realizar una ETL se ejecutan los pasos cíclicamente.
+ En cambio los trabajos o 
+\emph on
+jobs
+\emph default
+ son procesos automáticos que se activan en un determinado momento o cuando
+ se logra una condición determinada del origen.
+\end_layout
+
+\begin_layout Paragraph
+Integración de los datos
+\end_layout
+
+\begin_layout Standard
+La denominada integración de datos consiste en el proceso de llenado de
+ los almacenes de datos, como también de los posibles 
+\emph on
+datamart
+\emph default
+.
+ Para realizar este proceso se utilizan herramientas automatizadas.
+ Este proceso, aunque está dividido en fases no debe considerarse como pasos
+ secuenciales, ni tampoco como requisitos para el llenado de los almacenes.
+ Consiste en la extracción, la transformación y la carga, las cuales son
+ iterativas e incrementales y en actividades que apoyan estas fases.
+\end_layout
+
+\begin_layout Description
+Extracción: Es el proceso de obtener los datos desde el medio o fuente original,
+ estos pueden adquiridos desde un sensor si no se tienen ya registrados,
+ o realizar alguna consulta a alguna base de datos o archivo donde estén
+ contenidos.
+ Un ejemplo de extracción es la obtención del registro de todas las ventas
+ en un supermercado.
+\end_layout
+
+\begin_layout Description
+Transformación: Consiste en cambiar la forma de los datos, o su representación,
+ para hacerlos coincidir con la forma del almacén de datos que se desea
+ crear.
+ Por ejemplo eliminar el dígito verificador a los registros del RUT de los
+ clientes del supermercado.
+\end_layout
+
+\begin_layout Description
+Carga: Esta etapa radica en escribir los datos en el almacén de datos creado.
+ 
+\end_layout
+
+\begin_layout Standard
+Existen además actividades de apoyo a algunas de estas etapas.
+ En la extracción se describen las siguientes:
+\end_layout
+
+\begin_layout Description
+Captura
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+datos
+\begin_inset space ~
+\end_inset
+
+modificados: Consiste en solo extraer los datos que hayan cambiado o se
+ hayan agregado a la fuente después de la última extracción.
+\end_layout
+
+\begin_layout Description
+Puesta
+\begin_inset space ~
+\end_inset
+
+en
+\begin_inset space ~
+\end_inset
+
+escena: A veces no es eficiente transformar directamente los datos extraídos,
+ por lo que se opta por almacenarlos temporalmente para su posterior transformac
+ión.
+\end_layout
+
+\begin_layout Standard
+Para la etapa de transformación también existen actividades que apoyan esta
+ labor, algunas de ellas son:
+\end_layout
+
+\begin_layout Description
+Validación: Es la verificación de que los datos de origen sean correctos
+ y consistentes.
+ Los datos que no lo sean pueden ser filtrados.
+\end_layout
+
+\begin_layout Description
+Limpieza: Consiste en el proceso de modificar para corregir los datos inválidos.
+\end_layout
+
+\begin_layout Description
+Decodificación: A veces los datos de origen no son aptos para mostrarlos
+ en reportes, por lo tanto se deben modificar y hacer entendibles para el
+ usuario final.
+\end_layout
+
+\begin_layout Description
+Agregación: Para aumentar el rendimiento en consultas que deban procesar
+ gran cantidad de datos se prefiere agregarlos, esto es realizar operaciones
+ para un conjunto de datos tratando de explicar el conjunto en su totalidad.
+ Por ejemplo calcular promedios o sumas de elementos comunes.
+ Esta actividad puede realizarse en la etapa de transformación, para que
+ el análisis tenga un rendimiento superior.
+\end_layout
+
+\begin_layout Description
+Identificación: Consiste en generar y administrar nuevas claves primarias
+ e indices para el almacén de datos.
+ Al transformarse los datos y llevarlos a dimensiones o crear tablas de
+ hechos, deben crearse a veces nuevas claves identificadoras.
+\end_layout
+
+\begin_layout Standard
+En la etapa de carga se encuentran las siguientes actividades que apoyan
+ el proceso:
+\end_layout
+
+\begin_layout Description
+Carga
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+tablas
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+hechos: Consiste en crear y llenar las tablas de hechos (Fact Tables).
+ Se pueden crear nuevas filas en el almacén de datos o también modificar
+ las existentes.
+\end_layout
+
+\begin_layout Description
+Carga
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+tablas
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+dimensión: Al crear nuevas filas de hechos puede también ser necesaria la
+ creación o modificación de las tablas de dimensiones.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/EtapasAIDA.png
+	lyxscale 80
+	width 80line%
+
+\end_inset
+
+t
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Etapas-del-AIDA"
+
+\end_inset
+
+Etapas del AIDA
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Procesamiento Analítico En Línea (OLAP)
+\end_layout
+
+\begin_layout Standard
+Existen variadas formas de realizar un análisis de los datos.
+ Específicamente en este proyecto se utilizará el análisis en línea relacional.
+ La literatura nos presenta tres tipos de análisis OLAP, estos son el análisis
+ multidimensional MOLAP, el relacional ROLAP y el híbrido entre las dos
+ anteriores HOLAP.
+\end_layout
+
+\begin_layout Description
+Análisis
+\begin_inset space ~
+\end_inset
+
+MOLAP: Las tablas del almacén de datos son multidimensionales.
+ La aplicación MOLAP consta de dos partes: las tablas multidimensionales
+ (que son de tipo propietarias) y el motor de procesamiento.
+ Su ideal es la eficiencia de conservar la información desde antes en dimensione
+s.
+ Su característica principal es el alto desempeño.
+\end_layout
+
+\begin_layout Description
+Análisis
+\begin_inset space ~
+\end_inset
+
+ROLAP: Dado el uso masivo de las bases de datos relacionales, la corriente
+ de pensamiento ROLAP cree que las dimensiones pueden ser guardadas como
+ relaciones entre ellas.
+ De aquí nacen los esquemas de almacén de datos tales como el estrella o
+ el copo de nieve.
+ Es el análisis de moda en la actualidad por su facilidad de uso y la proliferac
+ión de ambientes de código abierto.
+ Se caracteriza por tener alta escalabilidad.
+\end_layout
+
+\begin_layout Description
+Análisis
+\begin_inset space ~
+\end_inset
+
+HOLAP: De desarrollo mas reciente, combina las dos visiones anteriormente
+ descritas.
+ Obtiene por lo tanto las ventajas de ellas, gran escalabilidad y desempeño.
+\end_layout
+
+\begin_layout Subparagraph
+Cubos, Esquemas, Dimensiones y Medidas
+\end_layout
+
+\begin_layout Standard
+El analisis ROLAP se basa en unidades fundamentales llamadas dimensiones.
+ Éstas representan un elemento abstracto que modela la realidad a analizar.
+ Dependiendo del problema pueden resultar diferentes dimensiones o ser agregadas
+ o modificadas en el camino.
+ Básicamente son tablas en una base de datos que agrupan características
+ que el desarollador del análisis considera que pertenecen a una entidad
+ en particular.
+\end_layout
+
+\begin_layout Standard
+Las dimensiones a veces pueden relacionarse con otras dimensiones.
+ Para estos casos se debe definir qué esquema seguirá el almacén de datos.
+ Existen esquemas famosos tales como el estrella o el copo de nieve, mostrados
+ en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Esquemas-de-almacén"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En las tablas de hechos, existen descripciones de cada hecho.
+ Estas descripciones son llamadas medidas.
+ Las medidas son generalmente un dato del tipo numérico que representa la
+ medida cualitativa o cuantitativa de la fila.
+ Estos datos son los que se agrupan o agregan cuando se analizan los datos
+ mediante ROLAP.
+\end_layout
+
+\begin_layout Standard
+Todas estas entidades vistas anteriormente se integran entre sí formando
+ lo que se denomina un cubo, que puede poseer tres o más dimensiones.
+ Las 
+\begin_inset Quotes fld
+\end_inset
+
+caras
+\begin_inset Quotes frd
+\end_inset
+
+ de este cubo son las dimensiones que se generaron en el almacén y cada
+ dimensión es comparada con la otra intersectándose en las medidas.
+ Una apreciación es que el cubo puede estar formado por dimensiones anidadas
+ por lo que solamente en el esquema de estrella cada cara corresponde a
+ una dimensión.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/Esquemas DW.png
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Esquemas-de-almacén"
+
+\end_inset
+
+Esquemas de almacén de datos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Minería de Datos
+\end_layout
+
+\begin_layout Standard
+La minería de datos despierta gran interés, ya que al tener como objetivo
+ la obtención de conocimiento desconocido o predecir el futuro parece a
+ muchos podría parecer beneficioso.
+ El término en si es utilizado indistintamente si se trata de máquinas de
+ aprendizaje o de minería de datos en sí, aunque las máquinas de aprendizaje
+ como concepto abarque un espectro mayor.
+ Como definición de minería de datos se puede exponer que es:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes fld
+\end_inset
+
+el proceso no trivial de identificar patrones válidos, novedosos, potencialmente
+ útiles y que en ultima instancia sean entendibles
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Fayyad1996"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una vez identificado los patrones descritos por el autor, se debe entrenar
+ una máquina que permita realizar predicciones basadas en las características
+ encontradas.
+ Las predicciones pueden ser del tipo clasificación o de estimación de un
+ valor futuro.
+ Las herramientas que permiten este aprendizaje automático son los arboles
+ de decisión, las maquinas de soporte vectorial (SVM) o las redes neuronales
+ artificiales (ANN), entre otras.
+\end_layout
+
+\begin_layout Paragraph
+Identificación de Patrones
+\end_layout
+
+\begin_layout Standard
+El reconocimiento o identificación de patrones tiene una larga y respetable
+ historia en la ingeniería, especialmente aplicada en lo militar.
+ Pero el alto costo del hardware para extraer los datos y computar las respuesta
+s la han hecho, por muchos años, una rama preferida sólo por especialistas.
+ Los avances del hardware en los últimos años han hecho que la aplicabilidad
+ del éste se extienda.
+ En esencia el reconocimiento de patrones trata de cubrir la siguiente problemát
+ica:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes fld
+\end_inset
+
+Dado algunos ejemplos de señales complejas y las decisiones correctas para
+ ellas, realizar decisiones automáticamente para un flujo de ejemplos futuros
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ripley2000"
+
+\end_inset
+
+(traducción propia)
+\end_layout
+
+\begin_layout Standard
+Pero en la vida diaria los humanos realizan el reconocimiento de patrones,
+ y sin darse cuenta hacen una clasificación o identificación de las cosas
+ por su propia experiencia pasada.
+ Ejemplo de las cosas que realizan los humanos son:
+\end_layout
+
+\begin_layout Itemize
+Reconocer caras que no hemos visto en mucho tiempo.
+\end_layout
+
+\begin_layout Itemize
+Cuando se es bebé se reconoce a la madre por su olor.
+\end_layout
+
+\begin_layout Itemize
+Identificar tipos de flores, animales y plantas.
+\end_layout
+
+\begin_layout Itemize
+Clasificar basura de lo que no es basura.
+\end_layout
+
+\begin_layout Standard
+La ciencia, la tecnología y los negocios también hacen lo suyo, incluyendo:
+\end_layout
+
+\begin_layout Itemize
+Detectar células anormales en el cuello uterino.
+\end_layout
+
+\begin_layout Itemize
+Identificar criminales mediante su huella dactilar o examen de ADN.
+\end_layout
+
+\begin_layout Itemize
+Identificar servicios que se encuentran cerca de su ubicación (Realidad
+ aumentada en dispositivos móviles).
+\end_layout
+
+\begin_layout Itemize
+Clasificar a los clientes por su riesgo de endeudamiento futuro.
+\end_layout
+
+\begin_layout Standard
+Los seres humanos pueden realizar algunas de las tareas bastante bien, pero
+ la presión tecnológica lleva a crear máquinas que puedan realizar las tareas
+ de forma más rápida y precisa.
+ El reconocimiento de patrones entonces, ayuda en la disciplina de construir
+ esas máquinas.
+ Fukunaga en el año 1990 dijo: 
+\end_layout
+
+\begin_layout Quote
+\begin_inset Quotes fld
+\end_inset
+
+Se siente que la toma de decisiones por parte de los humanos tiene algo
+ que ver con el reconocimiento de patrones; por ejemplo, el siguiente movimiento
+ en un juego de ajedrez está dado por la posición actual de la pieza, pero
+ la compra de calcetines está dada por un patrón mucho más complejo de informaci
+ón.
+ El objetivo de la investigación en el campo del reconocimiento de patrones
+ es clarificar esos mecanismos complejos de toma de decisiones y automatizar
+ esas funciones usando computadores.
+ Sin embargo, dada la naturaleza compleja del problema, la investigación
+ se ha centrado en problemas mas realistas, como la identificación de caracteres
+ en Latín y la clasificación de formas de onda.
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Fukunaga1990"
+
+\end_inset
+
+(traducción propia)
+\end_layout
+
+\begin_layout Standard
+Dado que los humanos pueden realizar estas tareas, incluso mejor que las
+ máquinas, es que se ha generado un gran interés en descubrir como funciona
+ el cerebro humano.
+ De aquí nacen las Redes Neuronales Artificiales, que tienen sus raíces
+ en la biología.
+ Existen también otros modelos que nacen de las ciencias matemáticas tales
+ como las Máquinas de Soporte Vectorial y las basadas en la matemática discreta
+ como la Lógica Difusa que ayudan a que el aprendizaje automático y la clasifica
+ción se desarrolle de una mejor manera.
+\end_layout
+
+\begin_layout Standard
+Para las máquinas de aprendizaje automático el reconocimiento de patrones
+ es la asignación, dado un valor de entrada, de una etiqueta a un valor
+ de salida dado, siguiendo algún algoritmo en específico.
+ Ejemplos de reconocimiento de patrones son la clasificación, el agrupamiento
+ o clustering, regresión y el etiquetado secuencial.
+\end_layout
+
+\begin_layout Standard
+El reconocimiento de patrones, usualmente es categorizado dependiendo del
+ tipo de aprendizaje que se usa para generar los datos de salida, existiendo
+ hasta ahora, tres tipos de aprendizaje: supervisado, no supervisado y semisuper
+visado.
+ El aprendizaje supervisado asume que los datos de entrenamiento han sido
+ debidamente etiquetados con la salida correcta.
+ Esto quiere decir que por ejemplo en clasificación, los datos de entrenamiento
+ son etiquetados con la clase correcta, antes de someter a la maquina al
+ proceso de entrenamiento.
+ Mientras que en el aprendizaje no supervisado, se tienen datos no etiquetados
+ y se trata de encontrar patrones intrínsecos en los datos, que pueden ser
+ ocupados después para la correcta salida de las nuevas instancias.
+ Cabe destacar que en este tipo de aprendizaje no existen datos de entrenamiento
+, por lo tanto los datos que deben ser etiquetados podría decirse que son
+ los datos de entrenamiento.
+ Existe también un híbrido entre estos dos tipos de aprendizaje, que simplemente
+ ocupa un grupo de datos etiquetados y otro grupo no etiquetado, usualmente
+ siendo este ultimo grupo mucho más grande que el primero.
+\end_layout
+
+\begin_layout Paragraph
+La tarea de reconocer patrones
+\end_layout
+
+\begin_layout Standard
+Exceptuando el aprendizaje no supervisado, se tiene un conjunto de clases
+ predeterminadas, y al tener estas clases previamente definidas podríamos
+ pensar en un tipo de oráculo que pudiese etiquetar cada ejemplo que se
+ le presente.
+ Cuando se recibe un ejemplo o instancia, se realizan algunas mediciones
+ que se conocen como 
+\emph on
+características
+\emph default
+.
+ Esos datos son introducidos a la maquina reconocedora de patrones llamada
+ 
+\emph on
+clasificador
+\emph default
+.
+ El clasificador, al procesar éstas características podría responder de
+ la siguiente manera:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+Este ejemplo es de la clase X
+\begin_inset Quotes frd
+\end_inset
+
+ o
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+Este ejemplo no pertenece a ninguna de las clases dadas
+\begin_inset Quotes frd
+\end_inset
+
+ o
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes fld
+\end_inset
+
+Este ejemplo es muy difícil para mí
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los datos de la segunda respuesta son llamados 
+\emph on
+outliers
+\emph default
+ o 
+\emph on
+datos atípicos
+\emph default
+, y los de la tercera 
+\emph on
+rechazos
+\emph default
+ o reportes dudosos.
+ Ambos son muy importantes en las aplicaciones.
+ Ésto porque los rechazos necesitan un proceso de clasificación mas costoso
+ o hasta un juicio experto.
+\end_layout
+
+\begin_layout Subparagraph
+Patrones y Modelos
+\end_layout
+
+\begin_layout Standard
+A menudo estos dos términos son confundidos, pero existe una gran diferencia
+ entre ellos, se intentará explicar a continuación la diferencia entre estos
+ dos términos.
+\end_layout
+
+\begin_layout Standard
+Un modelo es una descripción global, de alto nivel, de un conjunto de datos.
+ Puede ser descriptivo, resumiendo los datos en una forma conveniente y
+ concisa; o puede ser inferencial, permitiendo realizar alguna afirmación
+ acerca de la población desde donde se extrajeron los datos, o de realizar
+ pronósticos.
+ Entre las formas básicas de modelos se encuentran los modelos de regresión
+ lineal, los modelos mixtos y los modelos de Markov.
+\end_layout
+
+\begin_layout Standard
+En cambio, un patrón es 
+\begin_inset Quotes fld
+\end_inset
+
+una característica local de los datos, probablemente contenidos por sólo
+ algunos registros y/o variables
+\begin_inset Quotes frd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hand2001"
+
+\end_inset
+
+.
+ Un ejemplo de lo que es un patrón puede ser una característica estructural
+ en un espacio n-dimensional, como una brecha en una función de densidad,
+ o un punto de inflexión en una curva de regresión.
+ A menudo los patrones despiertan gran interés, porque representan desviaciones
+ en la forma normal que se comportan los datos: un par de variables que
+ tienen una extraña alta correlación , una pequeña cantidad de objetos que
+ tienen valores muy altos en una variable, un grupo de registros que siempre
+ tienen el mismo valor en las mismas variables, etc.
+ Así como con los modelos, se desean encontrar patrones para razones descriptiva
+s o inferenciales.
+ Ejemplos de patrones son las ondas transientes en un examen EEG, productos
+ que los clientes siempre compran juntos, o datos anormales en una base
+ de datos de manufactura de repuestos electrónicos.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsection
+Marco Referencial
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Marco-Referencial"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Siempre que se comienza una investigación es importante revisar en la literatura
+ si es que lo que se está investigando ya no ha sido realizado por alguien
+ anteriormente, es por esto que se deben recopilar y estudiar las investigacione
+s que se relacionen con el tema para también poder basarse en lo ya estudiado
+ por éstas y no reinventar la rueda.
+ Es por esto que es necesario a continuación describir los estudios realizados
+ sobre el tema que se han encontrado durante el transcurso de la investigación.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Determinantes de desempeño universitario.
+ ¿Importa la habilidad relativa?
+\end_layout
+
+\begin_layout Standard
+Este estudio fue realizado por Dante Contreras, perteneciente al Departamento
+ de Economía de la Universidad de Chile; Sebastián Gallegos del Departamento
+ de Estudios del Ministerio de Educación y Francisco Meneses procedente
+ de la Universidad de Wisconsin-Madison y del Banco Central de Chile en
+ el año 2009.
+\end_layout
+
+\begin_layout Standard
+La investigación examinó si el haber tenido un buen desempeño relativo en
+ el colegio de egreso de enseñanza media es un buen predictor de rendimiento
+ universitario.
+ La motivación de este trabajo fue revisar si una medida de habilidad relativa
+ podía entregar información relevante y adicional respecto de las proyecciones
+ académicas de los estudiantes, que no aporten los instrumentos de la batería
+ de selección actualmente en uso.
+\end_layout
+
+\begin_layout Standard
+Se examinó la relación entre el desempeño académico de los estudiantes de
+ primer año en cuatro universidades - Pontificia Universidad Católica de
+ Valparaíso, Universidad Católica de Temuco, Universidad Finis Terrae y
+ Universidad de Santiago - y los instrumentos de selección tradicionalmente
+ usados.
+ Luego, se incluyó una medida de habilidad relativa, el ranking de egreso
+ del alumno en su colegio, como un predictor de rendimiento adicional.
+ Ello entregó evidencia respecto de cómo rendirían los alumnos con un determinad
+o ranking en la universidad, condicional a haber ingresado bajo el sistema
+ de selección tradicional.
+ Este análisis permuto tener una evaluación ex-ante de una política de acceso
+ a la educación superior que considere al ranking de egreso como un instrumento
+ de selección.
+\end_layout
+
+\begin_layout Standard
+También se analizó el rendimiento de alumnos ingresados mediante un sistema
+ especial (o “cupos supernumerarios”) a la universidad.
+ Estos cupos se entregaron a los alumnos que, perteneciendo al 5% de mejor
+ rendimiento de su colegio de egreso, hubiesen quedado marginalmente por
+ debajo del punto de corte de la carrera a la que postularon.
+ Lo anterior entrega evidencia acerca del desempeño escolar relativo ex
+ – post.
+\end_layout
+
+\begin_layout Standard
+Los resultados indican que haber estado entre los mejores estudiantes de
+ la escuela de egreso implica un mejor desempeño universitario en el primer
+ año, aún controlando por los puntajes obtenidos en las PSU y las NEM para
+ cada carrera.
+ También se demostró que los estudiantes que ingresan por cupos supernumerarios
+ obtienen rendimientos estadísticamente iguales en el primer año cuando
+ se controla por el puntaje de ingreso a cada carrera en dos de las tres
+ universidades.
+ Es decir, los alumnos que ingresan por el sistema especial siguen un patrón
+ de rendimiento similar o levemente superior en el primer nivel universitario,
+ que aquellos que ingresan por la vía tradicional.
+ Los alumnos que ingresaron bajo los cupos supernumerarios, tuvieron un
+ rendimiento igual o superior a lo que su puntaje de ingreso a la universidad
+ hubiese predicho.
+\end_layout
+
+\begin_layout Subsubsection
+Búsqueda de patrones de rendimiento académico mediante técnicas de análisis
+ multivariante.
+ Aplicación a E4.
+\end_layout
+
+\begin_layout Standard
+Esta investigación fue efectuada por Antonio Rúa de la Universidad Pontificia
+ de Comillas en Madrid, en el año 2001.
+ Se aplicó el estudio a los alumnos de 1º de E4 de la carrera de Ciencias
+ Empresariales Internacionales impartida en la Facultad de Ciencias Económicas
+ y Empresariales de la Universidad Pontificia Comillas de Madrid.
+ El conjunto de datos se corresponde con las notas obtenidas en la convocatoria
+ de junio del curso 1999-2000.
+ Debe aclararse que para evitar la perdida de datos a aquellos alumnos que
+ no se presentaron al examen en convocatoria ordinaria se le adjudicó una
+ nota de 0.
+ Se partió de una matriz de datos constituida por las observaciones de las
+ notas obtenidas en las asignaturas cursadas (recogidas en columnas) por
+ los distintos alumnos del mismo curso (recogidos en filas).
+ 
+\end_layout
+
+\begin_layout Standard
+A partir de técnicas estadísticas de análisis multivariante se ha podido
+ constatar la existencia de una estructura subyacente dentro del conjunto
+ de todas las asignaturas cursadas por los alumnos de 1º de E4.
+ Esta estructura queda plasmada a través de cuatro factores básicos e intrínseco
+s a la carrera seguida (Factor Cuantitativo, Factor Lingüístico Humanístico,
+ Factor Empresarial y Factor 2º Idioma).
+ Asimismo, a partir de estos factores y mediante un análisis de conglomerados
+ se han encontrado ocho tipologías o patrones de comportamiento de los alumnos
+ en relación con su rendimiento académico, a saber: buen rendimiento académico,
+ situaciones atípicas, rendimientos académicos pésimos, rendimientos académicos
+ malos, rendimientos académicos que destacan en alguna faceta y rendimiento
+ académico normal.
+ 
+\end_layout
+
+\begin_layout Standard
+Mediante un análisis factorial se ha podido encontrar que en el conjunto
+ global de todas las asignaturas cursadas por los alumnos existía una estructura
+ subyacente que ha podido ser explicada a través de 4 factores comunes (Factor
+ Cuantitativo, Factor Lingüístico Humanístico, Factor Empresarial y Factor
+ 2º Idioma), cada uno de los cuales incide en las cuatro vertientes que
+ cabe destacar en 1º curso de E4: vertiente cuantitativa, Humanística, Empresari
+al e Idioma · Mediante un análisis de conglomerados se han encontrado ocho
+ tipologías académicas, es decir, los 65 alumnos se ha repartido en 8 conglomera
+dos con características netamente diferenciadas.
+ Las tipologías encontradas se pueden corresponder con los siguientes patrones
+ de comportamiento: buen rendimiento académico, situaciones atípicas, rendimient
+os académicos pésimos, rendimientos académicos malos, rendimientos académicos
+ que destacan en alguna faceta y rendimiento académico normal.
+\end_layout
+
+\begin_layout Standard
+La mayoría de los alemanes del Programa Alemán Alemán se encuentran encuadrados
+ dentro del conglomerado 1, esto es, el que mejores resultados presenta.
+ · El 50% de los alumnos del Programa Francés Francés se encuentran dentro
+ del conglomerado 8, es decir, el conglomerado donde los alumnos van aprobando
+ aunque sin grandes alardes.
+ El resto de los alumnos de este programa se encuentran dentro de otros
+ conglomerados, en los que han obtenido resultados bastante pésimos, lo
+ que provoca que en conjunto dicho programa sea el que salga peor parado,
+ y proporcione los peores resultados.
+ · El programa Hispano-Americano se encuentra repartido entre los conglomerados
+ 1, 5, 6 y 7 y la mayor parte de los alumnos del Programa Hispano-Alemán
+ están en el conglomerado, seguido del conglomerado 1.
+ Consideramos que el trabajo planteado puede resultar de gran interés para
+ todo el colectivo de profesores, en cuanto que permite identificar patrones
+ de comportamiento claramente diferenciados, y en muchos casos analizar
+ las causas que han provocado tal configuración, pudiendo resultar útil
+ como medida preventiva cara a cursos futuros.
+\end_layout
+
+\begin_layout Subsubsection
+Estudio de validez predictiva de la PSU y comparación con el sistema PAA
+\end_layout
+
+\begin_layout Standard
+Este trabajo fue realizado en el marco de la tesis de magíster de Sebastián
+ Prado, de la Universidad de Chile el año 2008.
+ Analizó la validez predictiva del Sistema PSU, en el ámbito de las carreras
+ de ingeniería civil de dos universidades: la U.
+ de Chile y la Pontificia U.
+ Católica de Chile, mediante la estimación del rendimiento del primer año
+ en la universidad.
+ Además, a partir de este estudio se estableció una comparación con el sistema
+ PAA.
+ Los datos utilizados correspondieron a información de los alumnos de primer
+ año de las promociones desde el 2001 al 2006 ingresados a la carrera de
+ ingeniería civil en las universidades señaladas.
+\end_layout
+
+\begin_layout Standard
+Uno de los principales resultados obtenidos es que la validez predictiva
+ de la PSU, para ingeniería civil en la PUC, es mucho menor a la reportada
+ en un estudio previo encargado por el Consejo de Rectores.
+ Por otro lado, se encuentra que el porcentaje de varianza explicado es
+ sensible a la nota de reprobación de los alumnos.
+ Además, para esta casa de estudios, se observa que el número de alumnos
+ que ingresaban a través de la PSU y reprobaban todos sus ramos, era mayor
+ en un 2% a los alumnos ingresados vía PAA y que reprobaban todas las asignatura
+s de primer año.
+ Los resultados presentados fueron robustos a controles por diferencias
+ en la dificultad de los cursos que enfrentan los alumnos, variabilidad
+ en la cantidad de alumnos admitidos año a año, diferencias en las escalas
+ de transformación de puntajes entre ambos sistemas de selección.
+ La implementación de los test de robustez mencionados y la utilización
+ de información de los alumnos adicional a las pruebas (demográfica, socioeconóm
+ica y de los colegios de procedencia) en la estimación del rendimiento,
+ constituyen las principales diferencias con el estudio citado.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,100 @@
+
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{fancybox}
+\usepackage{xcolor}
+\usepackage{color}  
+%\usepackage[ps2pdf,bookmarks,urlcolor=blue,citecolor=blue,linkcolor=blue,%
+%           pagecolor=blue,colorlinks,hyperfigures]{hyperref}
+
+
+
+
+%\renewcommand
+
+%=============================================================================
+% Redefining paragraph
+
+
+\makeatletter % needed to recognize '@' as a normal char
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\z@}{-3.25ex \@plus
+-1ex \@minus -.2ex}{1.5ex \@plus .2ex}{\normalfont\normalsize\bfseries}}
+\makeatother % needed to recognize '@' as a special char
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{3}
+
+
+%=============================================================================
+% Document
+
+\begin{document}
+
+\renewcommand{\listtablename}{Lista de tablas} 
+
+
+\thispagestyle{empty}
+\input{Portada/portada.tex}
+
+\newpage
+\pagenumbering{roman}
+
+%%=============================================================================
+%% Abstract
+
+\input{Resumen/resumen.tex}
+\newpage
+
+%%=============================================================================
+%% Table of Contents
+
+
+\tableofcontents
+\newpage
+
+
+%%=============================================================================
+%% Table of Contents
+
+%\renewcommand{listfigurename}{Lista de Figuras} 
+\listoffigures
+\newpage
+
+%%=============================================================================
+%% Table of Contents
+
+
+\listoftables
+\newpage
+
+%%=============================================================================
+%% Body of the document
+
+\pagenumbering{arabic}
+
+\section{Introducción}\label{sec:introduccion}
+  \input{Introduccion/introduccion.tex}
+  \newpage
+
+ \section{Capítulo 1}\label{sec:cap1}
+   \input{Capitulo_1/capitulo_1.tex}
+   \newpage
+
+ \section{Capítulo 2}\label{sec:cap1}
+   \input{Capitulo_2/capitulo_2.tex}
+   \newpage
+
+% 
+% \section{Conclusión}\label{sec:conclusions}
+%   \input{Conclusion/conclusion.tex}
+%   \newpage
+
+%%=============================================================================
+%% Biblio
+
+\bibliographystyle{alpha}
+\bibliography{bibliography}	
+
+
+\end{document}
