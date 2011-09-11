@@ -8215,3 +8215,10 @@
 2011/09/05 5:54:00	[es_90] JUnit Test	fa9bae7c-d7a4-11e0-9bfc-6d8f0c79598c	1315216439895.analysisview.xaction	PivotViewComponent	rbocazl	component_execution_ended	end			0.03500000014901161
 2011/09/05 5:54:00	[es_90] JUnit Test	fa9bae7c-d7a4-11e0-9bfc-6d8f0c79598c	1315216439895.analysisview.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	rbocazl	action_sequence_end	end			0.035999998450279236
 2011/09/05 5:54:00	[es_90] JUnit Test	0C1CB94C5294668F97143D7E821B4806	1315216439895.analysisview.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	rbocazl	instance_end	fa9bae7c-d7a4-11e0-9bfc-6d8f0c79598c			0.041999999433755875
+2011/09/11 3:32:48	Global startup actions	system session	global-department-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	system session	instance_start	3fba39e2-dc48-11e0-91d0-0b45718ccbc7			0.0
+2011/09/11 3:32:48	Global startup actions	3fba39e2-dc48-11e0-91d0-0b45718ccbc7	global-department-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	system session	action_sequence_start	start			0.0
+2011/09/11 3:32:49	Global startup actions	3fba39e2-dc48-11e0-91d0-0b45718ccbc7	global-department-list.xaction	SQLLookupRule	system session	component_execution_started	start			0.0
+2011/09/11 3:32:49	Global startup actions	3fba39e2-dc48-11e0-91d0-0b45718ccbc7	global-department-list.xaction	SQLLookupRule	system session	component_execution_ended	end			0.052000001072883606
+2011/09/11 3:32:49	Global startup actions	3fba39e2-dc48-11e0-91d0-0b45718ccbc7	global-department-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	system session	action_sequence_end	end			0.05900000035762787
+2011/09/11 3:32:49	Global startup actions	system session	global-department-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	system session	instance_end	3fba39e2-dc48-11e0-91d0-0b45718ccbc7			0.3959999978542328
+2011/09/11 3:35:05		7ED29B18FD8A7BECDA0EB7E1CE70F935		org.pentaho.platform.web.http.session.PentahoHttpSession		session_start				0.0

@@ -786,51 +786,6 @@ Análisis de las causas de algún fenómeno social.
 \end_layout
 
 \begin_layout Paragraph
-¿Por qué inteligente?
-\end_layout
-
-\begin_layout Standard
-En el proceso de la extracción de la estructura que subyace en los datos
- y en el entendimiento lo que está sucediendo, se aplican en forma reiterada
- diversos métodos, técnicas y se usan diversas herramientas.
- Para refinar las preguntas que el investigador trata de responder se requiere
- de una metodología clara, pero por sobre todo inteligencia.
- El análisis inteligente de datos no es un método sistemático de aplicación
- de las herramientas análisis de datos y de minería de datos.
- No pretende ser un camino aleatorio a través de las técnicas de análisis
- y los métodos estadísticos, sino que 
-\begin_inset Quotes fld
-\end_inset
-
-Un proceso cuidadosamente planeado para decidir lo que será más útil y revelador
-\begin_inset Quotes frd
-\end_inset
-
-
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Según el curso 
-\begin_inset Quotes fld
-\end_inset
-
-Análisis Inteligente de Datos
-\begin_inset Quotes frd
-\end_inset
-
-.
- Dr.
- Héctor Alllende.
- UTSFM
-\end_layout
-
-\end_inset
-
- para el investigador y la investigación en sí.
-\end_layout
-
-\begin_layout Paragraph
 Etapas del Análisis Inteligente de Datos
 \end_layout
 
@@ -1251,290 +1206,234 @@ key "Fayyad1996"
 
 \end_layout
 
-\begin_layout Paragraph
-Identificación de Patrones
-\end_layout
-
 \begin_layout Standard
-El reconocimiento o identificación de patrones tiene una larga y respetable
- historia en la ingeniería, especialmente aplicada en lo militar.
- Pero el alto costo del hardware para extraer los datos y computar las respuesta
-s la han hecho, por muchos años, una rama preferida sólo por especialistas.
- Los avances del hardware en los últimos años han hecho que la aplicabilidad
- del éste se extienda.
- En esencia el reconocimiento de patrones trata de cubrir la siguiente problemát
-ica:
-\end_layout
-
-\begin_layout Quotation
-\begin_inset Quotes fld
-\end_inset
-
-Dado algunos ejemplos de señales complejas y las decisiones correctas para
- ellas, realizar decisiones automáticamente para un flujo de ejemplos futuros
-\begin_inset Quotes frd
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Ripley2000"
-
-\end_inset
-
-(traducción propia)
-\end_layout
-
-\begin_layout Standard
-Pero en la vida diaria los humanos realizan el reconocimiento de patrones,
- y sin darse cuenta hacen una clasificación o identificación de las cosas
- por su propia experiencia pasada.
- Ejemplo de las cosas que realizan los humanos son:
-\end_layout
-
-\begin_layout Itemize
-Reconocer caras que no hemos visto en mucho tiempo.
-\end_layout
-
-\begin_layout Itemize
-Cuando se es bebé se reconoce a la madre por su olor.
-\end_layout
-
-\begin_layout Itemize
-Identificar tipos de flores, animales y plantas.
-\end_layout
-
-\begin_layout Itemize
-Clasificar basura de lo que no es basura.
-\end_layout
-
-\begin_layout Standard
-La ciencia, la tecnología y los negocios también hacen lo suyo, incluyendo:
-\end_layout
-
-\begin_layout Itemize
-Detectar células anormales en el cuello uterino.
-\end_layout
-
-\begin_layout Itemize
-Identificar criminales mediante su huella dactilar o examen de ADN.
-\end_layout
-
-\begin_layout Itemize
-Identificar servicios que se encuentran cerca de su ubicación (Realidad
- aumentada en dispositivos móviles).
-\end_layout
-
-\begin_layout Itemize
-Clasificar a los clientes por su riesgo de endeudamiento futuro.
-\end_layout
-
-\begin_layout Standard
-Los seres humanos pueden realizar algunas de las tareas bastante bien, pero
- la presión tecnológica lleva a crear máquinas que puedan realizar las tareas
- de forma más rápida y precisa.
- El reconocimiento de patrones entonces, ayuda en la disciplina de construir
- esas máquinas.
- Fukunaga en el año 1990 dijo: 
-\end_layout
-
-\begin_layout Quote
-\begin_inset Quotes fld
-\end_inset
-
-Se siente que la toma de decisiones por parte de los humanos tiene algo
- que ver con el reconocimiento de patrones; por ejemplo, el siguiente movimiento
- en un juego de ajedrez está dado por la posición actual de la pieza, pero
- la compra de calcetines está dada por un patrón mucho más complejo de informaci
-ón.
- El objetivo de la investigación en el campo del reconocimiento de patrones
- es clarificar esos mecanismos complejos de toma de decisiones y automatizar
- esas funciones usando computadores.
- Sin embargo, dada la naturaleza compleja del problema, la investigación
- se ha centrado en problemas mas realistas, como la identificación de caracteres
- en Latín y la clasificación de formas de onda.
-\begin_inset Quotes frd
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Fukunaga1990"
-
-\end_inset
-
-(traducción propia)
-\end_layout
-
-\begin_layout Standard
-Dado que los humanos pueden realizar estas tareas, incluso mejor que las
- máquinas, es que se ha generado un gran interés en descubrir como funciona
- el cerebro humano.
- De aquí nacen las Redes Neuronales Artificiales, que tienen sus raíces
- en la biología.
- Existen también otros modelos que nacen de las ciencias matemáticas tales
- como las Máquinas de Soporte Vectorial y las basadas en la matemática discreta
- como la Lógica Difusa que ayudan a que el aprendizaje automático y la clasifica
-ción se desarrolle de una mejor manera.
-\end_layout
-
-\begin_layout Standard
-Para las máquinas de aprendizaje automático el reconocimiento de patrones
- es la asignación, dado un valor de entrada, de una etiqueta a un valor
- de salida dado, siguiendo algún algoritmo en específico.
- Ejemplos de reconocimiento de patrones son la clasificación, el agrupamiento
- o clustering, regresión y el etiquetado secuencial.
-\end_layout
-
-\begin_layout Standard
-El reconocimiento de patrones, usualmente es categorizado dependiendo del
- tipo de aprendizaje que se usa para generar los datos de salida, existiendo
- hasta ahora, tres tipos de aprendizaje: supervisado, no supervisado y semi
- supervisado.
- El aprendizaje supervisado asume que los datos de entrenamiento han sido
- debidamente etiquetados con la salida correcta.
- Esto quiere decir que por ejemplo en clasificación, los datos de entrenamiento
- son etiquetados con la clase correcta, antes de someter a la maquina al
- proceso de entrenamiento.
- Mientras que en el aprendizaje no supervisado, se tienen datos no etiquetados
- y se trata de encontrar patrones intrínsecos en los datos, que pueden ser
- ocupados después para la correcta salida de las nuevas instancias.
- Cabe destacar que en este tipo de aprendizaje no existen datos de entrenamiento
-, por lo tanto los datos que deben ser etiquetados podría decirse que son
- los datos de entrenamiento.
- Existe también un híbrido entre estos dos tipos de aprendizaje, que simplemente
- ocupa un grupo de datos etiquetados y otro grupo no etiquetado, usualmente
- siendo este ultimo grupo mucho más grande que el primero.
+Por lo tanto, basándose en la definición anterior podemos decir que el proceso
+ de minería de datos debe tener una serie de caracteristicas.
+ Primero, los patrones que se deben identificar deben ser entendibles, por
+ lo tanto los resultados que se obtengan deben tener sentido.
+ Deben ser novedosos, esto quiere decir que digan algo que no se sabía con
+ anterioridad y que los resultados deben ser validos, dado un cierto contexto.
 \end_layout
 
 \begin_layout Paragraph
-La tarea de reconocer patrones
+El Proceso de Minería de Datos
 \end_layout
 
 \begin_layout Standard
-Exceptuando el aprendizaje no supervisado, se tiene un conjunto de clases
- predeterminadas, y al tener estas clases previamente definidas podríamos
- pensar en un tipo de oráculo que pudiese etiquetar cada ejemplo que se
- le presente.
- Cuando se recibe un ejemplo o instancia, se realizan algunas mediciones
- que se conocen como 
-\emph on
-características
-\emph default
+La minería de datos es un proceso, y tiene mucho en común con el análisis
+ inteligente de datos.
+ Existe un proceso documentado de minería de datos llamado CRoss Industry
+ Standard Process for Data Mining (CRISP-DM)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Una completa referencia a este estándar puede verse en http://www.crisp-dm.org
+\end_layout
+
+\end_inset
+
+ esquematizado en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Esquema-de-CRISP-DM"
+
+\end_inset
+
 .
- Esos datos son introducidos a la maquina reconocedora de patrones llamada
+ Al igual que en éste, los datos son la parte central del proceso.
+ Las actividades de entender el negocio, entender los datos y preparar los
+ datos son similares a las necesarias para construir un almacén de datos.
  
-\emph on
-clasificador
-\emph default
-.
- El clasificador, al procesar éstas características podría responder de
- la siguiente manera:
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Quotes fld
-\end_inset
-
-Este ejemplo es de la clase X
-\begin_inset Quotes frd
-\end_inset
-
- o
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Quotes fld
-\end_inset
-
-Este ejemplo no pertenece a ninguna de las clases dadas
-\begin_inset Quotes frd
-\end_inset
-
- o
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Quotes fld
-\end_inset
-
-Este ejemplo es muy difícil para mí
-\begin_inset Quotes frd
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-Los datos de la segunda respuesta son llamados 
+Las diferencias comienzan a notarse en la etapa de modelado.
+ El modelado consiste en considerar diferentes modelos y elegir el que mejor
+ se comporta.
+ El objetivo de la minería de datos no es explicar las posibles relaciones
+ entre los datos, sino que está enfocada en encontrar soluciones prácticas
+ para predecir ciertas salidas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/CrispDM.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Esquema-de-CRISP-DM"
+
+\end_inset
+
+Esquema de CRISP-DM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Herramientas de Minería de Datos
+\end_layout
+
+\begin_layout Standard
+La naturaleza predictiva de la minería de datos es la que la diferencia
+ del AIDA.
+ El AIDA se preocupa de el análisis de los datos históricos, y en comparar
+ objetivos con las medidas actuales.
+ La minería de datos provee herramientas para predecir estas medidas, con
+ algun grado de confianza.
+ Y las herramientas que utiliza son los modelos y los algoritmos.
+ Existen cuatro categorías que permiten realizar minería de datos: clasificación
+, asociación, 
 \emph on
-outliers
+clustering
 \emph default
- o 
-\emph on
-datos atípicos
-\emph default
-, y los de la tercera 
-\emph on
-rechazos
-\emph default
- o reportes dudosos.
- Ambos son muy importantes en las aplicaciones.
- Ésto porque los rechazos necesitan un proceso de clasificación mas costoso
- o hasta un juicio experto.
+ o agrupamiento y regresión
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bouman2009"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Subparagraph
-Patrones y Modelos
+Clasificación
 \end_layout
 
 \begin_layout Standard
-A menudo estos dos términos son confundidos, pero existe una gran diferencia
- entre ellos, se intentará explicar a continuación la diferencia entre estos
- dos términos.
+La clasificación es el proceso de separar o dividir el conjunto de datos
+ en grupos llamados clases.
+ Los miembros de cada clase deben ser homogéneos entre sí y heterogéneos
+ con respecto a los miembros de las otras clases.
+ La heterogeneidad y homogeneidad es definida como la distancia entre los
+ elementos.
+ Esta distancia es medida con respecto a la o las variables que se intentan
+ predecir.
+ 
 \end_layout
 
 \begin_layout Standard
-Un modelo es una descripción global, de alto nivel, de un conjunto de datos.
- Puede ser descriptivo, resumiendo los datos en una forma conveniente y
- concisa; o puede ser inferencial, permitiendo realizar alguna afirmación
- acerca de la población desde donde se extrajeron los datos, o de realizar
- pronósticos.
- Entre las formas básicas de modelos se encuentran los modelos de regresión
- lineal, los modelos mixtos y los modelos de Markov.
+La clasificación entonces es asignar una etiqueta o clase a una entrada
+ dado un conjunto de datos.
+ Se suele tener un conjunto de datos que se les conoce su clase y entrenar
+ el modelo con estos datos.
+ Un ejemplo de clasificación simple es la definición de a qué idioma pertenece
+ cierta palabra, teniendo un conjunto de palabras de las cuales ya se sabe
+ su idioma y poder predecir a qué idioma pertenece una nueva palabra no
+ incluida en los datos de entrenamiento.
+\end_layout
+
+\begin_layout Subparagraph
+Asociación
 \end_layout
 
 \begin_layout Standard
-En cambio, un patrón es 
-\begin_inset Quotes fld
-\end_inset
+La asociación consiste en encontrar cuál es la relacion entre dos o mas
+ elementos de un conjunto de datos.
+ Una aplicación de asociación comúnmente es la de los productos que se compran
+ juntos en un supermercado; el famoso ejemplo de la cerveza y los pañales.
+ La asociación explica correlaciones entre dos elementos pero no causalidad.
+\end_layout
 
-una característica local de los datos, probablemente contenidos por sólo
- algunos registros y/o variables
-\begin_inset Quotes frd
-\end_inset
+\begin_layout Subparagraph
+Clustering
+\end_layout
 
+\begin_layout Standard
+El 
+\emph on
+clustering
+\emph default
+ es similar a la clasificación.
+ Se trata de encontrar que elementos de un conjunto de datos comparten caracterí
+sticas comunes.
+ La diferencia está en que en el 
+\emph on
+clustering
+\emph default
+ no se sabe desde antes a qué clase pertenecen los datos de entrenamiento,
+ en cambio en la clasificación si.
+ 
+\end_layout
 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Hand2001"
+\begin_layout Standard
+Esta diferencia tambien se denomina aprendizaje supervisado y no supervisado.
+ Mientras que en la clasificación el entrenamiento es del tipo supervisado,
+ en el 
+\emph on
+clustering
+\emph default
+ es del tipo no supervisado y las clases las encuentra la misma herramienta.
+ En el aprendizaje no supervisado la herramienta de minería de datos solamente
+ encontrará grupos que comparten ciertas características y el investigador
+ será el encargado de definir cuales son las razones detrás de eso.
+\end_layout
 
-\end_inset
+\begin_layout Subparagraph
+Regresión
+\end_layout
 
-.
- Un ejemplo de lo que es un patrón puede ser una característica estructural
- en un espacio n-dimensional, como una brecha en una función de densidad,
- o un punto de inflexión en una curva de regresión.
- A menudo los patrones despiertan gran interés, porque representan desviaciones
- en la forma normal que se comportan los datos: un par de variables que
- tienen una extraña alta correlación , una pequeña cantidad de objetos que
- tienen valores muy altos en una variable, un grupo de registros que siempre
- tienen el mismo valor en las mismas variables, etc.
- Así como con los modelos, se desean encontrar patrones para razones descriptiva
-s o inferenciales.
- Ejemplos de patrones son las ondas transientes en un examen EEG, productos
- que los clientes siempre compran juntos, o datos anormales en una base
- de datos de manufactura de repuestos electrónicos.
+\begin_layout Standard
+La clasificación, 
+\emph on
+clustering
+\emph default
+ y asociación predicen clases especificas, que son valores nominales, es
+ decir no numéricos.
+ A menudo se requiere predecir una salida numérica basada en data histórica.
+ Esto presenta una mayor complejidad, ya que las posibilidades son infinitas,
+ tal como los números.
+ Existen diferentes formas de regresión tales como las lineales y las no
+ lineales.
+\end_layout
+
+\begin_layout Subparagraph
+Entrenamiento y Pruebas
+\end_layout
+
+\begin_layout Standard
+Estos dos términos a menudo son confundidos.
+ El entrenamiento es el proceso de construcción del modelo predictivo.
+ Para que la máquina aprenda es necesario entrenarla con un conjunto aleatorio
+ de datos y que tenga un tamaño considerable comparado con la totalidad
+ del conjunto de datos.
+ Las pruebas, en cambio, son las actividades que verifican la validez o
+ calidad del modelo construido.
+ La data usada para estas dos actividades no debe ser la misma.
+ El tamaño del conjunto de entrenamiento debería ser de dos tercios del
+ total dejando el otro tercio para las pruebas.
+ 
 \end_layout
 
 \begin_layout Subsection
