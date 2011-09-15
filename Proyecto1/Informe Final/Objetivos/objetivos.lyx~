@@ -67,10 +67,8 @@ Este apartado define la planificación del presente proyecto.
  la realización de este estudio.
  El alcance define los límites del proyecto, con los cuales la investigación
  no se sale de curso.
- Por último se detalla la programación del estudio, presentado en una carta
- Gantt junto con la metodología de trabajo.
- Todo esto permite llevar una programación del proyecto que permite hacer
- ajustes si se encuentran desviaciones a lo planificado.
+ Por último se detalla la planificación del proyecto, presentado en una
+ carta Gantt junto con la metodología de trabajo.
 \end_layout
 
 \begin_layout Subsection
@@ -78,8 +76,8 @@ Objetivo General
 \end_layout
 
 \begin_layout Standard
-Predecir el desempeño académico de los estudiantes de la Escuela de Ingeniería
- Informática de la Pontificia Universidad Católica de Valparaíso.
+Pronosticar el desempeño académico de los estudiantes de la Escuela de Ingenierí
+a Informática de la Pontificia Universidad Católica de Valparaíso.
  
 \end_layout
 
@@ -88,17 +86,17 @@ Objetivos Específicos
 \end_layout
 
 \begin_layout Itemize
-Definir indicadores que permitan la medición del desempeño estudiantil.
- 
+Realizar un estudio acabado de los conceptos y las investigaciones que se
+ relacionan con el presente proyecto.
 \end_layout
 
 \begin_layout Itemize
-Aplicar un análisis inteligente de datos para el reconocimiento de los patrones
- de desempeño de los estudiantes.
+Aplicar un análisis inteligente de datos para la identificación de característic
+as de los estudiantes que influyen en su desempeño.
 \end_layout
 
 \begin_layout Itemize
-Aplicar técnicas de minería de datos para predecir el desempeño universitario.
+Aplicar técnicas de minería de datos para pronosticar el desempeño estudiantil.
  
 \end_layout
 
@@ -284,16 +282,16 @@ Carta Gantt del proyecto
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Metodología de Trabajo
 \end_layout
 
 \begin_layout Standard
 La forma de realizar este trabajo consiste en investigación y desarrollo
- propio con reuniones periódicas junto con el profesor guía y los compañeros
- donde se exponen los avances.
- Si surgen dudas o se necesita apoyo del profesor guía se acuerdan reuniones
- extraordinarias.
+ propio con reuniones periódicas junto con el profesor guía y los compañeros.
+ En estas reuniones se exponen los avances y se clarifican las dudas.
+ Ademas ante cualquier eventualidad se programan reuniones extraordinarias
+ con el profesor guía.
 \end_layout
 
 \end_body

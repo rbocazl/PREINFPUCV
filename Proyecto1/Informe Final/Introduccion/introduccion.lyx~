@@ -87,7 +87,7 @@ key "Mckenzie2001"
 
 .
  El reto de las universidades entonces es reconocer esta heterogeneidad
- y afrontarla de la mejor manera posible.
+ y afrontarla como mejor puedan.
  Baker (1987) señaló que 
 \begin_inset Quotes fld
 \end_inset
@@ -101,7 +101,7 @@ el enfoque no solo debe estar en la admisión de un amplio abanico de estudiante
 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "successHE"
+key "Power1987"
 
 \end_inset
 
@@ -171,17 +171,15 @@ key "futuni"
 \end_inset
 
 .
- Y si estos factores son comunes en grupos de estudiantes estaríamos en
- presencia de patrones, que describirían a los estudiantes y permitirían
+ Si se determinan factores comunes en grupos de estudiantes, estaríamos
+ en presencia de patrones que describirían a los estudiantes y permitirían
  predecir su desempeño.
 \end_layout
 
 \begin_layout Standard
-En el campo de los predictores, se mantiene a la Prueba de Selección Universitar
-ia como el instrumento explicativo del posterior rendimiento del estudiante
- en el primer nivel universitario.
- Es por ésto que la Universidad, al estar inserta en el CRUCH, selecciona
- a sus postulantes mediante la batería de la PSU.
+La Pontifica Universidad Católica de Valparaíso(PUCV), al estar inserta
+ en el CRUCH, selecciona a sus postulantes mediante la batería de la Prueba
+ de Selección Universitaria(PSU).
  Contreras (2009) ha cuestionado esta metodología, determinando que el puntaje
  obtenido en la PSU no es el único indicador del rendimiento posterior
 \begin_inset CommandInset citation
@@ -192,43 +190,77 @@ key "habreluchile"
 
 .
  Para la Escuela sería una gran ventaja conocer si existen factores que
- influyen en el desempeño estudiantil, así podría tomar mejores decisiones
- con respecto a los recursos y sus asignaciones para mejorar el proceso
- formativo de sus estudiantes.
+ influyen en el desempeño estudiantil aparte del puntaje PSU, así podría
+ tomar mejores decisiones con respecto a los recursos y sus asignaciones
+ para mejorar el proceso formativo de sus estudiantes.
 \end_layout
 
 \begin_layout Standard
-La presente investigación se enmarca en la necesidad anterior, y para conseguir
- ésto se pretende realizar un reconocimiento de patrones, que explicarían
- características comunes de los estudiantes correlacionadas con su desempeño,
- y que permitirían clasificarlos a través de estos rasgos.
- El reconocimiento de patrones se realizará a través de técnicas del Análisis
- Inteligente de Datos, tales como las Redes Neurales y las Máquinas de Soporte
- Vectorial, entre otras.
+Al disponer la PUCV de un registro académico de las asignaturas dictadas
+ en las carreras de la Escuela de Ingeniería Informática y los estudiantes
+ que las han inscrito, permite tener una base de datos con información histórica
+ propicia para realizar un proceso de análisis de datos.
+ Este proceso se apoyaría en las nuevas tecnologías para obtener de manera
+ rápida y precisa conclusiones que permitan el desarrollo de máquinas de
+ aprendizaje.
+ Estas herramientas de la minería de datos permitirían adelantarse a los
+ hechos apoyando la toma de decisiones por parte de la dirección de la Escuela
+ para mejorar sus procesos docentes y asignar los recursos de una manera
+ eficiente.
 \end_layout
 
 \begin_layout Standard
-Primeramente, se describen los objetivos de éste documento, éstos son los
- fines que ésta investigación persigue.
- También se exponen las actividades que serán necesarias para completarla
- y su planificación estimada.
- Posteriormente se contextualiza esta investigación explicando lo que significa
- el desempeño y el rendimiento académico universitario, cómo afecta este
- indicador en la calidad de la educación superior, formas de medición del
- desempeño y del rendimiento de los estudiantes y la importancia de estos
- indicadores para mejorar la calidad de la educación.
- Además de introducir el reconocimiento de patrones, métodos de identificación,
- clasificación, etc.
- Acto seguido, se introduce la metodología del Análisis de Datos, y el aporte
- que significa al reconocimiento de patrones.Todo esto para llegar al Análisis
- Inteligente de Datos, describiendo como un área de la informática como
- la Inteligencia Artificial ha ayudado a realizar el Análisis de Datos de
- una forma automatizada e inteligente.Más adelante se detallan los datos
- que son necesarios para el desarrollo de la investigación, y que serán
- solicitados oportunamente a la Universidad.
- Además de explicar cuales son los resultados que se esperan obtener cuando
- ya culmine esta investigación, para por último enumerar las conclusiones
- de este estudio.
+Esta investigación se basa en la premisa del párrafo anterior para lograr
+ sus objetivos propuestos y apoyar la toma de decisiones de la Dirección.
+ En el presente informe se describe cada una de las etapas necesarias para
+ el desarrollo del trabajo.
+ En la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:objetivos"
+
+\end_inset
+
+ se presentan tanto el objetivo general como los objetivos específicos del
+ proyecto, además de la planificación del trabajo.
+ El marco teórico del proyecto se encuentra descrito en la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:marco"
+
+\end_inset
+
+, consta tanto de los conceptos involucrados (subsección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Marco-Conceptual"
+
+\end_inset
+
+) como de las investigaciones relacionadas (subsección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Marco-Referencial"
+
+\end_inset
+
+).
+ El desarrollo del trabajo se encuentra en la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:desarrollo"
+
+\end_inset
+
+, para finalizar con las conclusiones descritas en la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:conclusiones"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_body

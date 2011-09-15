@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <action-sequence> 
-  <title><![CDATA[INGRESO__Alumno-TipoColegio-Region_PSU-NEM]]></title>  
+  <title><![CDATA[TODOS__Colegio-Region-Cohorte-Asignatura_Rendimiento]]></title>  
   <version>1</version>  
   <logging-level>ERROR</logging-level>  
   <documentation> 
     <author>rbocazl</author>  
     <help/>  
     <result-type>report</result-type>  
-    <description>1315893300568.analysisview.xaction</description>  
+    <description>1316048243139.analysisview.xaction</description>  
     <icon/>  
     <!-- need an icon --> 
   </documentation>  
@@ -48,7 +48,7 @@
         <url type="string"/> 
       <chartbackgroundg type="string"/><chartvertaxislabel type="string"/><chartslicerfontsize type="string"/><chartaxislabelfontfamily type="string"/><charttitlefontfamily type="string"/><chartshowslicer type="string"/><query type="string"/><charttype type="string"/><chartbackgroundb type="string"/><actionreference type="string"/><showgrid type="string"/><chartslicerlocation type="string"/><chartaxistickfontstyle type="string"/><chartlocation type="string"/><role type="string"/><chartheight type="string"/><chartlegendfontsize type="string"/><chartwidth type="string"/><chartslicerfontfamily type="string"/><chartlegendlocation type="string"/><chartaxistickfontsize type="string"/><charttitlefontsize type="string"/><chartlegendfontstyle type="string"/><chartshowlegend type="string"/><chartaxislabelfontsize type="string"/><charttitlefontstyle type="string"/><chartaxistickfontfamily type="string"/><chartaxisticklabelrotation type="string"/><chartaxislabelfontstyle type="string"/><chartlegendfontfamily type="string"/><chartdrillthroughenabled type="string"/><charthorizaxislabel type="string"/><charttitle type="string"/><chartsliceralignment type="string"/><chartslicerfontstyle type="string"/><chartbackgroundr type="string"/></action-outputs>  
       <component-definition> 
-        <title><![CDATA[INGRESO__Alumno-TipoColegio-Region_PSU-NEM]]></title>  
+        <title><![CDATA[TODOS__Colegio-Region-Cohorte-Asignatura_Rendimiento]]></title>  
         <viewer>Pivot</viewer>  
         <model><![CDATA[solution:/civil/Civil.xml]]></model>  
         <options> 
@@ -76,13 +76,13 @@
           <spacer/>  
           <excel/> 
         </options>  
-        <query><![CDATA[select NON EMPTY {[Measures].[puntaje], [Measures].[nem], [Measures].[cantAlumnos], [Measures].[RelStdDevPSU], [Measures].[RelStdDevNEM]} ON COLUMNS,
-  NON EMPTY {([alumno.Alumno].[All alumno.Alumnos], [colegio.Colegio].[All colegio.Colegios], [region.Region].[All region.Regions], [cohorte.Cohorte].[All cohorte.Cohortes])} ON ROWS
-from [ingreso]
+        <query><![CDATA[select NON EMPTY {[Measures].[Rendimiento], [Measures].[CantAlumnos]} ON COLUMNS,
+  NON EMPTY {([Colegio].[All Colegio.Colegios], [Cohorte].[All Cohorte.Cohortes], [Region].[All Region.Regions], [Curso].[All Curso.Cursos], [Periodo].[All Periodo.Periodos], [Alumno].[All Alumno.Alumnos])} ON ROWS
+from [rendimiento]
 ]]></query>  
         <jndi><![CDATA[dw_civil]]></jndi>  
-        <cube>ingreso</cube>
-      <chartbackgroundg><![CDATA[255]]></chartbackgroundg><chartvertaxislabel><![CDATA[]]></chartvertaxislabel><chartslicerfontsize><![CDATA[12]]></chartslicerfontsize><chartaxislabelfontfamily><![CDATA[SansSerif]]></chartaxislabelfontfamily><charttitlefontfamily><![CDATA[SansSerif]]></charttitlefontfamily><chartshowslicer><![CDATA[true]]></chartshowslicer><charttype><![CDATA[1]]></charttype><chartbackgroundb><![CDATA[255]]></chartbackgroundb><actionreference><![CDATA[system/tmp/1315893300568.analysisview.xaction]]></actionreference><showgrid><![CDATA[true]]></showgrid><chartslicerlocation><![CDATA[1]]></chartslicerlocation><chartaxistickfontstyle><![CDATA[0]]></chartaxistickfontstyle><chartlocation><![CDATA[none]]></chartlocation><role/><chartheight><![CDATA[300]]></chartheight><chartlegendfontsize><![CDATA[10]]></chartlegendfontsize><chartwidth><![CDATA[500]]></chartwidth><chartslicerfontfamily><![CDATA[SansSerif]]></chartslicerfontfamily><chartlegendlocation><![CDATA[3]]></chartlegendlocation><chartaxistickfontsize><![CDATA[12]]></chartaxistickfontsize><charttitlefontsize><![CDATA[18]]></charttitlefontsize><connection/><chartlegendfontstyle><![CDATA[0]]></chartlegendfontstyle><chartshowlegend><![CDATA[true]]></chartshowlegend><chartaxislabelfontsize><![CDATA[12]]></chartaxislabelfontsize><charttitlefontstyle><![CDATA[1]]></charttitlefontstyle><chartaxistickfontfamily><![CDATA[SansSerif]]></chartaxistickfontfamily><chartaxisticklabelrotation><![CDATA[30]]></chartaxisticklabelrotation><chartaxislabelfontstyle><![CDATA[0]]></chartaxislabelfontstyle><chartlegendfontfamily><![CDATA[SansSerif]]></chartlegendfontfamily><chartdrillthroughenabled><![CDATA[false]]></chartdrillthroughenabled><charthorizaxislabel><![CDATA[]]></charthorizaxislabel><charttitle><![CDATA[]]></charttitle><chartsliceralignment><![CDATA[3]]></chartsliceralignment><chartslicerfontstyle><![CDATA[0]]></chartslicerfontstyle><chartbackgroundr><![CDATA[255]]></chartbackgroundr></component-definition>  
+        <cube>rendimiento</cube>
+      <chartbackgroundg><![CDATA[255]]></chartbackgroundg><chartvertaxislabel><![CDATA[]]></chartvertaxislabel><chartslicerfontsize><![CDATA[12]]></chartslicerfontsize><chartaxislabelfontfamily><![CDATA[SansSerif]]></chartaxislabelfontfamily><charttitlefontfamily><![CDATA[SansSerif]]></charttitlefontfamily><chartshowslicer><![CDATA[true]]></chartshowslicer><charttype><![CDATA[1]]></charttype><chartbackgroundb><![CDATA[255]]></chartbackgroundb><actionreference><![CDATA[system/tmp/1316048243139.analysisview.xaction]]></actionreference><showgrid><![CDATA[true]]></showgrid><chartslicerlocation><![CDATA[1]]></chartslicerlocation><chartaxistickfontstyle><![CDATA[0]]></chartaxistickfontstyle><chartlocation><![CDATA[none]]></chartlocation><role/><chartheight><![CDATA[300]]></chartheight><chartlegendfontsize><![CDATA[10]]></chartlegendfontsize><chartwidth><![CDATA[500]]></chartwidth><chartslicerfontfamily><![CDATA[SansSerif]]></chartslicerfontfamily><chartlegendlocation><![CDATA[3]]></chartlegendlocation><chartaxistickfontsize><![CDATA[12]]></chartaxistickfontsize><charttitlefontsize><![CDATA[18]]></charttitlefontsize><connection/><chartlegendfontstyle><![CDATA[0]]></chartlegendfontstyle><chartshowlegend><![CDATA[true]]></chartshowlegend><chartaxislabelfontsize><![CDATA[12]]></chartaxislabelfontsize><charttitlefontstyle><![CDATA[1]]></charttitlefontstyle><chartaxistickfontfamily><![CDATA[SansSerif]]></chartaxistickfontfamily><chartaxisticklabelrotation><![CDATA[30]]></chartaxisticklabelrotation><chartaxislabelfontstyle><![CDATA[0]]></chartaxislabelfontstyle><chartlegendfontfamily><![CDATA[SansSerif]]></chartlegendfontfamily><chartdrillthroughenabled><![CDATA[false]]></chartdrillthroughenabled><charthorizaxislabel><![CDATA[]]></charthorizaxislabel><charttitle><![CDATA[]]></charttitle><chartsliceralignment><![CDATA[3]]></chartsliceralignment><chartslicerfontstyle><![CDATA[0]]></chartslicerfontstyle><chartbackgroundr><![CDATA[255]]></chartbackgroundr></component-definition>  
       <action-name>Pivot View</action-name>  
       <logging-level>DEBUG</logging-level> 
     </action-definition> 

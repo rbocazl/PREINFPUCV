@@ -67,10 +67,8 @@ Este apartado define la planificación del presente proyecto.
  la realización de este estudio.
  El alcance define los límites del proyecto, con los cuales la investigación
  no se sale de curso.
- Por último se detalla la programación del estudio, presentado en una carta
- Gantt junto con la metodología de trabajo.
- Todo esto permite llevar una programación del proyecto que permite hacer
- ajustes si se encuentran desviaciones a lo planificado.
+ Por último se detalla la planificación del proyecto, presentado en una
+ carta Gantt junto con la metodología de trabajo.
 \end_layout
 
 \begin_layout Subsection
@@ -78,8 +76,8 @@ Objetivo General
 \end_layout
 
 \begin_layout Standard
-Predecir el desempeño académico de los estudiantes de la Escuela de Ingeniería
- Informática de la Pontificia Universidad Católica de Valparaíso.
+Pronosticar el desempeño académico de los estudiantes de la Escuela de Ingenierí
+a Informática de la Pontificia Universidad Católica de Valparaíso.
  
 \end_layout
 
@@ -88,17 +86,17 @@ Objetivos Específicos
 \end_layout
 
 \begin_layout Itemize
-Definir indicadores que permitan la medición del desempeño estudiantil.
- 
+Realizar un estudio acabado de los conceptos y las investigaciones que se
+ relacionan con el presente proyecto.
 \end_layout
 
 \begin_layout Itemize
-Aplicar un análisis inteligente de datos para el reconocimiento de los patrones
- de desempeño de los estudiantes.
+Aplicar un análisis inteligente de datos para la identificación de característic
+as de los estudiantes que influyen en su desempeño.
 \end_layout
 
 \begin_layout Itemize
-Aplicar técnicas de minería de datos para predecir el desempeño universitario.
+Aplicar técnicas de minería de datos para pronosticar el desempeño estudiantil.
  
 \end_layout
 
@@ -107,14 +105,13 @@ Alcance
 \end_layout
 
 \begin_layout Standard
-El alcance de la presente investigación se encuentra acotado a los estudiantes
- de la Escuela de Ingeniería Informática de la Pontificia Universidad Católica
- de Valparaíso y el historial académico de ellos.
+El alcance de la presente investigación se encuentra acotado al historial
+ académico de los estudiantes de la Escuela de Ingeniería Informática de
+ la Pontificia Universidad Católica de Valparaíso.
  Este proyecto consta de dos estudios diferentes, uno para cada carrera
  de la Escuela.
  La razón de lo anterior es que los datos recolectados difieren en ambas
- carreras, ya sea por la duración de los programas de pre-grado y sus asignatura
-s.
+ carreras, ya sea por la duración de los programas de pregrado y sus asignaturas.
 \end_layout
 
 \begin_layout Subsection
@@ -130,7 +127,7 @@ name "sub:Plan-de-Trabajo"
 
 \begin_layout Standard
 Las siguientes actividades se han planificado realizar en los tiempos especifica
-dos en la figura 
+dos en la Carta Gantt descrita en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Carta-Gantt"
@@ -169,8 +166,8 @@ Confección y revisión del informe de avance
 \end_layout
 
 \begin_layout Standard
-Esta actividad consiste en la tarea de redactar el informe, revisarlo conjuntame
-nte con el profesor guía y preparar la presentación.
+Esta actividad consiste en la tarea de redactar el informe de avance, revisarlo
+ conjuntamente con el profesor guía y preparar la presentación.
  Se estima una duración de 14 días.
 \end_layout
 
@@ -200,7 +197,7 @@ Realización del proceso de Extracción, Transformación y Limpieza (ETL)
 \end_layout
 
 \begin_layout Standard
-las primeras fases del análisis inteligente de datos: la extracción, limpieza
+Las primeras fases del análisis inteligente de datos: la extracción, limpieza
  y carga de los datos para su posterior análisis.
  Se estima que esta tarea dure 15 días.
 \end_layout
@@ -284,7 +281,7 @@ Carta Gantt del proyecto
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Metodología de Trabajo
 \end_layout
 

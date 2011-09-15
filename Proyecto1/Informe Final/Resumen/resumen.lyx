@@ -1,21 +1,29 @@
-#LyX 1.6.9 created this file. For more info see http://www.lyx.org/
-\lyxformat 345
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
 \textclass article
 \use_default_options false
+\maintain_unincluded_children false
 \language spanish
+\language_package default
 \inputencoding latin1
+\fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
 \font_default_family default
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
 
 \graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
 \paperfontsize 11
 \spacing single
 \use_hyperref false
@@ -23,21 +31,31 @@
 \use_geometry false
 \use_amsmath 1
 \use_esint 1
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
 \use_bibtopic false
+\use_indices false
 \paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
 \secnumdepth 4
 \tocdepth 3
 \paragraph_separation indent
-\defskip medskip
+\paragraph_indentation default
 \quotes_language french
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\author "" 
-\author "" 
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
 \end_header
 
 \begin_body
@@ -81,43 +99,36 @@ status collapsed
 \begin_layout Standard
 
 \size normal
-La continua búsqueda por la excelencia académica por parte de todas las
- instituciones de educación, han llevado a éstas a formularse preguntas
- sobre qué acciones debiesen ser tomadas para mejorar la calidad de la educación.
- Tales medidas van desde programas de apoyo a los estudiantes o mejorar
- las técnicas de selección.
+La continua búsqueda de la excelencia académica por parte de todas las instituci
+ones de educación, han llevado a éstas a formularse preguntas sobre qué
+ acciones debiesen ser tomadas para mejorar la calidad de la educación.
  Anticiparse a los hechos puede ser aún mejor, ya que permitiría la toma
- de decisiones en forma oportuna por parte de la dirección de las universidades.
- Es por esto, que la universidad se ve en la necesidad de disponer de herramient
-as que pronostiquen el rendimiento de sus estudiantes.
+ de decisiones en forma oportuna por parte de la dirección de las escuelas.
+ Es por esto que el desarrollo de una herramienta que permita el pronóstico
+ del desempeño estudiantil cobra importancia en este contexto y daría un
+ apoyo a la toma de decisiones a los directivos.
 \end_layout
 
 \begin_layout Standard
-En el presente trabajo se espera abordar este problema mediante el reconocimient
-o de los patrones relacionados al desempeño universitario de los estudiantes
- de la Escuela de Ingeniería Informática de la Pontificia Universidad de
- Valparaíso.
- Mediante la confección de medidores de desempeño y usando técnicas del
- análisis inteligente de datos, se pretende la identificación de características
- que permitan predecir el rendimiento posterior de los estudiantes, para
- así poder apoyar el proceso de toma de decisiones de la dirección de la
- Escuela.
+En el presente trabajo se espera fabricar esta herramienta mediante la utilizaci
+ón de máquinas de aprendizaje.
+ Para lograr ésto se debe realizar un proceso previo de análisis de datos
+ apoyado por herramientas informáticas para disminuir los tiempos y aumentar
+ la precisión.
+ Este análisis de datos permite la identificación de características que
+ influyen en el desempeño estudiantil universitario y que sientan las bases
+ para el modelo predictivo.
 \end_layout
 
 \begin_layout Standard
-Lo que se pretende obtener, en el transcurso de este estudio, son correlaciones
- entre los factores definidos y las características asociadas al desempeño
- que pudiesen ser identificadas al analizar los datos.
- Los resultados además deben servir de base para incluir predicciones de
- desempeño posterior.
- Ademas de analizar también, con que fiabilidad la estimación se está realizando
-, para la medición de la fortaleza del modelo predictivo confeccionado.
-\size normal
-
-\begin_inset Newline newline
-\end_inset
-
-
+Los factores característicos que influyen en el desempeño estudiantil, que
+ se han encontrado hasta el momento, son el tipo de colegio de egreso, la
+ región a la que pertenece el establecimiento donde egresó el estudiante,
+ el área de estudio a la que pertenece la asignatura inscrita y el tiempo
+ de permanencia del estudiante en la universidad.
+ Estos factores permitirán comenzar con la siguiente fase del proyecto:
+ la minería de datos.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -127,8 +138,7 @@ Lo que se pretende obtener, en el transcurso de este estudio, son correlaciones
 \size normal
 Palabras Clave:
 \series default
- desempeño académico, reconocimiento de patrones, análisis inteligente de
- datos.
+ desempeño académico, análisis inteligente de datos, minería de datos.
 \end_layout
 
 \end_body

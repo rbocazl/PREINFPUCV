@@ -1,21 +1,29 @@
-#LyX 1.6.9 created this file. For more info see http://www.lyx.org/
-\lyxformat 345
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
 \textclass article
 \use_default_options false
+\maintain_unincluded_children false
 \language spanish
+\language_package default
 \inputencoding latin1
+\fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
 \font_default_family default
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
 
 \graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
 \paperfontsize 11
 \spacing single
 \use_hyperref false
@@ -23,71 +31,138 @@
 \use_geometry false
 \use_amsmath 1
 \use_esint 1
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
 \use_bibtopic false
+\use_indices false
 \paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
 \secnumdepth 4
 \tocdepth 3
 \paragraph_separation indent
-\defskip medskip
+\paragraph_indentation default
 \quotes_language french
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\author "" 
-\author "" 
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
 \end_header
 
 \begin_body
 
 \begin_layout Standard
-El presente documento presentó el inicio de esta investigación, que parte
- de la necesidad de la Escuela de contar con instrumentos que den indicadores
- que permitan aumentar la calidad de su educación.
- Dada la preocupación que debe mostrar ésta por sus procesos formativos,
- es que se hace necesario reconocer que características de los estudiantes
- se relacionan con su desempeño académico.
+El presente documento presentó la primera fase de esta investigación, la
+ que consta de la definición del proyecto, la necesidad observada, los objetivos
+ propuestos, el plan de trabajo, y el desarrollo de la primera parte del
+ proyecto.
+ El fin último del proyecto debe ser satisfacer la necesidad de la Escuela
+ de contar con instrumentos que den indicadores que permitan aumentar la
+ calidad de su educación, evitar la deserción y mejorar el desempeño de
+ sus estudiantes.
+ 
 \end_layout
 
 \begin_layout Standard
-Dada esta problemática, en el presente documento se logró definir el objetivo
- y la metodología que se utilizará.
- El objetivo de este estudio viene a satisfacer la necesidad anteriormente
- descrita y la metodología a utilizar que será el análisis inteligente de
- datos.
- Se pudo esgrimir también una programación de la presente investigación
- y se logro identificar las principales tareas y sus duraciones, además
- de la definición del alcance del estudio.
+La definición en las secciones 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:objetivos"
+
+\end_inset
+
+y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Plan-de-Trabajo"
+
+\end_inset
+
+ permiten, dado los objetivos propuestos, realizar una planificación que
+ permita controlar los avances del proyecto.
+ Esta planificación se realizó en base al desglose de las tareas que son
+ necesarias para ésta fase del trabajo.
 \end_layout
 
 \begin_layout Standard
-Para comprender el contexto de la investigación, se realizó una explicación
- del marco teórico que engloba al presente estudio.
- Se logró realizar una breve definición de los conceptos involucrados: el
- reconocimiento de patrones, el análisis inteligente de datos y el desempeño
- académico.
- También se identificaron los datos necesarios para llevar a buen puerto
- esta investigación pudiendo definir tres dimensiones de datos.
+Para lograr una culminación exitosa de esta etapa del proyecto era necesario
+ realizar una definición de los principales conceptos involucrados.
+ Esto se describió en la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:marco"
+
+\end_inset
+
+, tratando tanto el desempeño académico, el análisis inteligente de datos
+ y la minería de datos.
+ Esto sentó las bases del trabajo de esta fase del trabajo, ya que permitió
+ el desarrollo de éste siguiendo las metodologías de los conceptos estudiados.
+ También se describieron algunos trabajos relacionados con la temática de
+ esta investigación.
 \end_layout
 
 \begin_layout Standard
-Los resultados que se esperan obtener en el transcurso de este estudio son
- el reconocimiento de las correlaciones entre los factores académicos, y
- las características asociadas al desempeño universitario de los estudiantes.
- Todo ésto, se espera que pueda ser identificado al completar el análisis
- de los datos.
- Los resultados además deberían incluir predicciones de desempeño posterior
- dado una serie de ejemplos de estudiantes a analizar.
- Se tendrá que analizar también con que fiabilidad el modelo predictivo
- está funcionando, para tener una idea de cuán fuerte es el modelo de pronóstico
- confeccionado.
+En el desarrollo de esta primera fase se logró definir, primeramente, los
+ datos necesarios para la elaboración de esta etapa.
+ Después de la definición de los datos se siguió la metodología del análisis
+ inteligente de datos.
+ El análisis de los datos fue realizado según lo estudiado en el marco teórico.
+ Después de realizado todo el proceso del análisis se detallaron algunas
+ conclusiones de éste, como pueden verse en la subsección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Conclusiones-del-análisis"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Que éste sea sólo el comienzo del camino a la consecución de los objetivos
- propuestos, tanto personales como académicos.
+Las conclusiones del análisis permiten sentar las bases para la siguiente
+ fase del proyecto: la minería de datos.
+ Se pudo identificar al menos tres características que podrían influir en
+ el rendimiento, tanto del primer año de la carrera como en su totalidad.
+ Pudo establecerse que el puntaje PSU no es el único factor ponderante en
+ el desempeño posterior y que la institución debe plantearse cambiar los
+ métodos de selección actuales.
+\end_layout
+
+\begin_layout Standard
+Las principales características de los estudiantes que pudieron ser identificada
+s en esta fase son el tipo de colegio de egreso de la enseñanza media, la
+ región a la que pertenecen y el tiempo de permanencia en la universidad.
+ Se pudo ver que los estudiantes que provienen de colegios particulares
+ superan en rendimiento a los de los subvencionados, y éstos a los de los
+ municipales.
+ También se encontró que los estudiantes de las regiones extremas presentan
+ rendimientos inferiores.
+ Por último mientras mas años se estudie en la carrera el rendimiento va
+ aumentando; las asignaturas de primer año presentan altas tasas de reprobación
+ mientras que las de últimos años las más altas.
+ El área de estudio también influye; asignaturas de derecho, comercial,
+ industrial están en el grupo superior de aprobación, en un segundo grupo
+ están las asignaturas propias de la informática y en el último grupo la
+ de las ciencias básicas, con las matemáticas en el fondo de la clasificación.
+\end_layout
+
+\begin_layout Standard
+La próxima etapa consistirá en el desarrollo de modelos predictivos que
+ permitan pronosticar el desempeño de un estudiante a través de su carrera.
+ Deberá probarse tantas herramientas como sea posible y comparar su capacidad
+ predictiva.
+ Las conclusiones de el presente informe deben ser la base para lograr la
+ culminación exitosa de la próxima fase de este proyecto.
 \end_layout
 
 \end_body

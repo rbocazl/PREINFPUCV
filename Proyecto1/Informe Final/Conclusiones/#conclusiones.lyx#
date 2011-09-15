@@ -69,7 +69,11 @@ El presente documento presentó la primera fase de esta investigación, la
  de contar con instrumentos que den indicadores que permitan aumentar la
  calidad de su educación, evitar la deserción y mejorar el desempeño de
  sus estudiantes.
- La definición en las secciones 
+ 
+\end_layout
+
+\begin_layout Standard
+La definición en las secciones 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:objetivos"
@@ -83,16 +87,16 @@ reference "sub:Plan-de-Trabajo"
 
 \end_inset
 
- permiten, dado los objetivos propuestos, realizar una planificación que
+ permiten, dado los objetivos propuestos, estimar una planificación que
  permita controlar los avances del proyecto.
  Esta planificación se realizó en base al desglose de las tareas que son
  necesarias para ésta fase del trabajo.
 \end_layout
 
 \begin_layout Standard
-Para lograr una culminación exitosa de esta etapa del proyecto era necesario
+Para lograr una culminación existosa de esta etapa del proyecto era necesario
  realizar una definición de los principales conceptos involucrados.
- Esto se describió en la sección 
+ Esto se describrió en la sección 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:marco"
@@ -103,14 +107,12 @@ reference "sec:marco"
  y la minería de datos.
  Esto sentó las bases del trabajo de esta fase del trabajo, ya que permitió
  el desarrollo de éste siguiendo las metodologías de los conceptos estudiados.
- También se describieron algunos trabajos relacionados con la temática de
- esta investigación.
 \end_layout
 
 \begin_layout Standard
 En el desarrollo de esta primera fase se logró definir, primeramente, los
  datos necesarios para la elaboración de esta etapa.
- Después de la definición de los datos se siguió la metodología del análisis
+ Despues de la definición de los datos se siguió la metodología del análisis
  inteligente de datos.
  El análisis de los datos fue realizado según lo estudiado en el marco teórico.
  Después de realizado todo el proceso del análisis se detallaron algunas
@@ -127,8 +129,8 @@ reference "sub:Conclusiones-del-análisis"
 \begin_layout Standard
 Las conclusiones del análisis permiten sentar las bases para la siguiente
  fase del proyecto: la minería de datos.
- Se pudo identificar cuatro características que podrían influir en el rendimient
-o, tanto del primer año de la carrera como en su totalidad.
+ Se pudo identificar al menos tres características que podrían influir en
+ el rendimiento, tanto del primer año de la carrera como en su totalidad.
  Pudo establecerse que el puntaje PSU no es el único factor ponderante en
  el desempeño posterior y que la institución debe plantearse cambiar los
  métodos de selección actuales.
@@ -143,10 +145,10 @@ s en esta fase son el tipo de colegio de egreso de la enseñanza media, la
  municipales.
  También se encontró que los estudiantes de las regiones extremas presentan
  rendimientos inferiores.
- Por último mientras más años se permanezca en la universidad el rendimiento
- va aumentando; las asignaturas de primer año presentan bajas tasas de aprobació
-n mientras que las de últimos años las más altas.
- El área de estudio también influye; asignaturas de derecho, comercial e
+ Por último mientras mas años se estudie en la carrera el rendimiento va
+ aumentando; las asignaturas de primer año presentan altas tasas de reprobación
+ mientras que las de ultimos años las más altas.
+ El área de estudio tambein influye; asignaturas de derecho, comercial,
  industrial están en el grupo superior de aprobación, en un segundo grupo
  están las asignaturas propias de la informática y en el último grupo la
  de las ciencias básicas, con las matemáticas en el fondo de la clasificación.
@@ -154,11 +156,12 @@ n mientras que las de últimos años las más altas.
 
 \begin_layout Standard
 La próxima etapa consistirá en el desarrollo de modelos predictivos que
- permitan pronosticar el desempeño de un estudiante a través de su carrera.
- Deberá probarse tantas herramientas como sea posible y comparar su capacidad
- predictiva.
- Las conclusiones de el presente informe deben ser la base para lograr la
- culminación exitosa de la próxima fase de este proyecto.
+ permitan pronosti
+\end_layout
+
+\begin_layout Standard
+Que éste sea sólo el comienzo del camino a la consecución de los objetivos
+ propuestos, tanto personales como académicos.
 \end_layout
 
 \end_body

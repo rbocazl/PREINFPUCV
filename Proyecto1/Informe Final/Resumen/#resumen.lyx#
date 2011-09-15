@@ -61,36 +61,11 @@
 \begin_body
 
 \begin_layout Standard
-\align center
-PONTIFICIA UNIVERSIDAD CATÓLICA DE VALPARAÍSO
-\begin_inset Newline newline
-\end_inset
-
- FACULTAD DE INGENIERÍA
-\begin_inset Newline newline
-\end_inset
-
- ESCUELA DE INGENIERÍA INFORMÁTICA
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset VSpace 4cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
+\noindent
 
 \size larger
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -101,8 +76,7 @@ status collapsed
 
 
 \series bold
-PRONÓSTICO DEL DESEMPEÑO ESTUDIANTIL EN LA ESCUELA DE INGENIERÍA INFORMÁTICA
- DE LA PUCV 
+Resumen
 \series default
 
 \begin_inset ERT
@@ -120,94 +94,48 @@ status collapsed
 \end_inset
 
 
-\begin_inset VSpace 3cm
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-\align center
 
 \size normal
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
+La continua búsqueda de la excelencia académica por parte de todas las instituci
+ones de educación, han llevado a éstas a formularse preguntas sobre qué
+ acciones debiesen ser tomadas para mejorar la calidad de la educación.
+ Anticiparse a los hechos puede ser aún mejor, ya que permitiría la toma
+ de decisiones en forma oportuna por parte de la dirección de las escuelas.
+ Es por esto que el desarrollo de una herramienta que permita el pronóstico
+ del desempeño estudiantil cobra importancia en este contexto y daría un
+ apoyo a la toma de decisiones a los directivos.
 \end_layout
 
-\end_inset
+\begin_layout Standard
+En el presente trabajo se espera fabricar esta herramienta mediante la utilizaci
+ón de máquinas de aprendizaje.
+ Para lograr ésto se debe realizar un proceso de análisis de datos que será
+ apoyado por herramientas informáticas para disminuir los tiempos y aumentar
+ la precisión.
+ Este análisis de datos permite la identificación de características que
+ influyen en el desempeño estudiantil universitario y que sientan las bases
+ para el modelo predictivo.
+\end_layout
 
+\begin_layout Standard
+Los factores característicos que influyen en el desempeño estudiantil que
+ se han encontrado hasta el momento son el tipo de colegio de egreso, la
+ región a la que pertenece el establecimiento donde egresó el estudiante,
+ el 
+\end_layout
+
+\begin_layout Standard
+\noindent
 
 \series bold
-RICARDO ALFONSO BOCAZ LEÓN
+\size normal
+Palabras Clave:
 \series default
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\align right
-
-\size normal
-\begin_inset VSpace 3cm
-\end_inset
-
- INFORME FINAL DE PROYECTO 1
-\begin_inset Newline newline
-\end_inset
-
-INGENIERÍA CIVIL INFORMÁTICA
-\begin_inset Newline newline
-\end_inset
-
- PROFESOR GUÍA: MG.
- RODRIGO ALFARO
-\begin_inset Newline newline
-\end_inset
-
- PROFESOR CORREFERENTE: DR.
- CRISTIAN RUSU
-\begin_inset Newline newline
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-
-\size normal
-\begin_inset VSpace 1.5cm
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\size normal
-SEPTIEMBRE, 2011
-\begin_inset Newline newline
-\end_inset
-
- 
+ desempeño académico, reconocimiento de patrones, análisis inteligente de
+ datos.
 \end_layout
 
 \end_body
