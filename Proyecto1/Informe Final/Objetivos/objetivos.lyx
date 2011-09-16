@@ -240,7 +240,18 @@ Este hito está planificado para el día 1 de julio de 2011 y consiste en
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/ProgramacionP1.PNG
+	width 100text%
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -255,17 +266,6 @@ name "fig:Carta-Gantt"
 
 Carta Gantt del proyecto
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/ProgramacionP1.PNG
-	width 100text%
 
 \end_inset
 

@@ -112,7 +112,7 @@ ones de educación, han llevado a éstas a formularse preguntas sobre qué
 \begin_layout Standard
 En el presente trabajo se espera fabricar esta herramienta mediante la utilizaci
 ón de máquinas de aprendizaje.
- Para lograr ésto se debe realizar un proceso de análisis de datos que será
+ Para lograr ésto se debe realizar un proceso previo de análisis de datos
  apoyado por herramientas informáticas para disminuir los tiempos y aumentar
  la precisión.
  Este análisis de datos permite la identificación de características que
@@ -121,8 +121,8 @@ En el presente trabajo se espera fabricar esta herramienta mediante la utilizaci
 \end_layout
 
 \begin_layout Standard
-Los factores característicos que influyen en el desempeño estudiantil que
- se han encontrado hasta el momento son el tipo de colegio de egreso, la
+Los factores característicos que influyen en el desempeño estudiantil, que
+ se han encontrado hasta el momento, son el tipo de colegio de egreso, la
  región a la que pertenece el establecimiento donde egresó el estudiante,
  el área de estudio a la que pertenece la asignatura inscrita y el tiempo
  de permanencia del estudiante en la universidad.
